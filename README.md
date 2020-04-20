@@ -35,3 +35,7 @@ Fitur Mendatang :
 3. Modul Antrian Mobie JKN
 4. Mobile Apps
 5. Website + Appointment
+
+Copyright (c) Kreatif Media SIMRS
+
+Dengan ini Saya telah membaca, memahami dan menyetujui bahwa Sistem ini bersifat free dan tidak diperkenankan untuk diperjual-belikan / komersilkan sebagai Syarat dan Ketentuan Pengguna, dan Saya tidak berkeberatan apabila penyedia SIMRS Kreatif Media mendata pada form registrasi yang sudah disediakan, berupa alamat e-mail / nomor handphone untuk kepentingan pengiriman informasi seputar sistem rumah sakit seperti broadcast, update dan lain-lain.
