@@ -1,0 +1,32 @@
+Nm_erro = {
+  "lang_jscr_dcml" : "عشاریہ",
+  "lang_jscr_decm" : "لمحھے  کا دسواں حصہ",
+  "lang_jscr_hour" : "گھنٹہ",
+  "lang_jscr_iday" : "دن",
+  "lang_jscr_intg" : "عدد اور",
+  "lang_jscr_ivcr" : "غلط کریڈٹ کارڈ نمبر",
+  "lang_jscr_ivdt" : "غلط تاریخ",
+  "lang_jscr_ivem" : "غلط ای میل",
+  "lang_jscr_ivnb" : "غلط عدد",
+  "lang_jscr_ivtm" : "غلط وقت",
+  "lang_jscr_ivv2" : "غلط تاریخ",
+  "lang_jscr_ivvl" : "غلط عشاریہ",
+  "lang_jscr_maxm" : "زیادہ سے زیادہ",
+  "lang_jscr_maxm_date" : "زیادہ سے زیادہ تاریخ",
+  "lang_jscr_minm" : "کم از کم",
+  "lang_jscr_minm_date" : "کم سے کم تاریخ",
+  "lang_jscr_mint" : "منٹ",
+  "lang_jscr_mnth" : "مہینہ",
+  "lang_jscr_msfr" : "فارم پر نام ہونا ضروری ہے",
+  "lang_jscr_mslg" : "لوگن موجود نہی ہے",
+  "lang_jscr_msob" : "اس فارم کے حصّے کا نام ضروری ہے",
+  "lang_jscr_mxdg" : "اعداد کی مقدار مقررہ حد سے تجاوز کر گئی",
+  "lang_jscr_mxvl" : "حد سے تجاوز کر گئی",
+  "lang_jscr_nnum" : "یہ خانہ صرف نمبر کے لئے ہے",
+  "lang_jscr_nvlf" : "منفی علامت قیمت کے بائیں طرف ہونا چاہیے",
+  "lang_jscr_reqr" : "فیلڈ ضرورت ہے",
+  "lang_jscr_secd" : "لمہے",
+  "lang_jscr_wfix" : "کیا آپ درست کرنا چاہتے ہیں؟"
+};
+
+//-------- Mens USR

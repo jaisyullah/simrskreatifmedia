@@ -1,0 +1,31 @@
+Nm_erro = {
+  "lang_jscr_decm" : "තත්පරයෙන් දහයෙන්",
+  "lang_jscr_hour" : "පැය",
+  "lang_jscr_iday" : "දවස",
+  "lang_jscr_intg" : "පූර්ණ සංඛ්‍යා සහ",
+  "lang_jscr_ivcr" : "වලංගු නොවන ක්‍රෙඩිට් කාඩ් අංකයකි",
+  "lang_jscr_ivdt" : "අවලංගු දත්ත:",
+  "lang_jscr_ivem" : "වලංගු නොවන ඊ-තැපෑල:",
+  "lang_jscr_ivnb" : "වලංගු නොවන පූර්ණ සංඛ්‍යාවක්",
+  "lang_jscr_ivtm" : "වලංගු නොවන වේලාව:",
+  "lang_jscr_ivv2" : "අවලංගු දත්ත:",
+  "lang_jscr_ivvl" : "වලංගු නොවන දශමයක්",
+  "lang_jscr_maxm" : "උපරිම",
+  "lang_jscr_maxm_date" : "උපරිම දිනය",
+  "lang_jscr_minm" : "අවම",
+  "lang_jscr_minm_date" : "අවම දිනය",
+  "lang_jscr_mint" : "මිනිත්තු",
+  "lang_jscr_mnth" : "මාසය",
+  "lang_jscr_msfr" : "පෝරමයට නමක් තිබිය යුතුය",
+  "lang_jscr_mslg" : "පිවිසුම අතුරුදහන්;",
+  "lang_jscr_msob" : "මෙම ආකෘතියට නමක් තිබිය යුතුය",
+  "lang_jscr_mxdg" : "ඉලක්කම් සංඛ්‍යාව අපේක්ෂිත ප්‍රමාණය ඉක්මවා ඇත",
+  "lang_jscr_mxvl" : "උපරිම දිග ඉක්මවා ඇත",
+  "lang_jscr_nnum" : "ක්ෂේත්‍රය සංඛ්‍යාත්මක වේ",
+  "lang_jscr_nvlf" : "රින ලකුණ වටිනාකමේ වම් පසින් තිබිය යුතුය",
+  "lang_jscr_reqr" : "අත්‍යාවශ්‍ය ක්ෂේත්‍රය",
+  "lang_jscr_secd" : "තත්පර",
+  "lang_jscr_wfix" : "ඔබට නිවැරදි කිරීමට අවශ්‍යද?"
+};
+
+//-------- Mens USR

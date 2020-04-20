@@ -1,0 +1,12 @@
+#success_message{ display: none;}
+.col-md-4 .input-group input {text-align: left !important;}
+/*mensagem*/
+#id_error_display_fixed {width: 100%;background: rgba(0, 0, 0, 0.4);height: 100%;;}
+table.scFormErrorTable{position:absolute;left: 50%;transform: translate(-50%, -50%);top: 50%;padding: 15px;background-color: #ffffff;box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);opacity:1;width: 250px;height: 100px;}
+td.scFormErrorMessage {padding: 25px 0 5px !important;}
+td.scFormErrorTitleFont{color: rgba(0, 0, 0, 0);position: relative;top: 8px;}
+td.scFormErrorTitleFont img {position: absolute;left: 50%;margin-left: -15px;}
+a.scButton_default {position: absolute;right: 15px;top: 15px;}
+td.scFormErrorTitleFont img {margin-top: -5px;}
+a.scButton_default {font-size: 10px;border: 1px solid #ccc;border-radius: 5px;padding: 2px 5px;text-decoration: none;color: #555;right: 8px;top: 8px;}
+/*fim mensagem*/

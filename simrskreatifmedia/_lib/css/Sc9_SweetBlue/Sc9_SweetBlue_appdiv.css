@@ -1,0 +1,153 @@
+.scAppDivMoldura { background-color: #f9fafc; background-image: none; opacity: 1; filter: alpha(opacity=100); border-collapse: collapse; border-color: #727cf5 !important; border-style: solid; border-width: 0 0 0 2px !important; padding: 20px !important; margin: 2px 0 0 0; -moz-box-shadow: inset 0px 0px 8px 0px rgba(0,0,0,0.05); -webkit-box-shadow: inset 0px 0px 8px 0px rgba(0,0,0,0.05); box-shadow: inset 0px 0px 8px 0px rgba(0,0,0,0.05) }
+#NM_Grid_Search .scAppDivMoldura { padding: 13px 20px !important }
+.scAppDivHeader { background-color: #f9fafc; background-image: none; opacity: 1; filter: alpha(opacity=100); border-collapse: collapse; border-color: #313a46; border-style: none; border-width: 0; padding: 5px }
+.scAppDivHeaderText { font-family: 'Nunito', sans-serif; font-size: 13px; color: #6c757d; font-weight: bold; text-decoration: none }
+#NM_Grid_Search .scAppDivHeaderText { vertical-align: top }
+.SummaryBox > td #sc_id_summary_fields { border-color: #f9fafc }
+.SummaryBox > td { border-color: #f9fafc }
+.SummaryBox > td .scAppDivHeader { background-color: #f9fafc }
+.GroupByOptions > div { border-color: #E0E6ED }
+.GroupByOptions > div label span { color: #6c757d }
+.SummaryBox > td .scAppDivHeader:before { background-image: url(../../img/scriptcase__NM__btn__NM__scriptcase9_Rhino__NM__nm_scriptcase9_Rhino_open.png) }
+.SummaryBox > td .scAppDivHeader.open:before { background-image: url(../../img/scriptcase__NM__btn__NM__scriptcase9_Rhino__NM__nm_scriptcase9_Rhino_opened.png) }
+#sc_id_free_groupby > td { padding-top: 10px }
+.scAppDivContent { background-color: #f9fafc; background-image: none; opacity: 1; filter: alpha(opacity=100); border-style: none; padding: 6px 4px; font-size: 13px }
+.scAppDivContentText { font-family: 'Nunito', sans-serif; font-size: 13px; color: #6c757d; font-style: css_appdiv_header_text_style; text-decoration: none; vertical-align: top }
+.scAppDivToolbar { font-family: 'Nunito', sans-serif; font-size: 13px; color: #6c757d; font-style: normal; text-decoration: none; background-color: #f9fafc; background-image: none; opacity: 1; filter: alpha(opacity=100); border-collapse: collapse; border-color: #E0E6ED; border-style: none; border-width: 0; padding: 5px }
+.scAppDivToolbarInput { background-color: #F9FAFC; background-image: none; opacity: 1; filter: alpha(opacity=100); border-color: #E0E6ED; border-style: solid; border-width: 1px; color: #313a46; font-family: 'Nunito', sans-serif; font-size: 13px; padding: 0 10px; text-decoration: none; box-sizing: border-box; height: 34px; line-height: 34px }
+.scAppDivtoolbarinputfocus:focus { background-image: none; opacity: 1; filter: alpha(opacity=100); border-color: #66afe9; color: #6c757d; box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6) }
+.scAppDivToolbarInput label { background-image: none; opacity: 1; filter: alpha(opacity=100); border-color: #66afe9; color: #6c757d; box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6) }
+.scAppDivSelectFields { background-color: none; background-image: none; border-color: #e3eaef; border-style: dashed; border-width: 1px; border-collapse: collapse; padding: 1px 2px }
+.scAppDivSelectFieldsEnabled { background-color: #f9fbfc; background-image: none; opacity: 1; filter: alpha(opacity=100); border-color: #e3eaef; border-style: solid; border-width: 1px; color: #767a7c; font-family: 'Nunito', sans-serif; font-size: 13px; padding: 2px 4px !important; margin: 2px !important; text-decoration: none; vertical-align: middle }
+.scAppDivSelectFieldsDisabled { background-color: #e3eaef; background-image: none; opacity: 1; filter: alpha(opacity=100); border-color: #f7f9fb; border-style: solid; border-width: 1px; color: #767a7c; font-family: 'Nunito', sans-serif; font-size: 13px; padding: 2px 4px !important; margin: 2px !important; text-decoration: none; vertical-align: middle }
+.scAppDivSelectBoxEnabled { background-color: #E9D9A7; background-image: none; opacity: 1; filter: alpha(opacity=100); border-color: #D5BB34; border-style: solid; border-width: 1px; color: #6c757d; font-family: 'Nunito', sans-serif; font-size: 13px; padding: 4px; text-decoration: none; vertical-align: middle }
+.scAppDivSelectBoxDisabled { background-color: #EEEDE3; background-image: none; opacity: 1; filter: alpha(opacity=100); border-color: #8b8a7F; border-style: none; border-width: 1px; color: #6c757d; font-family: 'Nunito', sans-serif; font-size: 13px; padding: 4px; text-decoration: none; vertical-align: middle }
+.scAppDivSelectFieldsPlaceholder { background-color: #FFFFFF; background-image: none; opacity: 1; filter: alpha(opacity=100); border-color: #8492A6; border-style: dashed; border-width: 1px; padding: 6px; margin: 4px }
+.scAppDivTabLine { background-color: none; background-image: none; background-position: bottom center; opacity: 1; filter: alpha(opacity=100); border-color: #e0e6ed; border-style: solid; border-width: 0 0 1px 0; width: 100%; margin: 0; padding: 3px 0 0; list-style-type: none }
+.scExportEmailTable { background-color: #FFFFFF; background-image: none; opacity: 1; filter: alpha(opacity=100); border-color: #E0E6ED; border-style: solid; border-width: 1px; border-collapse: collapse; padding: 10px }
+.scExportEmailDiv { background-image: none; opacity: 1; filter: alpha(opacity=100); border-style: none; border-collapse: collapse; padding: 10px 20px }
+.scExportEmailLabel { color: #6c757d; font-family: 'Nunito', sans-serif; font-size: 13px; text-decoration: none }
+.scExportEmailLabelSent { text-decoration: none }
+.scExportEmailInput { background-image: none; opacity: 1; filter: alpha(opacity=100); border-color: #ccc; border-style: solid; border-width: 1px; color: #6c757d; font-family: 'Nunito', sans-serif; font-size: 13px; padding: 6px 10px; margin: 4px; text-decoration: none; width: calc(100% - 22px) }
+.scGridFilterTag { background-image: none; opacity: 1; filter: alpha(opacity=100); border-color: #c6d0dc; border-style: solid; border-width: 0 0 1px 0; border-collapse: collapse; padding: 6px 20px !important; margin: 0; display: flex }
+#NM_Grid_Search .scGridFilterTag { padding: 6px 20px !important }
+#NM_Grid_Search #id_Fgrid_search { margin: 0 }
+.scGridFilterTagIconExp { padding: 0; margin: 0; vertical-align: top }
+.scGridFilterTagIconCol { padding: 0; margin: 8px 0 0 0 }
+.scGridFilterTagIcon { background-image: none; opacity: 1; filter: alpha(opacity=100); padding: 0; margin: 4px 0; box-sizing: border-box; display: flex }
+.scGridFilterTagIcon svg { width: 22px; height: 22px; fill: #313a46 }
+.scGridFilterTagList { background-image: none; opacity: 1; filter: alpha(opacity=100); border-collapse: collapse; padding: 0 10px; flex: 1; box-sizing: border-box }
+.scGridFilterTagListItem { background-color: #727cf5; background-image: none; opacity: 1; filter: alpha(opacity=100); border-color: #727cf5; border-style: solid; border-width: 1px; padding: 5px 5px 3px 12px; margin: 3px 0 2px 0; -moz-border-radius: 25px; -webkit-border-radius: 25px; border-radius: 25px; display: inline-block }
+.scGridFilterTagListItemLabel { color: #fff; font-family: 'Nunito', sans-serif; font-size: 13px; text-decoration: none }
+.scGridFilterTagListItemClose { background-color: #F9FAFC; background-image: none; opacity: 0.5; filter: alpha(opacity=50); margin: -1px 0 1px 10px; display: inline-block; border-radius: 25px; -moz-border-radius: 25px; -webkit-border-radius: 25px; width: 17px; height: 17px; float: right; cursor: pointer }
+.scGridFilterTagListItemClose:after { color: #6c757d; font-family: 'Nunito', sans-serif; font-size: 13px; text-decoration: none; content: '\00d7'; width: 100%; display: block; line-height: 18px }
+.scGridFilterTagListItemClose:hover { background-image: none; opacity: 1; filter: alpha(opacity=100) }
+.scGridFilterTagClose { background-image: none; opacity: 0.35; filter: alpha(opacity=35); padding: 0; margin: 4px 0 0 10px; box-sizing: border-box; display: inline-block; width: 28px; height: 28px; float: right; cursor: pointer }
+.scGridFilterTagClose:after { color: #6c757d; font-family: 'Nunito', sans-serif; font-size: 13px; text-decoration: none; content: '\00d7'; width: 100%; display: block; line-height: 28px }
+.scGridFilterTagClose:hover { background-image: none; opacity: 0.6; filter: alpha(opacity=60) }
+.scGridFilterTagListFilter { background-color: #fff; background-image: none; opacity: 1; filter: alpha(opacity=100); border-color: #E0E6ED; border-style: solid; border-width: 1px; border-collapse: collapse; padding: 0; margin: 10px 0 0 0; box-shadow: 0 2px 4px #c3c3c3; position: absolute; z-index: 1 }
+.scGridFilterTagListFilterLabel { background-color: #E0E6ED; background-image: none; opacity: 1; filter: alpha(opacity=100); padding: 10px 20px; color: #6c757d; font-family: 'Nunito', sans-serif; font-size: 13px; text-decoration: none }
+.scGridFilterTagListFilterLabelClose { background-color: #F9FAFC; background-image: none; opacity: 0.5; filter: alpha(opacity=50); margin: 0 0 0 10px; display: inline-block; width: 17px; height: 17px; float: right; cursor: pointer }
+.scGridFilterTagListFilterLabelClose:after { color: #6c757d; font-family: 'Nunito', sans-serif; font-size: 13px; text-decoration: none; content: '\00d7'; width: 100%; display: block; line-height: 18px }
+.scGridFilterTagListFilterLabelClose:hover { background-image: none; opacity: 1; filter: alpha(opacity=100) }
+.scGridFilterTagListFilterInputs { background-color: #FFFFFF; background-image: none; opacity: 1; filter: alpha(opacity=100); padding: 10px 20px; color: #6c757d; font-family: 'Nunito', sans-serif; font-size: 13px; text-decoration: none }
+.scGridFilterTagListFilterBar { background-color: #F9FAFC; background-image: none; opacity: 1; filter: alpha(opacity=100); border-color: #E0E6ED; border-style: solid; border-width: 1px 0 !important; border-collapse: collapse; padding: 10px 20px; text-align: right }
+.scGridFilterTagAdd { background-image: none; opacity: 1; filter: alpha(opacity=100); border-color: #c6d0dc; border-style: solid; border-width: 1px; padding: 5px 10px 5px 22px; margin: 0 3px; -moz-border-radius: 25px; -webkit-border-radius: 25px; border-radius: 25px; color: #6c757d; font-family: 'Nunito', sans-serif; font-size: 13px; text-decoration: none; cursor: pointer; display: inline-block; position: relative; top: 1px }
+.scGridFilterTagAddDisabled { background-image: none; opacity: 1; filter: alpha(opacity=100); -moz-border-radius: 25px; -webkit-border-radius: 25px; border-radius: 25px; color: #6c757d; font-family: 'Nunito', sans-serif; text-decoration: none; cursor: default }
+#id_Fgrid_search .scGridFilterTagAddDisabled:hover { background-color: transparent }
+#id_Fgrid_search .scGridFilterTagAdd > div { left: 0px; top: 29px; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; verflow: hidden }
+#id_Fgrid_search .scGridFilterTagAdd > div table { border-collapse: collapse }
+#id_Fgrid_search .scGridFilterTagAdd:after { content: '\00d7'; color: #6c757d; font-size: 17px; font-weight: bold; display: inline-block; position: absolute; left: 8px; top: 3px; transform: rotate(45deg) }
+#id_Fgrid_search .scGridFilterTagAddDisabled:after { color: #6c757d }
+#id_grid_search_add_tag { color: black }
+.scGridFilterTagAdd .scBtnGrpText { font-size: 13px }
+.scGridFilterTagSave { background-image: none; opacity: 1; filter: alpha(opacity=100); border-width: 0; padding: 0; margin: 6px 0 0 0; box-sizing: border-box; float: right; cursor: alias }
+
+.exportConfig {
+    top: 0;
+}
+
+.exportConfig #tabs {
+    padding-top: 35px;
+}
+
+.exportConfig .scAppDivTabLine {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 10px 0;
+    z-index: 10;
+}
+
+.exportConfig .scGridFieldOddFont {
+    padding: 7px 10px;
+    font-size: 12px;
+    vertical-align: top;
+    border-bottom: 1px dashed rgba(0,0,0,0.05);
+}
+
+.exportConfig .scGridFieldOddFont + .scGridFieldOddFont {
+    width: 260px;
+}
+
+.exportConfig .scGridFieldOddFont input,
+.exportConfig .scGridFieldOddFont select {
+    border-radius: 3px;
+    font-size: 12px;
+    padding: 1px 3px;
+    border: 1px solid #bac4d0;
+}
+
+.exportConfig .scGridTabela + .scGridTabela {
+    margin-top: 15px;
+}
+
+.exportConfig .input-group {
+    display: flex;
+    flex-direction: row;
+    padding: 1px 0 0;
+}
+
+.exportConfig .input-group label {
+    display: flex;
+}
+
+.exportConfig .input-group label input {
+    position: relative;
+    top: -3px;
+    left: -4px;
+    margin-right: -2px;
+}
+
+.exportConfig .input-group-vertical {
+    flex-direction: column;
+}
+
+.exportConfig .input-group-horizontal label + label {
+    margin-left: 10px;
+}
+
+.exportConfig .input-group-vertical label + label {
+    margin-top: 5px;
+}
+
+.exportConfig .buttons {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.exportConfig .buttons .scButton_default {
+    text-decoration: none;
+    box-shadow: none;
+    padding: 4px 12px!important;
+    line-height: 1;
+    font-size: 14px;
+}
+
+.exportConfig .buttons .scButton_default:first-child {
+    background: #5381C6;
+    color: white;
+    border-color: #5381C6;
+}
+                

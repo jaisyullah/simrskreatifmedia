@@ -1,0 +1,37 @@
+.scAppCalendarPage { font-family: 'Nunito', sans-serif; font-size: 13px; background-color: #fff; background-image: none; opacity: 1; filter: alpha(opacity=100); margin: 20px }
+.scAppCalendarPage .fc-unthemed .fc-content, .scAppCalendarPage .fc-unthemed .fc-divider, .scAppCalendarPage .fc-unthemed .fc-list-heading td, .scAppCalendarPage .fc-unthemed .fc-list-view, .scAppCalendarPage .fc-unthemed .fc-popover, .scAppCalendarPage .fc-unthemed .fc-row, .scAppCalendarPage .fc-unthemed tbody, .scAppCalendarPage .fc-unthemed td, .scAppCalendarPage .fc-unthemed th, .scAppCalendarPage .fc-unthemed thead { border-color: rgba(0,0,0,.05) }
+.scAppCalendarPage .fc-unthemed td.fc-today, .scAppCalendarPage #calendar_mini .fc-today { background-color: #FCFCEE; color: #6c757d }
+.fc-header-title,.fc-day-number,.fc-center > h2 { color: #6c757d; font-family: 'Nunito', sans-serif }
+.fc-today { background-color: #FCFCEE }
+.fc-day { border-color: #E0E6ED }
+.scAppCalendarPage .fc-day-header { background-color: #f1f3fa; color: #6c757d; border-color: #fff; border-width: 1px; border-style: solid; height: 40px; line-height: 40px }
+.fc-button { font-size: 13px !important; background-image: none !important; text-shadow: 0px 0px !important; border-style: none !important; padding: 2px 18px !important; height: 32px !important; line-height: 28px !important }
+.fc-event-inner { font-family: 'Nunito', sans-serif; font-size: 13px }
+.fc-agenda-days th { background-color: #f1f3fa; color: #6c757d; border-color: #fff; border-width: 1px; border-style: solid; height: 40px; line-height: 40px }
+.fc-sun, .fc-mon, .fc-tue, .fc-wed, .fc-thu, .fc-fri, .fc-sat, .fc-agenda-axis, .fc-agenda-gutter { background-image: none; opacity: 1; filter: alpha(opacity=100); color: #6c757d; font-family: 'Nunito', sans-serif; font-size: 13px; font-style: normal; text-decoration: none }
+.fc-axis { background-color: #f1f3fa; color: #6c757d; border-color: #fff; border-width: 1px; border-style: solid; font-family: 'Nunito', sans-serif; font-size: 13px }
+.fc-not-today { color: #000; font-family: 'Nunito', sans-serif; font-size: 13px }
+.scCalendarEventPast { background-color: #FFE8E8; background-image: none; opacity: 1; filter: alpha(opacity=100); color: #6c757d; border-color: #CB4949; border-style: solid; border-width: 1px; padding: 3px !important }
+.scCalendarEventOnDay { background-color: #D0FDD0; background-image: none; opacity: 1; filter: alpha(opacity=100); color: #6c757d; border-color: #1AAA44; border-style: solid; border-width: 1px; padding: 3px !important }
+.scCalendarEventFuture { background-color: #9EBFEB; background-image: none; opacity: 1; filter: alpha(opacity=100); color: #6c757d; border-color: #495DCB; border-style: solid; border-width: 1px; padding: 3px !important }
+.scCalendarPrintDate { font-family: 'Nunito', sans-serif; font-size: 13px; font-style: normal; text-decoration: none }
+.scCalendarPrintTime { font-family: 'Nunito', sans-serif; font-size: 13px; font-style: normal; text-decoration: none }
+.scCalendarPrintEvent { font-family: 'Nunito', sans-serif; font-size: 13px; font-style: normal; text-decoration: none }
+#calendar_mini { margin: 0 0 20px 0 }
+#calendar_mini > .fc-toolbar.fc-header-toolbar { margin-bottom: 0px !important }
+#calendar_mini > .fc-toolbar .fc-center { font-size: 0.7em; margin: 13px 0 0 0; display: inline-block !important }
+#calendar_mini .fc-today { background-color: #FCFCEE }
+#calendar_mini .fc-day-header { background-image: none; opacity: css_calendar_minigridweekdays_opacity; filter: alpha(opacity=css_calendar_minigridweekdays_opacity); color: #6c757d; font-family: 'Nunito', sans-serif; font-size: 13px; font-style: normal; text-decoration: none; height: 25px; line-height: 25px }
+#calendar_mini .fc-day-top { background-image: none; opacity: css_calendar_minigridmonthdays_opacity; filter: alpha(opacity=css_calendar_minigridmonthdays_opacity); border-color: #E0E6ED; border-style: solid; border-width: 1px; color: #6c757d; font-family: 'Nunito', sans-serif; font-size: 13px; font-style: normal; text-decoration: none; cursor: pointer }
+#calendar_mini .fc-day-number { color: #6c757d; font-family: 'Nunito', sans-serif; font-size: 13px; font-style: normal; text-decoration: none }
+#calendar_mini .fc-state-highlight { background-color: #FCFCEE; background-image: none; opacity: css_calendar_minigridselectedday_opacity; filter: alpha(opacity=css_calendar_minigridselectedday_opacity); border-color: #E0E6ED; border-style: solid; border-width: 1px; color: #6c757d; font-family: 'Nunito', sans-serif; font-size: 13px; font-style: normal; text-decoration: none }
+#calendar_mini .fc-basic-view .fc-body .fc-row { min-height: 0px }
+#calendar_mini .fc-button { font-size: 0.75em }
+#calendar_mini .fc-content-skeleton tbody { display: none }
+.fc .fc-view-container .fc-listMonth-view .fc-scroller { overflow: inherit !important }
+.scCalendarCategory { background-image: none; border-style: solid; border-width: 0; border-collapse: collapse; margin: 0; padding: 5px 0 0 0 }
+.scCalendarCategoryItemsMoldura { background-image: none; border-style: solid; border-width: 0; border-collapse: collapse; margin: 0; padding: 10px 0 0 10px; cursor: pointer }
+.scCalendarCategoryTitle { background-image: none; border-width: 0; color: #6c757d; font-family: 'Nunito', sans-serif; font-size: 13px; font-style: normal; text-decoration: none }
+.scCalendarCategoryItem { background-image: none; border-style: solid; border-width: 0; color: #6c757d; font-family: 'Nunito', sans-serif; font-size: 13px; padding: 2px; text-decoration: none }
+.scCalendarCategoryItemActive { border-style: solid; border-width: 0; color: #6c757d }
+.scCalendarCategoryItemActive div { background-image: url(../../img/scriptcase__NM__ico__NM__check_checkbox.png); background-repeat: no-repeat }

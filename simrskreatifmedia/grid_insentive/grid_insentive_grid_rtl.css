@@ -1,0 +1,18 @@
+.css_tgltindakan_label {text-align:center;vertical-align:middle;justify-content:center;font-weight:bold;}
+.css_tgltindakan_grid_line {vertical-align: top;text-align: center;}
+.css_dokcode_label {text-align:left;vertical-align:middle;justify-content:left;font-weight:bold;}
+.css_dokcode_grid_line {vertical-align: top;text-align: right;}
+.css_tindakan_label {text-align:left;vertical-align:middle;justify-content:left;font-weight:bold;}
+.css_tindakan_grid_line {vertical-align: top;text-align: right;}
+.css_pasien_label {text-align:left;vertical-align:middle;justify-content:left;font-weight:bold;}
+.css_pasien_grid_line {vertical-align: top;text-align: right;}
+.css_kode_label {text-align:left;vertical-align:middle;justify-content:left;font-weight:bold;}
+.css_kode_grid_line {vertical-align: top;text-align: right;}
+.css_deskripsi_label {text-align:left;vertical-align:middle;justify-content:left;font-weight:bold;}
+.css_deskripsi_grid_line {vertical-align: top;text-align: right;}
+.css_insentive_label {text-align:right;vertical-align:middle;justify-content:right;font-weight:bold;}
+.css_insentive_grid_line {font-weight:bold;vertical-align: top;text-align: right;}
+.css_insentive_sub_tot {text-align: right;}
+.css_insentive_tot_ger {text-align: right;}
+.css_diskon_label {text-align:right;vertical-align:middle;justify-content:right;font-weight:bold;}
+.css_diskon_grid_line {vertical-align: top;text-align: right;}

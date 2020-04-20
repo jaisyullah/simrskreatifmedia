@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>{lang_login_message_16}</title>
+		<meta name="description" content="{lang_crm_description}" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="{SC_LIB_PROJECT}crm/main.css">
+		<!--SC_JS_LIB-->
+        <!--SC_PAGE_CHARSET-->
+	
+		<?php
+			if(isset($_GET['lang']) && !empty($_GET['lang'])) {
+				$idioma = $_GET['lang'];
+			} else {
+				$idioma = substr($_SERVER["HTTP_ACCEPT_LANGUAGE"], 0, 2);
+			}
+		?>
+	
+		<style>
+			.flags {
+				border: 1px solid white;
+				padding: 0px!important;
+				display: inline-block!important;
+				height: 22px!important;				
+			}
+			
+			.flags:hover {
+				border-color: #ddd!important;
+			}
+
+			.flag-<?php echo $idioma ?>,
+			.flag-<?php echo $idioma ?>:hover {
+				border-color: #439894!important;
+    			background: #f1f1f1;
+    			cursor: default;
+			}
+		</style>
+	</head>
+
+	<body class="page-background" style="background-image:url('{SC_LIB_PROJECT}crm/crm-bg.jpg');">
+		<div class="page">
+			<div class="container">
+				<div class="grid">
+					<div class="col-7">
+						<div class="content">
+							<h1>
+								{lang_login_titulo}
+							</h1>
+
+							<p>
+								{lang_login_desc}
+							</p>
+							<p>
+								{lang_page_button_download}
+							</p>
+						</div>
+					</div>
+
+					<div class="col-1">
+						&nbsp;
+					</div>
+						
+					<div class="col-4 box-form">
+						<form class="form" action="" {SC_FORM_ATTR}>
+                          <!--SC_FORM_HIDDEN-->
+							<h2>
+								{lang_login_message_10}
+							</h2>
+						
+							<div class="control">
+								<label class="label" for="name">{lang_login_message_user}</label>
+								<input class="input {SC_FIELD_CLASS}" type="text" placeholder="{lang_login_user}" {SC_FIELD_INFO_login}>
+							</div>
+
+							<div class="control">
+								<label class="label" for="pass">{lang_login_message_pswrd}</label>
+								<input class="input {SC_FIELD_CLASS}" type="password" placeholder="{lang_login_pswrd}" {SC_FIELD_INFO_pswd}>
+							</div>
+
+							<div class="submit">
+								<input class="button" type="submit" {SC_FORM_SUBMIT_CALL} value="{lang_page_login_button}" />
+							</div>
+						</form>
+						<!-- Idiomas -->
+						<div class="flag-lang">
+							<a class="flags flag-en" href="../app_Login/?lang=en"><img src="{SC_LIB_PROJECT}crm/en_us.png" style="margin-top: -2px;padding-bottom: 0px;"></a>
+							<a class="flags flag-pt" href="../app_Login/?lang=pt"><img src="{SC_LIB_PROJECT}crm/pt_br.png" style="margin-top: -2px;padding-bottom: 0px;"></a>
+							<a class="flags flag-es" href="../app_Login/?lang=es"><img src="{SC_LIB_PROJECT}crm/es_es.png" style="margin-top: -2px;padding-bottom: 0px;"></a>
+						</div>
+						<hr style="margin: 25px 0 20px;">
+						<div id='message'>
+							<p style="margin: 0px;font-size: 12px;">{lang_page_login_login}</p>
+							<br />
+							<p style="margin: 0px;font-size: 12px;">{lang_page_login_pswd}</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="copyright">
+			<p>{lang_page_copyright}</p>
+		</div>
+	</body>	
+</html>

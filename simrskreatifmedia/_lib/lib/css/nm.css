@@ -1,0 +1,79 @@
+.scFormToastDivFixed.bl {
+    bottom: 15px;
+    right: auto;
+    top: auto;
+    left: 15px;
+}
+.scFormErrorTable {
+    width: auto;
+}
+.scFormToastDivFixed.bc {
+    bottom: 15px;
+    right: auto;
+    top: auto;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.scFormToastDivFixed.br {
+    bottom: 15px;
+    right: 15px;
+    top: auto;
+    left: auto;
+}
+.scFormToastDivFixed.tl {
+    top: 15px;
+    right: auto;
+    bottom: auto;
+    left: 15px;
+}
+.scFormToastDivFixed.tc {
+    top: 15px;
+    right: auto;
+    bottom: auto;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.scFormToastDivFixed.tr {
+    top: 15px;
+    right: 15px;
+    bottom: auto;
+    left: auto;
+}
+.scFormToastDivFixed {
+    position: fixed;
+    z-index: 100000;
+}
+.scFormToastTable {
+    display: flex;
+    height: auto;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+}
+.scFormToastTable > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.scFormToastTable > div.scFormToastWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-grow: 1;
+}
+.scFormToastTitle, .scFormToastMessage {
+    padding: 0px 20px;
+}
+
+.scFormErrorTable {
+    width: auto;
+}
+.scFormErrorTable td:first-child {
+    max-width: 120px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

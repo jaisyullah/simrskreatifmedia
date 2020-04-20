@@ -1,0 +1,32 @@
+Nm_erro = {
+  "lang_jscr_dcml" : "Decimaler",
+  "lang_jscr_decm" : "Tiendedele sekunder",
+  "lang_jscr_hour" : "Timer",
+  "lang_jscr_iday" : "Dag",
+  "lang_jscr_intg" : "Heltal og",
+  "lang_jscr_ivcr" : "Forkert Kreditkort-nummer",
+  "lang_jscr_ivdt" : "Fejl i Data:",
+  "lang_jscr_ivem" : "Fejl i Email:",
+  "lang_jscr_ivnb" : "Fejl i Heltal:",
+  "lang_jscr_ivtm" : "Fejl i Tid:",
+  "lang_jscr_ivv2" : "Fejl i Data:",
+  "lang_jscr_ivvl" : "Fejl i decimal",
+  "lang_jscr_maxm" : "Maks.",
+  "lang_jscr_maxm_date" : "Seneste Dato",
+  "lang_jscr_minm" : "Min.",
+  "lang_jscr_minm_date" : "Tidligste Dato",
+  "lang_jscr_mint" : "Minutter",
+  "lang_jscr_mnth" : "Måned",
+  "lang_jscr_msfr" : "Formen skal have et navn",
+  "lang_jscr_mslg" : "Login mangler;",
+  "lang_jscr_msob" : "Dette Form objekt skal have et navn",
+  "lang_jscr_mxdg" : "Antal cifre overstiger det forventede",
+  "lang_jscr_mxvl" : "Maks. længde overskredet",
+  "lang_jscr_nnum" : "Feltet er numerisk",
+  "lang_jscr_nvlf" : "Negativt fortegn skal være til venstre for værdien",
+  "lang_jscr_reqr" : "Obligatorik felt",
+  "lang_jscr_secd" : "Sekunder",
+  "lang_jscr_wfix" : "- Ønsker du at rette?'"
+};
+
+//-------- Mens USR

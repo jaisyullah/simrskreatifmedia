@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<DOC
+config_file="doc_config.inc"
+title="Test Document"
+subject="Illustrating the Generator Features"
+author="Paggard.com"
+manager="Paggard"
+company="Paggard.com"
+operator="scripting"
+category="general documents"
+keywords="rtf generator"
+comment="for testing purposes"
+>
+
+<img src="doc_gen_logo.png" width="60" height="16" wrap="no" align="left" border="0" left="3" top="3" anchor="page" />
+<header><b>Document Generator Class [RTF PDF]</b></header>
+<footer><font size="9"><b>author Paggard - mail paggard@paggard.com</b><tab /></font> page <cpagenum /> of <tpagenum /></footer>
+
+<p align="right"  after="3" ><font size="15" color="#9933CC"><b>&lt;Document Generator Class [RTF PDF]&gt;</b></font></p>
+<p after="3" >Document Generator Class is aiming to unify the generation of the printable documents using the common file formats - RTF and PDF. There are a lot of situations, when there is a need of some application which could form certain information in a format, which could be easily downloaded from internet server and then opened, printed or saved by any internet user, and this class can help the owners of various web services to accommodate this need.</p>
+
+<p after="3" >This script is written in PHP and uses no additional components (plugins or else). Only if you are planning to generate documents in different character sets - you will need to make sure that '<font color="#FF0000">mbstring</font>' extention<footnote><b>*mbstring*</b> extention is included into the standard PHP distribution packet, and can be enabled in your PHP.ini file</footnote>. The script works on Unix or Win32 platforms and require only PHP 4.x.x (or later) installed. As there is no plugins required for the script to work, it could be easily installed on server, or even be used in a local network to create some reports, or anything else.</p>
+
+<p after="3" >The script uses special markup language, based on XML rules. The language is very flexible and allow to create perfect-looking documents as there are a lot of options available to control document look.</p>
+
+<p /><i><b>Document Generator Class features:</b></i>
+<p lindent="12" findent="-6" ><font face="sym">&amp;#U174</font><tab />Generate customized contracts, agreements, bills of sales using client provided information. Save huge amount of time on document preparation. The document is totally generated within a split second using the dynamic data.</p>
+<p lindent="12" findent="-6" ><font face="sym">&amp;#U174</font><tab />The client does not need to know that a document has been generated "<font color="#CC0000">on the fly</font>". If you are preparing any type of documentation for your clients, this script can automate the production of the documents. You can generate any kinds of reports from databases, or any other source.</p>
+<p lindent="12" findent="-6" ><font face="sym">&amp;#U174</font><tab />Any other usage that you can imagine.</p>
+
+<p before="3">The Generator has a lot of useful features, and more than a half of them were added upon the requests of the scrip users. You can ask for some special feature and I'll try to insert it a soon as possible. Also, you'll get all the updates for free - you should  only ask for them (visit my site often to check the script news).</p>
+<br />
+<hr size="40" style="DOTTED" />
+
+<p ><b>The script cost is</b>:</p>
+<p lead="dot" tsize="80" ><i>American dollars</i><tab /><font face="verdana" color="#333366">$68.00</font></p>
+<p lead="dot" tsize="80" ><i>Euro</i><tab /><font face="verdana" color="#333366">51.00 &amp;#U8364</font></p>
+<br /><p >The information about ordering the script is given on my site: <a file="http://paggard.com/projects/doc.generator/toorder.php"><font color="#003399"><u>http://paggard.com/projects/doc.generator/toorder.php</u></font></a>. If you will have any questions - you can always contact me by email.</p>
+
+
+<br /><br />
+<p align="right" ><i>The main features of the Generator are listed on the next page...</i><br />
+<a local="next_page" def="yes">click here to go</a></p>
+<page />
+
+<p align="left" ><b><id name="next_page" />Here is the list of some main Generator features</b><br />(the list is not full)</p>
+<p lindent="12" findent="-6" ><font face="sym">&amp;#U183</font><tab />All kind of tables, with all kind of borders, with the possibility of filling table cells. Colspans and rowspans and all necessary formatting. Nested tables are also supported;</p>
+<p lindent="12" findent="-6" ><font face="sym">&amp;#U183</font><tab />Embedded .JPG .PNG images with full control over their layout;</p>
+<p lindent="12" findent="-6" ><font face="sym">&amp;#U183</font><tab />Multi-page support: document sections, pagebreaks, page orientation, page numbers, document headers and footers;</p>
+<p lindent="12" findent="-6" ><font face="sym">&amp;#U183</font><tab />Total font control: <b>bold</b>, <i>italic</i>, <u>underline</u>, font <font size="14" color="#990099">size</font>, font <font size="12" face="roman">face</font>, font <font color="#003399">color</font>, <sup>superscript</sup> and <sub>subscript</sub>;</p>
+<p lindent="12" findent="-6" ><font face="sym">&amp;#U183</font><tab />Paragraph control: alignment, indentation etc;</p>
+<p lindent="12" findent="-6" ><font face="sym">&amp;#U183</font><tab />Bullets and symbols;</p>
+<p lindent="12" findent="-6" ><font face="sym">&amp;#U183</font><tab />Hyperlinks within and outside the document;</p>
+<p lindent="12" findent="-6" ><font face="sym">&amp;#U183</font><tab />Footnotes;</p>
+
+<p /><hr size="40" style="DOTTED" />
+
+<p align="left" ><b>Below are some tables examples:</b></p>
+<table width="100" border="1">
+<tr bgcolor="30">
+<td colspan="2" valign="top">First cell</td>
+</tr>
+<tr>
+<td align="left">next cells</td><td align="right">another one</td>
+</tr></table>
+<br />
+<br /><b>Table borders:</b>
+<table width="100" border="0" color="#00ff00">
+<tr>
+<td colspan="2" valign="top" align="center" border="b"><b>First cell</b></td>
+</tr>
+<tr>
+<td align="left" border="b,r">next cells</td><td align="right" border="b">another one</td>
+</tr></table>
+
+
+<br />
+<b>Nested Tables:</b>
+
+<table border="1" cellpadding="0.5" >
+<tr>
+	<td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </td>
+	<td>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </td>
+</tr>
+<tr>
+	<td colspan="2">
+	Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	<table width="105" align="right" color="#E0E0E0">
+	<tr>
+		<td>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio, cumque nihil impedit, quo minus id, quod maxime placeat, facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. </td>
+		<td>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet, ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</td>
+	</tr>
+	</table>
+
+	</td>
+</tr>
+</table>
+<br />
+<b>More complicated example:</b>
+
+<table border="1" cellpadding="0.5">
+<tr>
+	<td rowspan="2">
+	
+	<table width="80">
+	<tr>
+		<td width="20">Lorem ipsum dolor sit amet, consectetur adipisicing elit, <i><b>sed do eiusmod</b></i> tempor incididunt ut labore et dolore magna aliqua.</td>
+		<td>
+		
+		<table width="55" border="1" align="right" color="#C7DCFE">
+		<tr>
+			<td width="30">Nam libero tempore, cum soluta nobis est eligendi optio</td>
+		</tr>
+		<tr>
+			<td>Itaque earum rerum hic tenetur a sapiente delectus</td>
+		</tr>
+		</table>
+		Temporibus autem quibusdam et aut officiis debitis
+
+		<table width="55" border="1" align="left" color="#F9F7D9">
+		<tr>
+			<td>omnis dolor repellendus</td>
+		</tr>
+		<tr>
+			<td>quo minus id</td>
+		</tr>
+		</table>
+
+		</td>
+	</tr>
+	</table>
+	
+	</td>
+	<td>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</td>
+</tr>
+<tr>
+	<td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <i><b>Duis aute irure dolor in reprehenderit</b></i> in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</td>
+</tr>
+</table>
+
+
+
+</DOC>

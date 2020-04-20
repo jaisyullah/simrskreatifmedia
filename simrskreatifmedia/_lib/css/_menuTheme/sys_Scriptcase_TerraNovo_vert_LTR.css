@@ -1,0 +1,50 @@
+ul#css3menu1,ul#css3menu1 ul{
+	margin:0;list-style:none;padding:0;background-image:url("/scriptcase/devel/conf/scriptcase/img/menu_img/sc_login_bg_azul.gif");}
+ul#css3menu1 ul{
+	display:none;position:absolute;left:100%;top:0;-moz-box-shadow:3.5px 3.5px 5px #000000;-webkit-box-shadow:3.5px 3.5px 5px #000000;box-shadow:3.5px 3.5px 5px #000000;background-color:#FF3333;background-image:none;}
+ul#css3menu1 li:hover>*{
+	display:block;}
+ul#css3menu1 li{
+	position:relative;display:block;white-space:nowrap;font-size:0;}
+ul#css3menu1 li:hover{
+	z-index:1;}
+ul#css3menu1 ul ul{
+	position:absolute;left:100%;top:0;}
+ul#css3menu1{
+	font-size:0;z-index:999;position:relative;display:inline-block;zoom:1;padding:0;
+	*display:inline;}
+* html ul#css3menu1 li a{
+	display:inline-block;}
+ul#css3menu1>li{
+	margin:0;}
+ul#css3menu1 a:active, ul#css3menu1 a:focus{
+	outline-style:none;}
+ul#css3menu1 a{
+	display:block;vertical-align:middle;text-align:left;text-decoration:none;font-weight:normal;font-style:none;font-size:12px;font-family:Arial, Arial, sans-serif;color:#FFFFFF;text-shadow:#FFF 0 0 1px;cursor:pointer;padding:10px;background-color:#FF0000;background-image:url("/scriptcase/devel/conf/scriptcase/img/menu_img/sc_login_bg_azul.gif");}
+ul#css3menu1 ul li{
+	float:none;background-color:#FF0000 !important;padding-left: 16px;}
+ul#css3menu1 ul a{
+	text-align:left;padding:4px;background-color:#FF3333;background-image:none;font-style:none;font-size:12px;font-family:Arial, Arial, sans-serif;color:#000000;text-decoration:none;}
+ul#css3menu1 li:hover>a,ul#css3menu1 li a.pressed{
+	background-color:#FFFFFF;color:#384D76;text-shadow:#FFF 0 0 1px;background-image:none;background-position:0 100px;text-decoration:none;}
+ul#css3menu1 span{
+	display:block;overflow:visible;background-position:right center;background-repeat:no-repeat;padding-right:0px;background-image:url('../../img/arrow_in_new.gif');padding-right:28px;}
+ul#css3menu1 ul span{
+	background-image:url('../../img/arrow_out_new.gif');padding-right:28px;}
+ul#css3menu1 ul li:hover>a,ul#css3menu1 ul li a.pressed{
+	background-color:#F3F7FB;background-image:none;color:#333333;text-decoration:none;}
+ul#css3menu1 li.topfirst>a{
+	}
+ul#css3menu1 li.toplast>a{
+	}
+ul#css3menu1 img {
+    border: none; vertical-align: middle; margin-right: 10px;}
+.scdisabledmain{
+ color:#ffffff !important;
+}
+.scdisabledsub{
+ color:#808080 !important;
+}
+.scMenuHTableCssAlt{
+ 
+}

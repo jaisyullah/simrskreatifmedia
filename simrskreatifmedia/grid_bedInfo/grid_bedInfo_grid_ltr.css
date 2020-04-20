@@ -1,0 +1,10 @@
+.css_ruang_label {text-align:left;vertical-align:middle;justify-content:left;font-weight:bold;}
+.css_ruang_grid_line {vertical-align: top;text-align: left;}
+.css_kelas_label {text-align:left;vertical-align:middle;justify-content:left;font-weight:bold;}
+.css_kelas_grid_line {vertical-align: top;text-align: left;}
+.css_tersedia_label {text-align:center;vertical-align:middle;justify-content:center;font-weight:bold;}
+.css_tersedia_grid_line {font-weight:bold;text-align: center;}
+.css_terisi_label {text-align:center;vertical-align:middle;justify-content:center;font-weight:bold;}
+.css_terisi_grid_line {font-weight:bold;text-align: center;}
+.css_jumlah_label {text-align:center;vertical-align:middle;justify-content:center;font-weight:bold;}
+.css_jumlah_grid_line {font-weight:bold;text-align: center;}

@@ -1,0 +1,32 @@
+.scCalendarPage { background-color: #F9F9F9; background-image: none; opacity: 1; filter: alpha(opacity=100) }
+.scCalendarBorder { background-color: #f5f5f5; background-image: none; opacity: 1; filter: alpha(opacity=100); border-collapse: collapse; border-color: #D2D2D2; border-style: solid; border-width: 1px; margin: 0 }
+.scCalendarBorderPadding { padding: 0 }
+.scCalendarToolbar { background-color: #16a085; background-image: none; background-repeat: repeat-x; opacity: 1; filter: alpha(opacity=100); border-color: #16a085; border-style: none; border-width: 1px }
+.scCalendarToolbarPadding { padding: 1px }
+.scCalendarInput { background-image: none; opacity: 1; filter: alpha(opacity=100); border-color: #CCCCCC; border-style: solid; border-width: 1px; color: #333333; font-family: Arial, sans-serif; font-size: 13px; font-style: normal; text-decoration: none }
+.scCalendarInput:focus { background-image: none; opacity: 1; filter: alpha(opacity=100); border-color: #CCCCCC; color: #333333 }
+.scCalendarTabela { background-color: #f5f5f5; background-image: none; opacity: 1; filter: alpha(opacity=100); border-collapse: collapse; border-color: #d0d0d0; border-style: solid; border-width: 1px 1px 1px 1px }
+.scCalendarWeekday { background-color: #fff; background-image: none; opacity: 1; filter: alpha(opacity=100); border-color: #cccccc; border-style: solid; border-width: 0 0 1px 0; color: #000000; font-family: Arial, sans-serif; font-size: 13px; font-style: normal; padding: 1px; text-decoration: none }
+.scCalendarMonthday { background-color: #FFFFFF; background-image: none; opacity: 1; filter: alpha(opacity=100); color: #000000; font-family: Arial, sans-serif; font-size: 13px; font-style: normal; padding: 2px; text-decoration: none }
+.scCalendarMonthdayFont { color: #000000; font-family: Arial, sans-serif; font-size: 13px; font-style: normal; text-decoration: none }
+.scCalendarSelectedday { background-color: #C4D8F0; background-image: none; opacity: 1; filter: alpha(opacity=100); border-color: #999; border-style: solid; border-width: 1px; color: #000000; font-family: Arial, sans-serif; font-size: 13px; font-style: normal; padding: 0 3px 0 3px; text-decoration: none }
+.ui-datepicker-trigger { vertical-align: middle; margin: 2px; background: none; border: none; padding: 0 }
+.ui-datepicker { display: none }
+.ui-icon { text-indent: 99999px !important }
+.scFormPage .ui-datepicker, .scFormPage .ui-datepicker .ui-datepicker-header { border-color: #d0d0d0 }
+.ui-datepicker,.ui-datepicker > .ui-datepicker-header { background-color: #16a085; background-image: none; background-repeat: repeat-x; opacity: 1; filter: alpha(opacity=100); padding: 0 }
+.ui-datepicker, .ui-datepicker > .ui-state-default { background-color: #FFFFFF; background-image: none; opacity: 1; filter: alpha(opacity=100); color: #000000; font-family: Arial, sans-serif; font-size: 13px; font-style: normal; text-align: right; text-decoration: none }
+.ui-datepicker > .ui-state-active { background-color: #C4D8F0; background-image: none; opacity: 1; filter: alpha(opacity=100); color: #000000; font-family: Arial, sans-serif; font-size: 13px; font-style: normal; text-align: center; text-decoration: none }
+.recur_info_table { border-collapse: collapse; border-width: 0 }
+.recur_info_cell { padding: 1px 4px; white-space: nowrap; vertical-align: top }
+.recur_info_label { text-align: right }
+.recur_info_after { width: 75px }
+.recur_info_in { width: 100px }
+.sc-cal-categ { display: inline-block; min-width: 200px; padding: 0 }
+.sc-cal-categ-input { display: table; width: 100% }
+.sc-cal-categ-input-content { display: table-cell; padding: 3px 10px }
+.sc-cal-categ-input-caret { display: table-cell; width: 25px; padding: 3px 0; border-color: #ddd; border-style: solid; border-width: 0 0 0 1px; font-size: 10px; text-align: center; vertical-align: middle }
+.sc-cal-categ-dropdown { display: none; position: absolute; z-index: 1000; padding: 0; background-color: #fff; border-color: #aaa; border-style: solid; border-width: 1px }
+.sc-cal-categ-colorbox { display: inline-block; width: 16px; height: 16px; margin: 0 2px }
+.sc-cal-categ-item { padding: 3px 10px; min-height: 10px }
+.sc-cal-categ-selected { background-color: #5484ed;; color: #fff }

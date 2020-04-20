@@ -1,0 +1,1 @@
+vclaim_test_get_result

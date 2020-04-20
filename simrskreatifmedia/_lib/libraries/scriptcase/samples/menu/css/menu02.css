@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+/*------TIP------*/
+.help-tip{position: relative;top: 3px;text-align: center;width: 18px;height: 18px;font-size: 14px;line-height: 18px;cursor: pointer;}
+.help-tip:before{content:'?';font-weight: bold;}
+.help-tip:hover p{display:block;transform-origin: 100% 0%;-webkit-animation: fadeIn 0.3s ease-in-out;animation: fadeIn 0.3s ease-in-out;}
+.help-tip p{display: none;text-align: left;background-color: #fff;padding: 20px;width: 300px;position: absolute;border-radius: 3px;box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);right: -4px;color: #3e5062;font-size: 13px;line-height: 1.4;text-transform: none;right: 0px;top: 29px;font-family: 'Roboto', sans-serif;border: 1px solid rgba(0, 0, 0, 0.085);padding: 15px !important;color:#000;}
+
+.help-tip p:before{position: absolute;content: '';width:0;height: 0;border:6px solid transparent;border: 8px solid transparent;border-bottom-color: #fff;right: 0px;top: -16px;padding-top: 15px;}
+.help-tip p:after{width:100%;height:0px;content:'';position: absolute;top:-40px;left:0;}
+/*.help-tip:hover:before {color:#a5a5a5;}*/
+/* CSS animation */
+@-webkit-keyframes fadeIn {
+0% {opacity:0;transform: scale(0.6);}
+100% {opacity:100%;transform: scale(1);}
+}
+@keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:100%;}
+}
+/*------FIM-TIP------*/
+.font25{font-size:25px;}

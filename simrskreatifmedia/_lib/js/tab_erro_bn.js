@@ -1,0 +1,32 @@
+Nm_erro = {
+  "lang_jscr_dcml" : "দশমিক",
+  "lang_jscr_decm" : "একটি সেকেন্ডের এক দশমাংশ",
+  "lang_jscr_hour" : "ঘন্টা",
+  "lang_jscr_iday" : "দিন",
+  "lang_jscr_intg" : "পূর্ণসংখ্যা এবং",
+  "lang_jscr_ivcr" : "অবৈধ ক্রেডিট কার্ড নম্বর",
+  "lang_jscr_ivdt" : "অবৈধ তথ্যঃ",
+  "lang_jscr_ivem" : "অবৈধ ইমেইল",
+  "lang_jscr_ivnb" : "অবৈধ পূর্ণসংখ্যা",
+  "lang_jscr_ivtm" : "অবৈধ সময়ঃ",
+  "lang_jscr_ivv2" : "অবৈধ তথ্যঃ",
+  "lang_jscr_ivvl" : "অবৈধ দশমিক",
+  "lang_jscr_maxm" : "সর্বাধিক",
+  "lang_jscr_maxm_date" : "সর্বাপেক্ষা তারিখ",
+  "lang_jscr_minm" : "সর্বনিম্ন/ন্যুনতম",
+  "lang_jscr_minm_date" : "ন্যুনতম  তারিখ",
+  "lang_jscr_mint" : "মিনিট",
+  "lang_jscr_mnth" : "মাস",
+  "lang_jscr_msfr" : "ফর্মটিতে একটি নাম থাকা আবশ্যক",
+  "lang_jscr_mslg" : "লগইন নেই",
+  "lang_jscr_msob" : "ফর্মের বস্তুটির একটি নাম থাকা আবশ্যক",
+  "lang_jscr_mxdg" : "সংখ্যার পরিমান প্রত্যাশিত সংখ্যার পরিমাণকে অতিক্রম করেছে",
+  "lang_jscr_mxvl" : "সর্বাধিক দৈর্ঘ্য অতিক্রম করেছে",
+  "lang_jscr_nnum" : "ক্ষেত্রটি সংখ্যাসূচক",
+  "lang_jscr_nvlf" : "ঋণাত্মক চিহ্নটি মূল্যের বাম দিকে থাকা বাধ্যতামূলক",
+  "lang_jscr_reqr" : "ক্ষেত্রটি আবশ্যক",
+  "lang_jscr_secd" : "সেকেন্ড",
+  "lang_jscr_wfix" : "আপনি কি সংশোধন করতে চান?"
+};
+
+//-------- Mens USR

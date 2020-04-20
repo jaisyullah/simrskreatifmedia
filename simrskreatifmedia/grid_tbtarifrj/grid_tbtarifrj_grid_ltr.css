@@ -1,0 +1,12 @@
+.css_id_label {text-align:right;vertical-align:middle;justify-content:right;font-weight:bold;}
+.css_id_grid_line {vertical-align: top;text-align: right;}
+.css_kodetindakan_label {text-align:left;vertical-align:middle;justify-content:left;font-weight:bold;}
+.css_kodetindakan_grid_line {vertical-align: top;text-align: left;}
+.css_isumum_label {text-align:left;vertical-align:middle;justify-content:left;font-weight:bold;}
+.css_isumum_grid_line {vertical-align: top;text-align: left;}
+.css_isspesialis_label {text-align:left;vertical-align:middle;justify-content:left;font-weight:bold;}
+.css_isspesialis_grid_line {vertical-align: top;text-align: left;}
+.css_tarifumum_label {text-align:right;vertical-align:middle;justify-content:right;font-weight:bold;}
+.css_tarifumum_grid_line {vertical-align: top;text-align: right;}
+.css_tarifspesialis_label {text-align:right;vertical-align:middle;justify-content:right;font-weight:bold;}
+.css_tarifspesialis_grid_line {vertical-align: top;text-align: right;}

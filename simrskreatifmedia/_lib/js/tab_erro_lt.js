@@ -1,0 +1,32 @@
+Nm_erro = {
+  "lang_jscr_dcml" : "Dešimtys",
+  "lang_jscr_decm" : "Sekundės dešimtoji",
+  "lang_jscr_hour" : "Valanda",
+  "lang_jscr_iday" : "Diena",
+  "lang_jscr_intg" : "Sveikieji skaičiai ir",
+  "lang_jscr_ivcr" : "Klaidingas Kortelės Kodas",
+  "lang_jscr_ivdt" : "Klaidingi Duomenys:",
+  "lang_jscr_ivem" : "Neteisingas El. Paštas:",
+  "lang_jscr_ivnb" : "Klaidingas Sveikasis Skaičius",
+  "lang_jscr_ivtm" : "Neteisingas Laikas:",
+  "lang_jscr_ivv2" : "Klaidingi Duomenys:",
+  "lang_jscr_ivvl" : "Klaidinga Dešimtis",
+  "lang_jscr_maxm" : "Maksimali",
+  "lang_jscr_maxm_date" : "Maksimali Data",
+  "lang_jscr_minm" : "Minimali",
+  "lang_jscr_minm_date" : "Minimali Data",
+  "lang_jscr_mint" : "Minutės",
+  "lang_jscr_mnth" : "Mėnesis",
+  "lang_jscr_msfr" : "Forma turi turėti pavadinimą",
+  "lang_jscr_mslg" : "Trūksta Prisijungimo vardo;",
+  "lang_jscr_msob" : "Šis Formos objektas turi turėti pavadinimą",
+  "lang_jscr_mxdg" : "Simbolių kiekis viršija numatytąjį",
+  "lang_jscr_mxvl" : "Viršytas Maksimalus ilgis",
+  "lang_jscr_nnum" : "Ši sritis skaitinė",
+  "lang_jscr_nvlf" : "Neigiamas simbolis turi būti vertės kairėje",
+  "lang_jscr_reqr" : "Privalomas laukas",
+  "lang_jscr_secd" : "Sekundės",
+  "lang_jscr_wfix" : "Ar norite pataisyti?"
+};
+
+//-------- Mens USR

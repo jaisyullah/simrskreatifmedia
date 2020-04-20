@@ -1,0 +1,32 @@
+Nm_erro = {
+  "lang_jscr_dcml" : "Décimales",
+  "lang_jscr_decm" : "Un dixième de seconde",
+  "lang_jscr_hour" : "Heure",
+  "lang_jscr_iday" : "Jour",
+  "lang_jscr_intg" : "Nombres entiers et",
+  "lang_jscr_ivcr" : "Numéro de carte de crédit invalide",
+  "lang_jscr_ivdt" : "Données invalides :",
+  "lang_jscr_ivem" : "Email invalide :",
+  "lang_jscr_ivnb" : "Nombre entier invalide :",
+  "lang_jscr_ivtm" : "Heure invalide :",
+  "lang_jscr_ivv2" : "Données invalides :",
+  "lang_jscr_ivvl" : "Nombre décimal invalide",
+  "lang_jscr_maxm" : "Maximum",
+  "lang_jscr_maxm_date" : "Date Maximum",
+  "lang_jscr_minm" : "Minimum",
+  "lang_jscr_minm_date" : "Date Minimum",
+  "lang_jscr_mint" : "Minutes",
+  "lang_jscr_mnth" : "Mois",
+  "lang_jscr_msfr" : "Le Formulaire doit avoir un nom",
+  "lang_jscr_mslg" : "Authentification manquante ;",
+  "lang_jscr_msob" : "Cet objet Formulaire doit avoir un nom",
+  "lang_jscr_mxdg" : "Le nombre de chiffres dépasse la limite",
+  "lang_jscr_mxvl" : "Longueur maximum dépassée",
+  "lang_jscr_nnum" : "Le champ est numérique",
+  "lang_jscr_nvlf" : "Le signe négatif doit être à gauche de  la valeur",
+  "lang_jscr_reqr" : "Champ obligatoire",
+  "lang_jscr_secd" : "Secondes",
+  "lang_jscr_wfix" : "- Voulez-vous corriger ?"
+};
+
+//-------- Mens USR

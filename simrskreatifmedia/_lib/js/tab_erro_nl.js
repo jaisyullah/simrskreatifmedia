@@ -1,0 +1,32 @@
+Nm_erro = {
+  "lang_jscr_dcml" : "Decimalen",
+  "lang_jscr_decm" : "Tiende van een seconde",
+  "lang_jscr_hour" : "Uur",
+  "lang_jscr_iday" : "Dag",
+  "lang_jscr_intg" : "Hele getallen en",
+  "lang_jscr_ivcr" : "Ongeldig Creditcardnummer",
+  "lang_jscr_ivdt" : "Ongeldige Gegevens:",
+  "lang_jscr_ivem" : "Ongeldige Email:",
+  "lang_jscr_ivnb" : "Ongeldig getal",
+  "lang_jscr_ivtm" : "Ongeldige Tijd:",
+  "lang_jscr_ivv2" : "Ongeldige Gegevens:",
+  "lang_jscr_ivvl" : "Ongeldige decimaal",
+  "lang_jscr_maxm" : "Max",
+  "lang_jscr_maxm_date" : "Uiterste Datum",
+  "lang_jscr_minm" : "Min",
+  "lang_jscr_minm_date" : "Vroegste Datum",
+  "lang_jscr_mint" : "Minuten",
+  "lang_jscr_mnth" : "Maand",
+  "lang_jscr_msfr" : "Het Formulier dient een naam te hebben",
+  "lang_jscr_mslg" : "Login mist;",
+  "lang_jscr_msob" : "Dit Formulierobject dient een naam te hebben",
+  "lang_jscr_mxdg" : "Aantal tekens groter dan verwacht",
+  "lang_jscr_mxvl" : "Max lengte overschreden",
+  "lang_jscr_nnum" : "Het veld is numeriek",
+  "lang_jscr_nvlf" : "Het negatiefteken dient links van de waarde te staan",
+  "lang_jscr_reqr" : "Vereist veld",
+  "lang_jscr_secd" : "Seconden",
+  "lang_jscr_wfix" : "- Wilt u corrigeren?"
+};
+
+//-------- Mens USR

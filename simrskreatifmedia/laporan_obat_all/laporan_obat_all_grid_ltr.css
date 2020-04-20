@@ -1,0 +1,23 @@
+.css_trandate_label {text-align:center;vertical-align:middle;justify-content:center;font-weight:bold;}
+.css_trandate_grid_line {vertical-align: top;text-align: center;}
+.css_trancode_label {text-align:left;vertical-align:middle;justify-content:left;font-weight:bold;}
+.css_trancode_grid_line {vertical-align: top;text-align: left;}
+.css_namapasien_label {text-align:;vertical-align:middle;justify-content:;font-weight:bold;}
+.css_namapasien_grid_line {font-weight:bold;text-align: center;}
+.css_namaitem_label {text-align:left;vertical-align:middle;justify-content:left;font-weight:bold;}
+.css_namaitem_grid_line {vertical-align: top;text-align: left;}
+.css_satuan_label {text-align:left;vertical-align:middle;justify-content:left;font-weight:bold;}
+.css_satuan_grid_line {vertical-align: top;text-align: left;}
+.css_jumlah_label {text-align:right;vertical-align:middle;justify-content:right;font-weight:bold;}
+.css_jumlah_grid_line {vertical-align: top;text-align: right;}
+.css_biaya_label {text-align:right;vertical-align:middle;justify-content:right;font-weight:bold;}
+.css_biaya_grid_line {vertical-align: top;text-align: right;}
+.css_jenis_label {text-align:left;vertical-align:middle;justify-content:left;font-weight:bold;}
+.css_jenis_grid_line {vertical-align: top;text-align: left;}
+.css_total_label {text-align:right;vertical-align:middle;justify-content:right;font-weight:bold;}
+.css_total_grid_line {text-align: right;}
+.css_sc_field_0_label {text-align:right;vertical-align:middle;justify-content:right;font-weight:bold;}
+.css_sc_field_0_grid_line {text-align: right;}
+.css_sc_field_1_label {text-align:right;vertical-align:middle;justify-content:right;font-weight:bold;}
+.css_sc_field_1_grid_line {font-weight:bold;text-align: right;}
+.css_sc_field_1_tot_ger {text-align: right;}

@@ -1,0 +1,9 @@
+.scMenuHHeader { background-color: #96281B; background-image: none; opacity: 1; filter: alpha(opacity=100) }
+_:-ms-lang(x), .ie10up, .scMenuHHeader { border-collapse: separate }
+.scMenuHHeaderFont { color: #fff; font-family: Arial, sans-serif; font-size: 16px; text-shadow: none; font-weight: bold; padding: 0; text-decoration: none }
+.ui-body-a, .ui-overlay-a, .ui-body-c, .ui-overlay-c { background-color: #fff; background-image: none; opacity: 1; filter: alpha(opacity=100) }
+.ui-bar-b { color: #fff; font-family: Arial, sans-serif; font-size: 16px; font-weight: bold; padding: 0; text-decoration: none; background-color: #96281B; background-image: none; opacity: 1; filter: alpha(opacity=100) }
+.ui-btn-up-a { background-color: #FFFFFF; background-image: none; opacity: 1; filter: alpha(opacity=100); font-family: Arial, sans-serif; font-size: 13px; text-shadow: none; color: #000000; text-decoration: none; font-style: normal }
+.ui-btn-up-a:visited, .ui-btn-up-a a.ui-link-inherit { color: #000000 }
+.ui-btn-hover-a { background-color: #FFFFFF; background-image: none; opacity: 1; filter: alpha(opacity=100); font-family: Arial, sans-serif; font-size: 13px; text-shadow: none; color: #000000; text-decoration: none; font-style: normal }
+.ui-btn-hover-a:visited, .ui-btn-hover-a:hover, .ui-btn-hover-a a.ui-link-inherit { color: #000000; background-color: #FFFFFF }

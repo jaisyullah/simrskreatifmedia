@@ -1,0 +1,7 @@
+.SC_SubMenuApp .scBtnGrpBackground { background-color: #f5f5f5; border-color: #CFCFCF; border-style: solid; border-width: 1px 1px 1px 1px; border-collapse: collapse; padding: 0; z-index: 99999; text-align: left }
+.SC_SubMenuApp .scBtnGrpText { background-color: #fff; padding: 4px 35px 4px 15px; cursor: pointer; white-space: nowrap; color: #000000 }
+.SC_SubMenuApp .scBtnGrpTextOver { background-color: #F0EEEE }
+.SC_SubMenuApp .scBtnGrpLink { color: #000000; font-family: Arial, sans-serif; font-size: 13px; text-shadow: 12px; text-decoration: none }
+.SC_SubMenuButton .scBtnGrpBackground { text-align: left }
+.SC_SubMenuButton { z-index: 1000 }
+.SC_SubMenuApp { z-index: 1000 }

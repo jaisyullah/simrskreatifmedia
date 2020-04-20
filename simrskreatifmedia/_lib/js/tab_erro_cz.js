@@ -1,0 +1,32 @@
+Nm_erro = {
+  "lang_jscr_dcml" : "Desetinné číslo",
+  "lang_jscr_decm" : "Desetina sekundy",
+  "lang_jscr_hour" : "Hodina",
+  "lang_jscr_iday" : "Den",
+  "lang_jscr_intg" : "Celá čísla a",
+  "lang_jscr_ivcr" : "Neplatné číslo kreditní karty",
+  "lang_jscr_ivdt" : "Neplatná údaje:",
+  "lang_jscr_ivem" : "Neplatný email:",
+  "lang_jscr_ivnb" : "Neplatné číslo",
+  "lang_jscr_ivtm" : "Neplatný čas:",
+  "lang_jscr_ivv2" : "Neplatný údaj:",
+  "lang_jscr_ivvl" : "Neplatné desetinné číslo",
+  "lang_jscr_maxm" : "Max",
+  "lang_jscr_maxm_date" : "Nejvyšší datum",
+  "lang_jscr_minm" : "Min",
+  "lang_jscr_minm_date" : "Nejnižší datum",
+  "lang_jscr_mint" : "Minut",
+  "lang_jscr_mnth" : "Měsíc",
+  "lang_jscr_msfr" : "Formulář(pole formuláře) musí mít jméno",
+  "lang_jscr_mslg" : "Chybějící login;",
+  "lang_jscr_msob" : "Tento formulářový objekt musí mít jméno",
+  "lang_jscr_mxdg" : "Počet čísel překročil předpokládané množství",
+  "lang_jscr_mxvl" : "Max délka je překročena",
+  "lang_jscr_nnum" : "Položka je číselná",
+  "lang_jscr_nvlf" : "Záporné znaménko musí být na levé strane hodnoty",
+  "lang_jscr_reqr" : "Požadovaná položka",
+  "lang_jscr_secd" : "Sekundy",
+  "lang_jscr_wfix" : "- Opravdu to chcete opravit?"
+};
+
+//-------- Mens USR

@@ -1,0 +1,63 @@
+The COOLjsMenu Standard / COOLjsMenu Professional (software) and everything
+that comes with it is:
+(c) Copyright 2001-2005, Sergey Nosenko.
+(c) Copyright 2001-2005, CoolDev.Com.
+All rights reserved.
+
+IMPORTANT- READ CAREFULLY: This CoolDev.Com End-User License Agreement
+("EULA") is a legal agreement between you, an individual developer of
+SOFTWARE COMPONENT PRODUCT(S) applications, ("Developer End User") and
+CoolDev. for all CoolDev SOFTWARE COMPONENT PRODUCT(S) components, source
+code, demos, intermediate files, media, printed materials, and "online"
+or electronic documentation ("SOFTWARE COMPONENT PRODUCT(S) COMPONENT
+PRODUCT(S)") contained in this distributive. All SOFTWARE COMPONENT
+PRODUCT(S) is licensed, not sold.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS
+IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO,
+THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE COPYRIGHT HOLDERS OR
+CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.  THIS
+DISCLAIMER OF WARRANTY CONSTITUTES AN ESSENTIAL PART OF THIS LICENSE.
+NO USE OF ANY ORIGINAL CODE IS AUTHORIZED HEREUNDER EXCEPT UNDER THIS
+DISCLAIMER.
+
+This special license agreement provided to the end user (you) with the
+non exclusive right to sell, lease, rent or elsehow distribute third-parties
+the software as part of the other product you sell, lease or elsehow offer
+the third-parties.
+
+The software distributed to the third parties should contain all the
+copyright notices and remain unchanged and strictly point that the
+original producer and copyright holder for the software is CoolDev.Com
+company. You are not allowed to redistribute modified version of the
+software.
+
+You should mention in the legal documentation that comes with your software
+product or application that software is included as per this legal agreement
+thus distributed legally.
+
+The license also permits the transfer of the RIGHTS to sell, lease, rent or
+elsehow distribute the software to any third-parties. That means if you are
+granting the third party with the right to sell, lease, rent or elsehow
+distribute YOUR software product which utilizes COOLDEV'S software - this
+third party also obtains the right to redistribute COOLDEV's scripts as part
+of your software product they redistribute.
+
+This license agreement is effective until terminated. You may terminate it
+by destroying the program, the documentation and copies thereof. This
+license  will also terminate if you fail to comply with any terms or
+conditions of this agreement.
+
+All other rights and restrictions not specifically granted in this license
+are reserved by author.
+
+JavaScript code remain the intellectual property of Sergey Nosenko and
+CoolDev.Com.
+(c) Copyright 2001-2005.  All rights reserved.

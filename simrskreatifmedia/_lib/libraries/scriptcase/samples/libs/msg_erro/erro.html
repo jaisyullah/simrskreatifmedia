@@ -1,0 +1,51 @@
+<style>
+#dialogoverlay{display: none;opacity: .8;position: fixed;top: 0px;left: 0px;background: #808080;width: 100%;z-index: 10;color: rgb(51, 51, 51);}
+#dialogbox{display: none;position: fixed;background: #FFFFFF;border-radius:7px; width:550px;z-index: 10;}
+#dialogbox > div{/* background:#FFF; margin:8px; */}
+#dialogbox > div > #dialogboxhead{font-size:19px; padding:20px;border-bottom: 1px solid rgb(229, 229, 229);height: 16px; }
+#dialogbox > div > #dialogboxbody{ padding:20px; }
+#dialogbox > div > #dialogboxfoot{ padding:20px; text-align:right;border-top: 1px solid rgb(229, 229, 229); }
+button.ok{width: 10%;background: #e2e2e2;padding: 5px;color: #000;cursor: pointer;border: 1px solid #dadada;}
+button.close{border: none;background: none;float: right;cursor: pointer;}
+</style>
+<script>
+var tipoErro = "";
+function CustomAlert(){
+    this.render = function(dialog){
+        var winW = window.innerWidth;
+        var winH = window.innerHeight;
+        var dialogoverlay = document.getElementById('dialogoverlay');
+        var dialogbox = document.getElementById('dialogbox');
+        dialogoverlay.style.display = "block";
+        dialogoverlay.style.height = winH+"px";
+        dialogbox.style.left = (winW/2) - (550 * .5)+"px";
+        dialogbox.style.top = "100px";
+        dialogbox.style.display = "block";
+        document.getElementById('dialogboxhead').innerHTML = tipoErro + '<button onclick="Alert.ok()" class="close">x</button>';
+        document.getElementById('dialogboxbody').innerHTML = dialog;
+        document.getElementById('dialogboxfoot').innerHTML = '<button onclick="Alert.ok()" class="ok">OK</button>';
+    }
+	this.ok = function(){
+		document.getElementById('dialogbox').style.display = "none";
+		document.getElementById('dialogoverlay').style.display = "none";
+	}
+}
+var Alert = new CustomAlert();
+
+function scDisplayUserError(errorMessage) {
+	tipoErro = "Erro";
+    Alert.render(errorMessage.replace("<br />", "\n"));
+}
+function scDisplayUserDebug(debugMessage) {
+	tipoErro = "Debug";
+	Alert.render(debugMessage.replace(/<br \/>/gi, "\n"));
+}
+</script>
+<div id="dialogoverlay"></div>
+<div id="dialogbox">
+  <div>
+    <div id="dialogboxhead">Erro</div>
+    <div id="dialogboxbody"></div>
+    <div id="dialogboxfoot"></div>
+  </div>
+</div>

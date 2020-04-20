@@ -1,0 +1,32 @@
+Nm_erro = {
+  "lang_jscr_dcml" : "ਦਸ਼ਮਲਵ",
+  "lang_jscr_decm" : "ਇੱਕ ਸਕਿੰਟ ਦਾ ਦਸਵਾਂ ਹਿੱਸਾ",
+  "lang_jscr_hour" : "ਘੰਟਾ",
+  "lang_jscr_iday" : "ਦਿਨ",
+  "lang_jscr_intg" : "ਪੂਰਣਾਂਕ ਅਤੇ",
+  "lang_jscr_ivcr" : "ਗਲਤ ਕ੍ਰੇਡਿਟ ਕਾਰਡ ਨੰਬਰ",
+  "lang_jscr_ivdt" : "ਗਲਤ ਡੇਟਾ:",
+  "lang_jscr_ivem" : "ਗਲਤ ਈ ਮੇਲ:",
+  "lang_jscr_ivnb" : "ਗਲਤ ਪੁਰਣਾਂਕ",
+  "lang_jscr_ivtm" : "ਗਲਤ ਸਮਾਂ :",
+  "lang_jscr_ivv2" : "ਗਲਤ ਡੇਟਾ :",
+  "lang_jscr_ivvl" : "ਗਲਤ ਦਸਮਲਵ ਅੰਕ",
+  "lang_jscr_maxm" : "ਅਧਿਕਤਮ",
+  "lang_jscr_maxm_date" : "ਅਧਿਕਤਮ ਮਿਤੀ",
+  "lang_jscr_minm" : "ਘੱਟੋ ਘੱਟ",
+  "lang_jscr_minm_date" : "ਨਿਊਨਤਮ ਮਿਤੀ",
+  "lang_jscr_mint" : "ਮਿਨਟ",
+  "lang_jscr_mnth" : "ਮਹੀਨਾ",
+  "lang_jscr_msfr" : "ਫਾਰਮ 'ਚ ਨਾਂ ਹੋਣਾ ਜ਼ਰੂਰੀ ਹੈ",
+  "lang_jscr_mslg" : "ਲੋਗਿਨ ਨਹੀਂ ਹੈ;",
+  "lang_jscr_msob" : "ਏਸ ਫਾਰਮ ਔਬਜੈਕਟ ਦਾ ਨਾਂ ਜ਼ਰੂਰੀ ਹੈ",
+  "lang_jscr_mxdg" : "ਅੰਕਾਂ ਦੀ ਗਿਣਤੀ ਉੱਮੀਦ ਤੋਂ ਜ਼ਿਆਦਾ ਹੈ",
+  "lang_jscr_mxvl" : "ਅਧਿਕਤਮ ਲੰਬਾਈ ਤੋਂ ਜ਼ਿਆਦਾ ਹੈ",
+  "lang_jscr_nnum" : "ਇਹ ਥਾਂ ਅੰਕਾਂ ਵਾਲੀ ਹੈ",
+  "lang_jscr_nvlf" : "ਨਕਾਰਾਤਮਕ ਨਿਸ਼ਾਨ ਵੈਲਯੂ ਦੇ ਖੱਬੇ ਹੋਣਾ ਚਾਹੀਦਾ ਹੈ",
+  "lang_jscr_reqr" : "ਜ਼ਰੂਰੀ ਫੀਲਡ",
+  "lang_jscr_secd" : "ਸਕਿੰਟ",
+  "lang_jscr_wfix" : "- ਕੀ ਤੁਸੀਂ ਠੀਕ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹੋ ?"
+};
+
+//-------- Mens USR

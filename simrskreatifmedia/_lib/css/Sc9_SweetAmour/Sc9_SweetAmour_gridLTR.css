@@ -1,0 +1,26 @@
+.scGridHeaderFont { text-align: left }
+.scGridBlock { text-align: left }
+.scGridLabelVert { text-align: left }
+.scGridLabelFont { text-align: left }
+.scGridRefinedSearchLabel { text-align: left }
+.scGridRefinedSearchCampoFont { text-align: left }
+.scGridRefinedSearchCampoFont:hover { text-align: left }
+.scGridRefinedSearchCampoFont:active { text-align: left }
+.scGridRefinedSearchVejaMaisFont { text-align: left }
+.scGridRefinedSearchRangeValues { text-align: center }
+.scGridRefinedSearchQuantidade { text-align: left }
+.scGridSummarySearchLabel { text-align: left }
+.scGridSummaryLabel { text-align: left }
+.scGridSummaryLineEven { text-align: right }
+.scGridSummaryLineOdd { text-align: right }
+.scGridSummaryGroupbyVisible { text-align: left }
+.scGridSummaryGroupbyInvisible { text-align: left }
+.scGridSummaryGroupbySeq { text-align: center }
+.SumoSelect > .CaptionCont { text-align: left }
+.SumoSelect .select-all { text-align: left }
+.SumoSelect .no-match { text-align: left }
+.SumoSelect > .optWrapper > .options li.opt.selected { text-align: left }
+.SumoSelect > .optWrapper > .options li.opt { text-align: left }
+.SumoSelect > .optWrapper.multiple > .MultiControls > p.btnOk { text-align: center }
+.SumoSelect > .optWrapper.multiple > .MultiControls { text-align: css_summarysearch_multiselectbuttonline_text_align }
+.SumoSelect > .optWrapper.multiple > .MultiControls > p.btnCancel { text-align: center }

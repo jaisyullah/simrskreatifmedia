@@ -1,0 +1,32 @@
+Nm_erro = {
+  "lang_jscr_dcml" : "分隔符",
+  "lang_jscr_decm" : "十分之一秒",
+  "lang_jscr_hour" : "小时",
+  "lang_jscr_iday" : "日",
+  "lang_jscr_intg" : "整数和",
+  "lang_jscr_ivcr" : "信用卡号无效",
+  "lang_jscr_ivdt" : "数据无效",
+  "lang_jscr_ivem" : "邮箱地址无效",
+  "lang_jscr_ivnb" : "整数无效",
+  "lang_jscr_ivtm" : "时间格式无效",
+  "lang_jscr_ivv2" : "日期格式无效",
+  "lang_jscr_ivvl" : "小数无效",
+  "lang_jscr_maxm" : "最大",
+  "lang_jscr_maxm_date" : "最大日期",
+  "lang_jscr_minm" : "最小",
+  "lang_jscr_minm_date" : "最小日期",
+  "lang_jscr_mint" : "分钟",
+  "lang_jscr_mnth" : "月",
+  "lang_jscr_msfr" : "表格未命名",
+  "lang_jscr_mslg" : "无此用户名",
+  "lang_jscr_msob" : "表格未命名",
+  "lang_jscr_mxdg" : "数字超出预期值",
+  "lang_jscr_mxvl" : "超过最大文本长度",
+  "lang_jscr_nnum" : "仅填数字",
+  "lang_jscr_nvlf" : "负号须在左侧",
+  "lang_jscr_reqr" : "必填项!",
+  "lang_jscr_secd" : "秒",
+  "lang_jscr_wfix" : "- 是否需要更正?"
+};
+
+//-------- Mens USR

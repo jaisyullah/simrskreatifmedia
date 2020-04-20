@@ -1,0 +1,50 @@
+ul#css3menu1,ul#css3menu1 ul{
+	margin:0;list-style:none;padding:0;background-color:#dedede;border-width:1px;border-style:solid;border-color:#5f5f5f;border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;}
+ul#css3menu1 ul{
+	display:none;position:absolute;left:0;top:100%;-moz-box-shadow:3.5px 3.5px 5px #000000;-webkit-box-shadow:3.5px 3.5px 5px #000000;box-shadow:3.5px 3.5px 5px #000000;background-color:#424542;border-radius:6px;-moz-border-radius:6px;-webkit-border-radius:6px;border-width:1px;border-color:#FFF;padding:0 10px 10px;}
+ul#css3menu1 li:hover>*{
+	display:block;}
+ul#css3menu1 li{
+	position:relative;display:block;white-space:nowrap;font-size:0;float:left;}
+ul#css3menu1 li:hover{
+	z-index:1;}
+ul#css3menu1 ul ul{
+	position:absolute;left:100%;top:0;}
+ul#css3menu1{
+	font-size:0;z-index:999;position:relative;display:inline-block;zoom:1;padding:0;
+	*display:inline;}
+* html ul#css3menu1 li a{
+	display:inline-block;}
+ul#css3menu1>li{
+	margin:0;}
+ul#css3menu1 a:active, ul#css3menu1 a:focus{
+	outline-style:none;}
+ul#css3menu1 a{ 
+	display:block;vertical-align:middle;text-align:left;text-decoration:none;font-weight:bold;font-style:none;font-size:14px;font-family:Trebuchet MS;color:#000000;text-shadow:#FFF 0 0 1px;cursor:pointer;padding:10px;background-color:#222222;background-image:url('../../img/theme_menu_mainbk_1.png');background-repeat:repeat;background-position:0 0;border-width:0 0 0 1px;border-style:solid;border-color:#C0C0C0;}
+ul#css3menu1 ul li{
+	float:none;margin:10px 0 0;}
+ul#css3menu1 ul a{
+	text-align:left;padding:4px;background-color:#424542;background-image:none;border-width:0;border-radius:0px;-moz-border-radius:0px;-webkit-border-radius:0px;font-weight:bold;font-style:none;font-size:13px;font-family:Tahoma;color:#ffffff;text-decoration:none;text-shadow:#FFF 0 0 0;}
+ul#css3menu1 li:hover>a,ul#css3menu1 li a.pressed{
+	background-color:#61a700;;border-color:#C0C0C0;border-style:solid;font-weight:bold;font-style:none;font-size:14px;font-family:Trebuchet MS;color:#333333;text-decoration:none;text-shadow:#FFF 0 0 0;background-image:url('../../img/theme_menu_mainbk_1.png');background-position:0 100px;}
+ul#css3menu1 span{
+	display:block;overflow:visible;background-position:right center;background-repeat:no-repeat;padding-right:0px;}
+ul#css3menu1 ul span{
+	background-image:url('../../img/theme_menu_arrowsub_1.png');padding-right:12px;}
+ul#css3menu1 ul li:hover>a,ul#css3menu1 ul li a.pressed{
+	background-color:#424542;background-image:none;font-weight:bold;font-style:none;font-size:13px;font-family:Tahoma;color:#6bd600;text-decoration:none;}
+ul#css3menu1 li.topfirst>a{
+	}
+ul#css3menu1 li.toplast>a{
+	}
+ul#css3menu1 img {
+    border: none; vertical-align: middle; margin-right: 10px;}
+.scdisabledmain{
+ color:#808080 !important;
+}
+.scdisabledsub{
+ color:#808080 !important;
+}
+.scMenuHTableCssAlt{
+ background-image:url("/scriptcase/devel/conf/scriptcase/img/menu_img/theme_menu_mainbk_1.png");background-color:#333;background-repeat:repeat-x;
+}

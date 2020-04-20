@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--SC_PAGE_CHARSET-->
+        <title>Sign In</title>
+        <link rel="stylesheet" type="text/css" href="{SC_LIB_CURRENT}login/css/login.css">
+        <link rel="stylesheet" type="text/css" href="{SC_LIB_CURRENT}libs/css/styles.css">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body class="page-sidebar page-background bg-half-img" style="background-image:url('{SC_LIB_CURRENT}login/img/bg-sample-login-2.jpg');background-size:100%;">
+        <div class="page">
+            <div class="container">
+                <div class="grid">
+                    <div class="col-7">
+                        <div class="content">
+                            <h1>
+                                Sign In
+                            </h1>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est fugit consequatur exercitationem accusamus facere distinctio consequuntur! Suscipit, dolores, voluptas. Consequatur.
+                            </p>
+                            <p>
+                                <a href="#">Read more about us »</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-1">
+                    </div>
+                    <div class="col-4">
+                        <form class="form half-size" action="" {SC_FORM_ATTR}>
+                            <!--SC_FORM_HIDDEN-->
+                            <h2>
+                                Sign In
+                            </h2>
+                            <div class="control">
+                                <label class="label" for="name">Name</label>
+                                <input class="input {SC_FIELD_CLASS}" {SC_FIELD_INFO_login} type="text" placeholder="Name" name="name">
+                            </div>
+                            <div class="control">
+                                <label class="label" for="pass">Password</label>
+                                <input class="input {SC_FIELD_CLASS}" {SC_FIELD_INFO_pswd} type="password" placeholder="Password" name="pass">
+                            </div>
+                            <!--SC_REQUIRED_MSG-->
+                            <!--SC_CAPTCHA-->
+                            <div class="submit">
+                                <input class="button" type="button" value="Sign In" {SC_FORM_SUBMIT_CALL} />
+                            </div>
+                            {SC_FIELD_INFO_Links}
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="alert-message negative">
+            <span class="message"></span>
+            <span class="close">&times;</span>
+        </div>
+        
+        <!--SC_JS_LIB-->
+        <script type="text/javascript" src="{SC_LIB_CURRENT}libs/js/error.js"></script>
+    </body>
+</html>

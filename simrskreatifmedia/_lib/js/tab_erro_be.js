@@ -1,0 +1,32 @@
+Nm_erro = {
+  "lang_jscr_dcml" : "Дзесятковыя дробі",
+  "lang_jscr_decm" : "Дзясятая доля секунды",
+  "lang_jscr_hour" : "Гадзіна",
+  "lang_jscr_iday" : "Дзень",
+  "lang_jscr_intg" : "Цэлыя лікі",
+  "lang_jscr_ivcr" : "Няправільны нумар крэдытнай карты",
+  "lang_jscr_ivdt" : "Няправільныя дадзеныя",
+  "lang_jscr_ivem" : "Няправільны адрас электроннай пошты",
+  "lang_jscr_ivnb" : "Няправільны цэлы лік",
+  "lang_jscr_ivtm" : "Няправільны час:",
+  "lang_jscr_ivv2" : "Няправільныя дадзеныя:",
+  "lang_jscr_ivvl" : "Няправільная дзясятковая дроб",
+  "lang_jscr_maxm" : "Максімум",
+  "lang_jscr_maxm_date" : "Максімальная дата",
+  "lang_jscr_minm" : "Мінімум",
+  "lang_jscr_minm_date" : "Мінімальная дата",
+  "lang_jscr_mint" : "Хвіліны",
+  "lang_jscr_mnth" : "Месяц",
+  "lang_jscr_msfr" : "Форма павінна мець назву",
+  "lang_jscr_mslg" : "няма лагіну",
+  "lang_jscr_msob" : "Гэты аб'ект Form павінен мець назву",
+  "lang_jscr_mxdg" : "Колькасць знакаў перавышае чаканую",
+  "lang_jscr_mxvl" : "Перавышана максімальная даўжыня",
+  "lang_jscr_nnum" : "Гэтае поле мае лічбу",
+  "lang_jscr_nvlf" : "Мінус павінен быць злева ад велічыні",
+  "lang_jscr_reqr" : "Патрабаванае поле",
+  "lang_jscr_secd" : "Секунды",
+  "lang_jscr_wfix" : "- Хочаце выправіць?"
+};
+
+//-------- Mens USR

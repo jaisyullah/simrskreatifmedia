@@ -1,0 +1,32 @@
+Nm_erro = {
+  "lang_jscr_dcml" : "十進",
+  "lang_jscr_decm" : "コンマ1秒",
+  "lang_jscr_hour" : "時間",
+  "lang_jscr_iday" : "日",
+  "lang_jscr_intg" : "整数値および",
+  "lang_jscr_ivcr" : "無効なクレジット・カード番号",
+  "lang_jscr_ivdt" : "無効なデータ",
+  "lang_jscr_ivem" : "無効な電子メール",
+  "lang_jscr_ivnb" : "無効な整数値",
+  "lang_jscr_ivtm" : "無効な時間",
+  "lang_jscr_ivv2" : "無効なデータ：",
+  "lang_jscr_ivvl" : "無効な十進値",
+  "lang_jscr_maxm" : "最大値",
+  "lang_jscr_maxm_date" : "最大日時",
+  "lang_jscr_minm" : "最小値",
+  "lang_jscr_minm_date" : "最小日時",
+  "lang_jscr_mint" : "分",
+  "lang_jscr_mnth" : "月",
+  "lang_jscr_msfr" : "フォームネームは必要です",
+  "lang_jscr_mslg" : "ログインに失敗しました；",
+  "lang_jscr_msob" : "このフォームオブジェクトネームは必要です",
+  "lang_jscr_mxdg" : "期待値を超える桁数です",
+  "lang_jscr_mxvl" : "最大長を超過しました",
+  "lang_jscr_nnum" : "フィールドは数値型です",
+  "lang_jscr_nvlf" : "負号は数値の左に置かなければなりません",
+  "lang_jscr_reqr" : "必須フィールド",
+  "lang_jscr_secd" : "秒",
+  "lang_jscr_wfix" : "- 訂正しますか？"
+};
+
+//-------- Mens USR

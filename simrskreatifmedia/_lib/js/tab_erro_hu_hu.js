@@ -1,0 +1,32 @@
+Nm_erro = {
+  "lang_jscr_dcml" : "Tizedesek",
+  "lang_jscr_decm" : "Tizedmásodperc",
+  "lang_jscr_hour" : "Óra",
+  "lang_jscr_iday" : "Nap",
+  "lang_jscr_intg" : "Egész számok és",
+  "lang_jscr_ivcr" : "Hibás hitel kártyaszám",
+  "lang_jscr_ivdt" : "Hibás adat:",
+  "lang_jscr_ivem" : "Hibás emailcím:",
+  "lang_jscr_ivnb" : "Hibás egész szám",
+  "lang_jscr_ivtm" : "Hibás idő:",
+  "lang_jscr_ivv2" : "Hibás adat(ok):",
+  "lang_jscr_ivvl" : "Hibás szám",
+  "lang_jscr_maxm" : "Max",
+  "lang_jscr_maxm_date" : "Maximum Dátum",
+  "lang_jscr_minm" : "Min",
+  "lang_jscr_minm_date" : "Minimum Dátum",
+  "lang_jscr_mint" : "Perc",
+  "lang_jscr_mnth" : "Hónap",
+  "lang_jscr_msfr" : "Az űrlapnak nevet kell adni",
+  "lang_jscr_mslg" : "be kell lépni;",
+  "lang_jscr_msob" : "Ennek az űrlap objektumnak nevet kell adni",
+  "lang_jscr_mxdg" : "Túl sok számjegyből áll",
+  "lang_jscr_mxvl" : "Túl hosszú",
+  "lang_jscr_nnum" : "Ez a mező numerikus",
+  "lang_jscr_nvlf" : "A negatív előjel a bal oldalon kell, hogy legyen",
+  "lang_jscr_reqr" : "Kötelező mező",
+  "lang_jscr_secd" : "Másodperc",
+  "lang_jscr_wfix" : "- Szeretné javítani?"
+};
+
+//-------- Mens USR

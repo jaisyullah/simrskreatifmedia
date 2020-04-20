@@ -1,0 +1,145 @@
+.scGridPage { background-color: #FFFFFF; background-image: none; opacity: 1; filter: alpha(opacity=100); color: #000000; font-family: 'Nunito', sans-serif; margin: 20px; font-size: 13px }
+.scGridBorder { background-color: #FFFFFF; background-image: none; opacity: 1; filter: alpha(opacity=100); border-color: #000000; border-style: none; border-width: 1px; border-collapse: collapse; padding: 0 }
+.scGridPageLink { color: #000000; text-decoration: underline }
+.scGridToolbarNav { background-color: #FFFFFF; background-image: none; opacity: 1; filter: alpha(opacity=100); color: #000000; font-family: 'Nunito', sans-serif; font-size: 14px; font-weight: bold; text-decoration: none; border-color: #000000; padding: 12px; text-align: center; height: 34px; line-height: 10px; display: inline-block; box-sizing: border-box }
+.scGridToolbarNavOpen { background-color: #FFFFFF; background-image: none; opacity: 1; filter: alpha(opacity=100); color: #000000; font-family: 'Nunito', sans-serif; font-size: 14px; font-weight: bold; text-decoration: none; border-color: #000000; border-style: none; padding: 12px; -moz-border-radius: 30px; -webkit-border-radius: 30px; border-radius: 30px; text-align: center; height: 34px; line-height: 10px; display: inline-block; box-sizing: border-box }
+.scGridToolbar { background-color: #FFFFFF; background-image: none; opacity: 1; filter: alpha(opacity=100); color: #000000; font-family: 'Nunito', sans-serif; font-size: 13px; text-decoration: none; border-color: #000000; border-style: none; border-width: 0; padding: 20px; margin: 0 }
+.scGridToolbarPadding { padding: 20px }
+.scGridToolbarPadding > span { background-color: #FFFFFF }
+.css_toolbar_obj { background-color: #FFFFFF; background-image: none; opacity: 1; filter: alpha(opacity=100); border-color: #000000; border-style: solid; border-width: 1px; color: #000000; font-family: 'Nunito', sans-serif; font-size: 13px; padding: 0 10px; text-decoration: none; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; height: 34px; line-height: 34px; box-shadow: 0 2px 6px 0 rgba(227,234,239,.5) }
+.css_toolbar_obj:focus { background-color: #FFFFFF; background-image: none; opacity: 1; filter: alpha(opacity=100); border-color: #000000; color: #000000; box-shadow: none }
+.css_toolbar_objWm { color: #000000 }
+.scGridHeader { background-color: #FFFFFF; background-image: none; opacity: 1; filter: alpha(opacity=100); border-color: #000000; border-style: solid; border-width: 1px }
+.scGridHeaderFont { color: #000000; font-family: 'Nunito', sans-serif; font-size: 13px; text-decoration: none }
+.scGridFooter { background-color: #FFFFFF; background-image: none; opacity: 1; filter: alpha(opacity=100); border-color: #000000 }
+.scGridFooterFont { color: #000000; font-family: 'Nunito', sans-serif; font-size: 13px; font-weight: bold; text-decoration: none }
+.scGridObjectOdd { background-color: #FFFFFF; background-image: none; opacity: 1; filter: alpha(opacity=100); border-color: #000000; border-style: solid; border-width: 1px; color: #000000; font-family: 'Nunito', sans-serif; font-size: 13px; text-decoration: none }
+.scGridBlockBg { background-color: #FFFFFF; background-image: none; opacity: 1; filter: alpha(opacity=100); border-width: 0 0 1px 0; border-style: solid; border-top-color: #E3EAEF; border-bottom-color: #E3EAEF; border-left-color: #e3eaef; border-right-color: #e3eaef }
+.scGridBlockLineBg { background-color: #FFFFFF; background-image: none; opacity: 1; filter: alpha(opacity=100); border-color: #FFFFFF; border-width: 0 0 1px 0; border-style: solid }
+.scGridBlockSpaceBg { background-color: #FFFFFF; background-image: none; opacity: 1; filter: alpha(opacity=100); border-color: #000000; border-width: 0 0 1px 0; border-style: solid; border-left-color: #e3eaef; border-right-color: #e3eaef }
+.scGridBlock { background-color: #FFFFFF; background-image: none; opacity: 1; filter: alpha(opacity=100); border-color: #000000; border-width: 0 0 1px 0; border-style: solid; color: #000000; font-family: 'Nunito', sans-serif; font-size: 13px; font-weight: bold; padding: 12px 15px; text-decoration: none }
+.scGridBlockFont { color: #000000; font-family: 'Nunito', sans-serif; font-size: 13px; font-weight: bold; text-decoration: none }
+.scGridBlockLink { color: #000000; text-decoration: underline }
+.scGridBlockAlign { color: #000000; font-family: 'Nunito', sans-serif; font-size: 13px; font-weight: bold; text-decoration: none }
+.scGridTotal { background-color: #FFFFFF; background-image: none; opacity: 1; filter: alpha(opacity=100); border-color: #000000; border-style: solid; border-width: 0 0 1px 0 }
+.scGridTotalFont { color: #000000; font-family: 'Nunito', sans-serif; font-size: 13px; font-weight: bold; padding: 12px 15px; text-decoration: none }
+.scGridSubtotal { background-color: #FFFFFF; background-image: none; opacity: 1; filter: alpha(opacity=100); border-color: #000000; border-style: solid; border-width: 0 0 1px 0 }
+.scGridSubtotalFont { color: #000000; font-family: 'Nunito', sans-serif; font-size: 13px; padding: 12px 15px; text-decoration: none }
+.scGridFieldEven { background-color: #FFFFFF; background-image: none; opacity: 1; filter: alpha(opacity=100) }
+.scGridFieldEvenFont { color: #000000; font-family: 'Nunito', sans-serif; font-size: 13px; padding: 12px 15px; text-decoration: none; border-color: #000000; border-style: solid; border-width: 0 0 1px 0 }
+.scGridFieldEvenVert { background-color: #FFFFFF; background-image: none; opacity: 1; filter: alpha(opacity=100); border-color: #000000; border-style: solid; border-width: 1px; color: #000000; font-family: 'Nunito', sans-serif; font-size: 13px; padding: 12px 15px; text-decoration: none }
+.scGridFieldEvenLink { color: #000000; text-decoration: none }
+.scGridFieldOdd { background-color: #FFFFFF; background-image: none; opacity: 1; filter: alpha(opacity=100) }
+.scGridFieldOddFont { color: #000000; font-family: 'Nunito', sans-serif; font-size: 13px; padding: 12px 15px; text-decoration: none; border-color: #000000; border-style: solid; border-width: 0 0 1px 0 }
+.scGridFieldOddVert { background-color: #FFFFFF; background-image: none; opacity: 1; filter: alpha(opacity=100); border-color: #000000; border-style: solid; border-width: 1px; color: #000000; font-family: 'Nunito', sans-serif; font-size: 13px; padding: 12px 15px; text-decoration: none }
+.scGridFieldOddLink { color: #000000; text-decoration: none }
+.scGridFieldClick { background-color: #FFFFFF; box-shadow: css_grid_campo_par_box_shadow; border-color: #000000; border-style: solid; border-width: 0 0 1px 0 }
+.scGridFieldOver { background-color: #FFFFFF }
+.scGridLabel { background-color: #FFFFFF; box-shadow: 0 0 35px 0 rgba(154,161,171,.15); background-image: none; opacity: 1; filter: alpha(opacity=100) }
+.scGridLabelVert { background-color: #FFFFFF; box-shadow: 0 0 35px 0 rgba(154,161,171,.15); background-image: none; opacity: 1; filter: alpha(opacity=100); border-color: #000000; border-style: solid; border-width: 1px; color: #000000; font-family: 'Nunito', sans-serif; font-size: 13px; font-weight: bold; padding: 12px 15px; text-decoration: none; vertical-align: middle; width: 20% }
+.scGridLabelFont { color: #000000; font-family: 'Nunito', sans-serif; font-size: 13px; font-weight: bold; padding: 12px 15px; text-decoration: none; vertical-align: middle; border-color: #000000; border-style: solid; border-width: 1px }
+scGridLabelVert:hover,.scGridLabelFont:hover { background-color: #FFFFFF; background-image: none; opacity: 1; filter: alpha(opacity=100); color: #000000; text-decoration: none; border-color: #000000; border-style: solid; border-width: 1px }
+.scGridLabelLink { color: #000000; font-family: 'Nunito', sans-serif; font-size: 13px; font-weight: bold; text-decoration: none; vertical-align: middle }
+.scGridTabela { background-color: #FFFFFF; background-image: none; opacity: 1; filter: alpha(opacity=100); border-collapse: collapse; border-color: #000000; box-shadow: 0 0 35px 0 rgba(154,161,171,.15); border-style: none; border-width: 0; padding: 0 }
+.scGridTabelaTd { padding: 0 }
+.TB_overlayBG { background-color: #FFFFFF }
+#TB_window { border-color: #000000; border-style: none; background-color: #FFFFFF }
+.scBtnPassField { margin: 10px 5px }
+#first_bot,#first_top,#back_bot,#back_top,#forward_bot,#forward_top,#last_bot,#last_top { margin: 0 5px }
+.scGridRefinedSearchPadding { padding: 20px; background-color: #FFFFFF; background-image: none; border-color: #000000; border-style: none; border-width: 1px 1px 0 0 }
+.scGridRefinedSearchMoldura { background-color: #FFFFFF; background-image: none; opacity: 1; filter: alpha(opacity=100); border-color: #000000; border-style: none; border-width: 1px; border-collapse: collapse }
+.scGridRefinedSearchMoldura > div { margin: 0 0 20px 0 }
+.scGridRefinedSearchMoldura .scAppDivToolbarInput[type=checkbox], .scGridRefinedSearchMoldura .scAppDivToolbarInput[type=radio], .scGridFilterTagListFilterInputs .scAppDivToolbarInput[type=checkbox], .scGridFilterTagListFilterInputs .scAppDivToolbarInput[type=radio], #table_dyn_search .scAppDivToolbarInput[type=checkbox], #table_dyn_search .scAppDivToolbarInput[type=radio] { height: 13px !important; position: relative; display: inline-block; top: 2px }
+.scGridRefinedSearchMolduraResult { background-color: #FFFFFF; background-image: none; opacity: 1; filter: alpha(opacity=100); border-color: #000000; border-style: solid; border-width: 0 1px; border-collapse: collapse; padding: 0 }
+.scGridRefinedSearchToolbar { background-color: #FFFFFF; background-image: none; opacity: 1; filter: alpha(opacity=100); color: #000000; font-family: 'Nunito', sans-serif; font-size: 13px; text-decoration: none; border-color: #000000; border-style: solid; border-width: 0 1px 1px 1px; padding: 8px 15px }
+.scGridRefinedSearchLabel { background-color: #FFFFFF; background-image: none; opacity: 1; filter: alpha(opacity=100); border-color: #000000; border-style: solid; border-width: 1px; color: #000000; border-radius: 4px; font-family: 'Nunito', sans-serif; font-size: 13px; padding: 8px; text-decoration: none; vertical-align: middle }
+.scGridRefinedSearchCampo { background-color: #FFFFFF; background-image: none; opacity: 1; filter: alpha(opacity=100); border-color: #000000; border-style: solid; border-width: 0 0 1px 0; padding: 8px 15px }
+.scGridRefinedSearchCampoFont { color: #000000; font-family: 'Nunito', sans-serif; font-size: 12px; text-decoration: none }
+.scGridRefinedSearchCampo:hover { background-color: #FFFFFF; background-image: none; opacity: 1; filter: alpha(opacity=100); border-color: #000000; border-style: solid; border-width: 0 0 1px 0; padding: 8px 15px }
+.scGridRefinedSearchCampoFont:hover { color: #000000; font-family: 'Nunito', sans-serif; font-size: 12px; font-weight: bold; text-decoration: none }
+.scGridRefinedSearchCampo:active { background-color: #FFFFFF; background-image: none; opacity: 1; filter: alpha(opacity=100); border-color: #000000; border-style: solid; border-width: 0 0 1px 0; padding: 8px 15px }
+.scGridRefinedSearchCampoFont:active { color: #000000; font-family: 'Nunito', sans-serif; font-size: 13px; text-decoration: underline }
+.scGridRefinedSearchVejaMais { background-color: #FFFFFF; background-image: none; opacity: 1; filter: alpha(opacity=100); border-color: #000000; border-style: solid; border-width: 0 1px 1px 1px; padding: 8px 15px }
+.scGridRefinedSearchVejaMaisFont { color: #000000; font-family: 'Nunito', sans-serif; font-size: 13px; text-decoration: none }
+.ui-slider-horizontal { background-color: #FFFFFF; background-image: none; opacity: 1; filter: alpha(opacity=100); border-color: #000000; border-style: none; border-collapse: collapse; margin: 0 auto; height: .3em !important }
+.ui-slider-horizontal > .ui-slider-range { background-color: #FFFFFF; background-image: none; opacity: 1; filter: alpha(opacity=100); border-color: #000000; border-collapse: collapse }
+.ui-slider-horizontal > .ui-state-default { background: #727cf5 !important; background-image: none; opacity: 1; filter: alpha(opacity=100); border-color: #000000; border-collapse: collapse; margin: 0 0 0 -7px !important; -moz-border-radius: 0; -webkit-border-radius: 0; border-radius: 0; top: -4px !important; outline: none }
+.ui-slider-horizontal > .ui-slider-handle { width: 0.5em !important; height: 0.8em !important }
+.ui-slider-horizontal > .ui-state-hover { background-color: #FFFFFF; background-image: none; opacity: 1; filter: alpha(opacity=100); border-color: #000000; border-collapse: collapse }
+.ui-slider-horizontal > .ui-state-active { background-color: #FFFFFF; background-image: none; opacity: 1; filter: alpha(opacity=100); border-color: #000000; border-collapse: collapse }
+.scGridRefinedSearchRangeValues { background-color: #FFFFFF; background-image: none; opacity: 1; filter: alpha(opacity=100); border-color: #000000; padding: 4px; color: #000000; font-family: 'Nunito', sans-serif; font-size: 13px; text-decoration: none }
+.scGridRefinedSearchQuantidade { background-color: #FFFFFF; background-image: none; opacity: 1; filter: alpha(opacity=100); border-color: #000000; border-style: none; padding: 0 2px; color: #000000; font-family: 'Nunito', sans-serif; font-size: 12px; text-decoration: none }
+.scAjaxDiv { background-color: #FFFFFF; background-image: none; opacity: 1; filter: alpha(opacity=100); color: #000000; font-family: 'Nunito', sans-serif; font-size: 13px; text-decoration: none; border-collapse: collapse; border-color: #000000; border-style: none }
+.scGridSummarySearchMoldura { background-color: #FFFFFF; background-image: none; opacity: 1; filter: alpha(opacity=100); border-color: #000000; border-style: solid; border-width: 1px; border-collapse: collapse; padding: 5px 10px; margin: 0; width: calc(100% - 40px) !important }
+.scGridSummarySearchCampo { background-color: #FFFFFF; background-image: none; opacity: 1; filter: alpha(opacity=100); border-color: #000000; border-style: none; border-collapse: collapse; margin: 20px 10px }
+.scGridSummarySearchLabel { background-color: #FFFFFF; background-image: none; opacity: 1; filter: alpha(opacity=100); border-color: #000000; border-style: solid; border-width: 0 0 1px 0; color: #000000; font-family: 'Nunito', sans-serif; font-size: 11px; padding: 0 0 8px 0; text-decoration: none; vertical-align: middle; margin: 0 0 8px 0; text-transform: none; letter-spacing: 1px }
+.scGridSummarySearchLabelclean { background-color: #FFFFFF; background-image: none; opacity: 1; filter: alpha(opacity=100); border-color: #000000; color: #000000; font-family: 'Nunito', sans-serif; font-size: 12px !important; font-weight: normal; letter-spacing: 0px; text-decoration: none; text-transform: capitalize; display: block; visibility: hidden }
+.scGridSummarySearchLabelclean a { color: #000000; font-family: 'Nunito', sans-serif; font-size: 12px !important; text-transform: capitalize; font-weight: normal; text-decoration: none; letter-spacing: 0px }
+.scGridSummarySearchLabelclean a:hover { text-decoration: underline }
+.scGridSummarySearchObjeto { background-color: #FFFFFF; background-image: none; opacity: 1; filter: alpha(opacity=100); border-color: #000000; border-style: none; border-collapse: collapse; padding: 0 10px; box-sizing: border-box; height: 34px }
+.scGridSummarySearchObjeto > img { vertical-align: middle }
+.scGridSummarySearchCampo:hover .scGridSummarySearchLabelclean { visibility: visible!important }
+.scGridSummarySearchCleanBtn { background-color: #FFFFFF; background-image: none; opacity: 1; filter: alpha(opacity=100); border-color: #000000; border-style: none; border-collapse: collapse; margin: 20px 10px; box-sizing: css_summarysearch_btnclean_box_sizing; height: css_summarysearch_btnclean_height; line-height: css_summarysearch_btnclean_line_height }
+.scGridSummaryLabel { background-color: #FFFFFF; box-shadow: 0 0 35px 0 rgba(154,161,171,.15); background-image: none; opacity: 1; filter: alpha(opacity=100); color: #000000; font-family: 'Nunito', sans-serif; font-size: 13px; text-decoration: none; border-color: #000000; border-style: solid; border-width: 1px; vertical-align: middle; padding: 12px 15px }
+.scGridSummaryLabel:hover { background-color: #FFFFFF; background-image: none; opacity: 1; filter: alpha(opacity=100); color: #000000; text-decoration: none; border-color: #000000; border-style: solid; border-width: 1px }
+.scGridSummaryTotal { background-color: #FFFFFF; background-image: none; opacity: 1; filter: alpha(opacity=100); color: #000000; font-family: 'Nunito', sans-serif; font-size: 13px; text-decoration: none; border-color: #000000; border-style: solid; border-width: 1px 0; padding: 8px 10px }
+.scGridSummarySubtotal { background-color: #FFFFFF; background-image: none; opacity: 1; filter: alpha(opacity=100); color: #000000; font-family: 'Nunito', sans-serif; font-size: 13px; text-decoration: none; border-color: #000000; border-style: solid; border-width: 1px 0; padding: 8px 10px }
+.scGridSummaryLineEven { background-color: #FFFFFF; background-image: none; opacity: 1; filter: alpha(opacity=100); color: #000000; font-family: 'Nunito', sans-serif; font-size: 13px; text-decoration: none; border-color: #000000; border-style: solid; border-width: 1px 0; padding: 12px 15px }
+.scGridSummaryLineOdd { background-color: #FFFFFF; background-image: none; opacity: 1; filter: alpha(opacity=100); color: #000000; font-family: 'Nunito', sans-serif; font-size: 13px; text-decoration: none; border-color: #000000; border-style: solid; border-width: 1px 0; padding: 12px 15px }
+.scGridSummaryGroupbyVisible { background-color: #FFFFFF; background-image: none; opacity: 1; filter: alpha(opacity=100); color: #000000; font-family: 'Nunito', sans-serif; font-size: 13px; text-decoration: none; border-color: #000000; border-style: solid; border-width: 1px 0; padding: 8px 10px }
+.scGridSummaryGroupbyVisibleLink { color: #000000; text-decoration: none }
+.scGridSummaryGroupbyInvisible { background-color: #FFFFFF; background-image: none; opacity: 1; filter: alpha(opacity=100); color: #000000; font-family: 'Nunito', sans-serif; font-size: 13px; text-decoration: none; font-style: italic; border-color: #000000; border-style: solid; border-width: 1px 0; padding: 8px 10px }
+.scGridSummaryGroupbyInvisibleDisplay { display: none }
+.scGridSummaryGroupbyInvisibleLink { color: #000000; text-decoration: none }
+.scGridSummaryLine:hover .scGridSummaryLineOdd { background-color: #FFFFFF; opacity: 1; filter: alpha(opacity=100); border-color: #000000; border-style: none; border-width: 1px 0 }
+.scGridSummaryLine:hover .scGridSummaryLineEven { background-color: #FFFFFF; opacity: 1; filter: alpha(opacity=100); border-color: #000000; border-style: none; border-width: 1px 0 }
+.scGridSummaryLine:hover .scGridSummaryGroupbyVisible { background-color: #FFFFFF; opacity: 1; filter: alpha(opacity=100); border-color: #000000; border-style: none; border-width: 1px 0 }
+.scGridSummaryLine:hover .scGridSummaryGroupbVisibleLink { color: #000000; text-decoration: none }
+.scGridSummaryLine:hover .scGridSummaryGroupbyInvisible { background-color: #FFFFFF; opacity: 1; filter: alpha(opacity=100); border-color: #000000; border-style: none; border-width: 1px 0 }
+.scGridSummaryLine:hover .scGridSummaryGroupbyInvisibleLink { color: #000000; text-decoration: none }
+.scGridSummaryLine:hover .scGridSummaryGroupbyInvisible .scGridSummaryGroupbyInvisibleDisplay { display: table-cell }
+.scGridSummaryLine:hover .scGridSummarySubtotal { background-color: #FFFFFF; opacity: 1; filter: alpha(opacity=100); border-color: #000000; border-style: none; border-width: 1px 0 }
+.scGridSummaryLine:hover .scGridSummaryTotal { background-color: #FFFFFF; opacity: 1; filter: alpha(opacity=100); border-color: #000000; border-style: none; border-width: 1px 0 }
+.scGridSummaryClickedLine { background-color: #FFFFFF; box-shadow: inset 0 8px 6px -8px rgba(0,0,0,0.05); opacity: 1; filter: alpha(opacity=100); border-color: #000000; border-style: solid; border-width: 1px 0 }
+.scGridSummaryClickedGroupbyVisible { background-color: #FFFFFF; box-shadow: inset 0 8px 6px -8px rgba(0,0,0,0.05); opacity: 1; filter: alpha(opacity=100); border-color: #000000; border-style: solid; border-width: 1px 0 }
+.scGridSummaryClickedGroupbyInvisible { background-color: #FFFFFF; box-shadow: inset 0 8px 6px -8px rgba(0,0,0,0.05); opacity: 1; filter: alpha(opacity=100); border-color: #000000; border-style: solid; border-width: 1px 0 }
+.scGridSummaryClickedGroupbyInvisibleDisplay { display: table-cell }
+.scGridSummaryClickedSubtotal { background-color: #FFFFFF; opacity: 1; filter: alpha(opacity=100); border-color: #000000; border-style: none; border-width: 1px 0 }
+.scGridSummaryClickedTotal { background-color: #FFFFFF; opacity: 1; filter: alpha(opacity=100); border-color: #000000; border-style: none; border-width: 1px 0 }
+.scGridSummaryGroupbySeq { vertical-align: middle }
+.SumoSelect > .CaptionCont { background-color: #FFFFFF; background-image: none; opacity: 1; filter: alpha(opacity=100); color: #000000; font-family: 'Nunito', sans-serif; font-size: 13px; padding: 0 10px; text-decoration: none; vertical-align: middle; border-color: #000000; border-style: solid; border-width: 1px; box-shadow: border-box; height: 34px; line-height: 34px }
+.SumoSelect .select-all { background-color: #FFFFFF; background-image: none; opacity: 1; filter: alpha(opacity=100); color: #000000; font-family: 'Nunito', sans-serif; font-size: 13px; text-decoration: none; vertical-align: middle; border-color: #000000 }
+.SumoSelect .no-match { background-color: #FFFFFF; background-image: none; opacity: 1; filter: alpha(opacity=100); color: #000000; font-family: 'Nunito', sans-serif; font-size: 13px; text-decoration: none; vertical-align: middle; border-color: #000000 }
+.SumoSelect > .optWrapper { border-color: #000000 }
+.SumoSelect > .optWrapper > .options li.opt { background-color: #FFFFFF; background-image: none; opacity: 1; filter: alpha(opacity=100); color: #000000; font-family: 'Nunito', sans-serif; font-size: 13px; text-decoration: none; vertical-align: middle; border-color: #000000 }
+.SumoSelect > .optWrapper > .options li.opt.selected { background-color: #FFFFFF; box-shadow: 0 0 5px 0 rgba(154,161,171,.5); color: #000000 }
+.SumoSelect > .optWrapper > .options li.opt:hover { background-color: #FFFFFF; box-shadow: 0 0 5px 0 rgba(154,161,171,.5); color: #000000 }
+.SumoSelect > .optWrapper.multiple > .MultiControls > p.btnOk { background-color: #FFFFFF; background-image: none; opacity: 1; filter: alpha(opacity=100); color: #000000; font-family: 'Nunito', sans-serif; font-size: 13px; text-decoration: none; vertical-align: middle; border-color: #000000 }
+.SumoSelect > .optWrapper.multiple > .MultiControls { background-color: #FFFFFF; background-image: none; opacity: 1; filter: alpha(opacity=100); color: #000000; font-family: css_summarysearch_multiselectbuttonline_font; font-size: css_summarysearch_multiselectbuttonline_font_size; text-shadow: css_summarysearch_multiselectbuttonline_text_shadow; font-weight: css_summarysearch_multiselectbuttonline_font_weight; text-decoration: css_summarysearch_multiselectbuttonline_text_decoration; vertical-align: css_summarysearch_multiselectbuttonline_vertical_align; border-color: #000000 }
+.SumoSelect > .optWrapper.multiple > .MultiControls > p.btnCancel { background-color: #FFFFFF; background-image: none; opacity: 1; filter: alpha(opacity=100); color: #000000; font-family: 'Nunito', sans-serif; font-size: 13px; text-decoration: none; vertical-align: middle; border-color: #000000 }
+.SumoSelect > .optWrapper.multiple > .options li.opt.selected span i, .SumoSelect .select-all.selected > span i { background-color: #FFFFFF; background-image: none; opacity: 1; filter: alpha(opacity=100); border-color: #000000 }
+.SumoSelect > .optWrapper.multiple > .options li.opt span i, .SumoSelect .select-all > span i { background-color: #FFFFFF; background-image: none; opacity: 1; filter: alpha(opacity=100); border-color: #000000 }
+.active > .scGridSummarySearchLabel { color: #000000 }
+.active > .scGridSummarySearchObjeto > .SumoSelect > .CaptionCont, .active > .scGridSummarySearchObjeto > .css_toolbar_obj { border-color: #000000 }
+#sc_id_class_id, #sc_id_fldord_selected select { height: 18px; line-height: 18px; padding: 0 }
+#summary_body > td,#sc_grid_body { padding: 20px }
+.sc-ui-summ-options, .sc-ui-groupby-options { list-style-type: none; margin: 0; padding: 0 2px; min-height: 30px }
+.sc-ui-summ-options li, .sc-ui-groupby-options li { margin: 3px 3px 3px 0; padding: 1px; float: left; width: 150px; height: 20px; text-align: left }
+#sc-id-custom-groupby, #sc-id-custom-summ { font-size: 13px }
+.sc-ui-overflow-groupby { overflow: hidden; white-space: nowrap }
+.sc-ui-overflow-summ { width: 125px; overflow: hidden; white-space: nowrap; float: left }
+#sc-id-chart-selection { display: none; z-index: 1000; position: absolute; padding: 3px; width: 375px; min-height: 325px; border-style: solid; border-width: 1px }
+#sc-id-chart-menu-type { float: left; width: 158px }
+.sc-ui-chart-types { text-align: left; background-color: #FFFFFF; margin: 0; padding: 5px; border-color: #000000; border-style: solid; border-width: 1px; font-weight: bold; color: #000000 }
+.sc-ui-chart-types:hover { background-color: #FFFFFF; box-shadow: 0 0 5px 0 rgba(154,161,171,.5); color: #000000; text-decoration: none; border-color: #000000; border-style: solid; border-width: 1px; cursor: pointer }
+.sc-ui-chart-type-selected,.sc-ui-chart-type-selected:hover { background-color: #FFFFFF; border-color: #000000; border-width: 1px; border-style: solid; cursor: default; color: #000000; text-decoration: none }
+.sc-ui-chart-options { float: right; width: 217px; height: 100%; text-align: left; background-color: #FFFFFF }
+.sc-ui-chart-option-type { background-color: #FFFFFF; border-color: #000000; border-style: solid; border-width: 2px; height: 90px; width: 90px; float: left; margin: 10px 0 0 10px; text-align: center }
+.sc-ui-chart-option-type-hover:hover { background-color: #FFFFFF; border-color: #000000; cursor: pointer }
+.sc-ui-sumcfg { display: none; position: absolute; border-style: solid; border-width: 1px; z-index: 1001; text-align: center; padding: 3px 5px; font-weight: bold }
+.sc-ui-sumcfg label { font-weight: normal }
+#sc-id-sort { display: none; position: absolute; border-style: solid; border-width: 1px; z-index: 1002; text-align: left; padding: 0 }
+.sc-ui-sort-option { padding: 6px 15px; font-size: 13px }
+.sc-ui-sort-option:hover { background-color: #FFFFFF }
+.sc-ui-sort-option-check { height: 16px; width: 16px; vertical-align: text-bottom; margin-right: 10px }
+#sc-id-sort,.sc-ui-sumcfg,#sc-id-chart-selection,#sc-id-combination-table { font-size: 13px; box-shadow: 2px 2px 3px #b0b0b0; border-color: #000000; background-color: #FFFFFF }

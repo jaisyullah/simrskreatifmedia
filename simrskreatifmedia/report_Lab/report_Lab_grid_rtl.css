@@ -1,0 +1,20 @@
+.css_tgltransaksi_label {text-align:center;vertical-align:middle;justify-content:center;font-weight:bold;}
+.css_tgltransaksi_grid_line {vertical-align: top;text-align: center;}
+.css_pemeriksaan_label {text-align:left;vertical-align:middle;justify-content:left;font-weight:bold;}
+.css_pemeriksaan_grid_line {vertical-align: top;text-align: right;}
+.css_kategori_label {text-align:left;vertical-align:middle;justify-content:left;font-weight:bold;}
+.css_kategori_grid_line {vertical-align: top;text-align: right;}
+.css_pasien_label {text-align:left;vertical-align:middle;justify-content:left;font-weight:bold;}
+.css_pasien_grid_line {font-weight:bold;vertical-align: top;text-align: right;}
+.css_poli_label {text-align:left;vertical-align:middle;justify-content:left;font-weight:bold;}
+.css_poli_grid_line {vertical-align: top;text-align: right;}
+.css_penjamin_label {text-align:left;vertical-align:middle;justify-content:left;font-weight:bold;}
+.css_penjamin_grid_line {vertical-align: top;text-align: right;}
+.css_nostruk_label {text-align:left;vertical-align:middle;justify-content:left;font-weight:bold;}
+.css_nostruk_grid_line {vertical-align: top;text-align: right;}
+.css_kode_label {text-align:left;vertical-align:middle;justify-content:left;font-weight:bold;}
+.css_kode_grid_line {vertical-align: top;text-align: right;}
+.css_koderanap_label {text-align:left;vertical-align:middle;justify-content:left;font-weight:bold;}
+.css_koderanap_grid_line {vertical-align: top;text-align: right;}
+.css_klsranap_label {text-align:left;vertical-align:middle;justify-content:left;font-weight:bold;}
+.css_klsranap_grid_line {vertical-align: top;text-align: right;}

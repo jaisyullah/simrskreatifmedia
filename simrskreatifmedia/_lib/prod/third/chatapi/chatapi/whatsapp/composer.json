@@ -1,0 +1,23 @@
+{
+    "name": "chatapi/whatsapp",
+    "type": "library",
+    "description": "Library for WhatsApp api",
+    "keywords": ["library", "WhatsApp", "api"],
+    "authors": [
+        {
+            "name": "Tamidin",
+            "email": "taubm@yandex.ru"
+        }
+    ],
+    "autoload": {
+        "classmap": [
+            "src/"
+        ]
+    },
+    "require": {
+        "guzzlehttp/guzzle": "^6.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^5.7"
+    }
+}

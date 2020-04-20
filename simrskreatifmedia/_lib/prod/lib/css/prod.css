@@ -1,0 +1,460 @@
+ *{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+ }
+
+html,body {
+
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+body.nmPageBg{
+    background: url("../../../devel/conf/scriptcase/img/login/sc9_bg.jpg") no-repeat center center!important;
+}
+
+form { display: inline }
+
+a { text-decoration: none; outline:none}
+a:hover { text-decoration: none; }
+
+.nmMenuLine {
+	background-color: #598db5;
+    height: 32px;
+    font-family: Arial;
+    font-size: 14px !important;
+}
+
+.nmTitle, #MB_header, .nmMenuContent h1.nmMenuApp {
+    background-color: #e0e6ed;
+    padding: 10px;
+}
+
+.nmTextTitle, .nmTitle, .nmTextTitle2, .nmTextTitle3 {
+    color: #3c4858;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.nmTextTitle2 { font-size: 16px; }
+.nmTextTitle3 { font-size: 14px; }
+
+ .nmButton, .nmButtonDisabled {
+     color: #fff;
+     background: #4090B3;
+     border: 0;
+     box-shadow: 2px 2px 2px #aaa;
+     border-radius: 3px;
+     padding: 5px 14px !important;
+     font-size: 13px;
+     margin: 3px;
+     cursor: pointer;
+ }
+ .nmButton:hover
+ {
+     background: #3b7195;
+ }
+ .nmButton:disabled, .nmButtonDisabled {
+     color: #c2c2c2;
+     background: #dbe6ea;
+     cursor: auto !important;
+ }
+ .nmButtonDisabled:hover
+ {
+     background: #dbe6ea !important;
+ }
+ .nmButtonGreenBack, .nmButtonGreenBack:hover, .nmButtonRedBack, .nmButtonRedBack:hover
+ {
+     font-size:15px;
+     background-image: url(../img/btnnew/crystal/nmButton_back_step.png);
+     background-repeat: no-repeat;
+     background-position: left;
+     padding: 7px 7px 7px 30px !important;
+ }
+ .nmButtonGreenForward, .nmButtonGreenForward:hover
+ {
+     background-color: #47996A;
+ }
+ .nmButtonRedBack, .nmButtonRedBack:hover
+ {
+     background-color: #bd3d32;
+ }
+ .nmButtonGreenForward, .nmButtonGreenForward:hover,.nmButtonRedForward, .nmButtonRedForward:hover
+ {
+     font-size:15px;
+     background-image: url(../img/btnnew/crystal/nmButton_next_step.png);
+     background-repeat: no-repeat;
+     background-position: right;
+     padding: 7px 30px 7px 7px !important;
+ }
+ .nmButtonGreenForward, .nmButtonGreenForward:hover
+ {
+     background-color: #47996A;
+ }
+ .nmButtonRedForward, .nmButtonRedForward:hover
+ {
+     background-color: #bd3d32;
+ }
+ .nmButtonSmall
+ {
+     padding: 2px 4px !important;
+     font-size: 13px;
+     margin: 0px;
+ }
+ .nmButtonSub{
+     display: inline-block;
+     color: #226684;
+     font-size: 11px;
+     letter-spacing: 1px;
+     border-radius: 3px;
+     background: #eee;
+     padding: 5px 3px;
+     margin-top: 8px;
+     border: 1px solid #ddd;
+ }
+
+.nmErrorMsg { background-color: #FFE0E0; color: #000000; font-size: 11px; padding: 2px 5px 2px; }
+
+.nmLinkData { color: #000000; }
+.nmText { color: #333333; }
+.nmText2 { color: #333333;  font-size: 13px; }
+
+.nmTable, #MB_frame {
+    border-collapse: collapse;
+    border-spacing: 0px;
+    background-color: #FFFFFF;
+    text-align: left;
+    border: 1px solid #598db5;
+    border-top-color: #429ac0;
+}
+
+.nmErrorTitle { background-color: #FF4040; color: #000000; font-size: 13px; font-weight: bold; padding: 2px 5px 2px; }
+.nmErrorMsg { background-color: #FFE0E0; color: #000000; font-size: 11px; padding: 2px 5px 2px; }
+.nmErrorText { color: #FF0000; }
+
+
+
+
+*{margin:0;padding:0}
+a { text-decoration:none; color:white; }
+form { display:inline; margin: 0; padding: 0; }
+
+.nmLoginErroDiv
+{
+	background-color: #ffffff;
+	border: 1px solid #cccccc;
+	padding: 10px;
+	display:none;
+	border-radius: 6px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+	box-shadow: 5px 5px 5px #888;
+	-moz-box-shadow: 10px 10px 5px #888;
+	-webkit-box-shadow: 10px 10px 5px #888;
+}
+
+/* Modifica��es no CSS do msdropdown */
+.dd { background-color: transparent; }
+.dd .ddTitle span.arrow { background: url(../../img/nm_dd_arrow.png) no-repeat 0 0; }
+.dd .ddTitle {
+	width: 125px;
+    background:url(../../img/bgFormBtLogin.png) repeat-x #5D5D5D;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    cursor:pointer;
+}
+.dd .ddChild {
+    background: #e9e7e7 url(../../img/nm_dd_div_bg.png) repeat-x 0 0;
+
+    border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+    -moz-border-radius-bottomleft: 4px;
+    -webkit-border-bottom-left-radius: 4px;
+    -moz-border-radius-bottomright: 4px;
+    -webkit-border-bottom-right-radius: 4px;
+}
+.dd .ddChild a {  padding: 3px 0 3px 3px; color:#555555; }
+.dd .ddChild a:hover { background: url(../../img/nm_dd_hover_bg.png) repeat-x 0 0;  }
+.dd .ddChild a.selected { background: url(../../img/nm_dd_selected_bg.png) repeat-x 0 0;  font-weight: bold; }
+
+
+
+/* Login */
+#loginContainer {
+    height: 100%;
+    width: 100%;
+    margin:0px auto; }
+
+#loginPartsBox {
+    max-width: 450px!important;
+    margin:0 auto;
+}
+
+#loginBoxForm{
+    background: white;
+    border-radius: 4px;
+    min-height: auto;
+    padding: 30px;
+    overflow: hidden;
+}
+
+#loginPartsLogo{
+    /*background: url("../../../devel/conf/scriptcase/img/login/scriptcase-9.1.png") no-repeat center center;*/
+    background-size: 100%;
+    width: 300px;
+    height: 49px;
+    margin: 0 auto 30px auto;
+}
+
+#loginPartsLogo img{
+    /*display: none;*/
+}
+
+#loginBoxForm input { font-size: 18px; font-weight: bold; color:#555555 !important; width: 170px; background:url(../../img/bgFormText.png) no-repeat; }
+#loginFormButtons { display: block; padding-top: 10px; }
+#loginButtonsLang { float:left; width: 137px; height: 24px; font-size: 12px; color:#fff; font-weight: bold; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; cursor: pointer; }
+#loginButtonsLang:active { }
+#loginButtonsLang  ul { list-style-type: none; margin:0; padding: 0 0; }
+#loginButtonsLang  ul .lang { padding: 3px 0 0 3px; }
+#loginButtonsLang  ul .lang img {  vertical-align: middle; margin: 0 0 2px 0 }
+#forgotPass { color:#fff; font-size: 10px; float:right; padding-top: 5px; margin: 0 0 0 20px; }
+#loginPartsInfos { font-size: 12px; height: 30px; color: #5e666e; margin-top: 25px;  width: 500px; margin: 0 auto; text-align: center; }
+#loginPartsInfos a { color: #5e666e; font-weight: bold; border:0px; }
+#loginFooter { margin-left: auto; left:0px; right:0px; margin-right: auto; color: #FFFFFF; padding: 8px; background:url(../../img/bg_bar.png); width:892px; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px;}
+#id_bar_right { float:right;}
+#id_bar_right  a {  text-decoration: none; color:#ffffff; border: 0px;}
+#id_bar_right  a img {  text-decoration: none; color:#ffffff; border: 0px;}
+#id_bar_right img {vertical-align: middle;}
+
+#loginButtonsLogin {
+    text-transform: uppercase;
+    background: #f9fafc;
+    margin: 40px -30px -30px -30px;
+    padding: 20px 30px;
+    border-top: 1px solid #d1dde2;
+}
+
+#loginButtonsLogin a {
+    color: #fff;
+    background: #5580c1;
+    display: inline-block;
+    padding: 15px 35px;
+    border-radius: 3px;
+    font-size: 12px;
+    transition: all .2s;
+}
+
+#loginButtonsLogin a:hover {
+    background: #446ead;
+}
+
+
+#id_login_msg{
+background-color: #FFE0E0;
+padding: 8px;
+border-radius: 3px;
+font-size: 14px;
+color:#000000;
+}
+#id_login_msg a{ text-decoration: none; color:#FFFFFF;}
+
+#id_cp{ 
+    background: rgba(0, 0, 0, 0.25);
+    color: white;
+    padding: 13px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    z-index: 9999;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+#sc_footer{ width:100%;}
+#sc_footer .left{float:left;}
+#sc_footer .right{float:right;}
+
+.nmIntroMsgNotRead{	
+	display:none;
+	
+	position: absolute;
+
+	background-color:#fcf9b5;
+	
+	margin: 0 auto;
+	padding: 5px 25px;
+	
+	box-shadow: 5px 5px 10px #888;
+	
+	border: 1px solid #cac892;
+	
+	-moz-border-radius:    6px;
+	-webkit-border-radius: 6px;
+	border-radius:         6px;
+	
+	cursor: pointer;
+
+    z-index:9999;
+}
+.nmIntroMsgNotRead
+{
+	right: 10px;
+	top: 0px;
+}
+
+#loginBoxForm * {
+    color:#3c4858;
+    text-align: left;
+}
+
+#loginBoxForm table,
+#loginBoxForm table tr,
+#loginBoxForm table tr td {
+    padding: 0;
+    margin: 0;
+    border-collapse: collapse;
+}
+
+#loginBoxForm .nmTextTitle {
+    font-size: 19px;
+    color:#8492A6;
+    font-weight: normal;
+    text-align: left!important;
+    margin-bottom: 20px;
+}
+
+#loginBoxForm table td.nmTextTitle {
+    font-size: 13px;
+    font-weight: bold;
+    color:#3C4858;
+    text-transform: uppercase;
+    text-align: left!important;
+    width: 28%;
+}
+
+#loginBoxForm table td input,
+#loginBoxForm table td select {
+    border:1px solid #d1dde2;
+    text-shadow: none;
+    box-shadow: none;
+    background: none;
+    width: 100%;
+    padding: 4px;
+    box-sizing: border-box;
+    height: 33px;
+    border-radius: 3px;
+}
+
+#loginBoxForm table td.nmText {
+    width: 500px;
+}
+
+.nmPageTop {
+    height: 100%;
+    border: none!important;
+    border-collapse: initial!important;
+}
+
+.nmPage .nmMenuLine {
+    background: #3c4858;
+    border: none;
+    height: 36px; }
+
+.nmPage .nmMenuLine > td {
+    vertical-align: top; }
+
+.nmPage .nmMenuLine > td > table {
+    height: 36px; }
+.nmPage .nmMenuLine .nmTextTitle3 {
+    background: url("../../../devel/conf/scriptcase/img/menu_img/logo.svg") no-repeat 5px 5px #3c4858;
+    background-size: 24px;
+    text-align: center;
+    padding-left: 20px;
+    content: "";
+    width: 36px;
+    width: 100%;
+    color: white; }
+
+.nmPage .nmMenuLine .nmTextTitle3 img {
+    display: none;
+}
+
+.nmTable, #MB_frame {
+    border: none;
+    background: none;
+}
+
+.nmPage tr.nmMenuLine + tr > td {
+    height: 100%;
+    border-right: 1px solid #d1dde2;
+    background: #f9fafc;
+    padding: 0!important; }
+
+.nmPage tr.nmMenuLine + tr > td .nmTitle {
+    background: #e0e6ed;
+    border: none;
+    padding: 10px;
+    height: auto;
+    text-transform: uppercase;
+}
+
+.nmPage tr.nmMenuLine + tr > td .nmTitle span {
+    color: #3c4858;
+}
+
+.nmPage tr.nmMenuLine + tr > td .nmTableTd .nmLineV3 {
+    padding: 7px;
+}
+
+.nmPage tr.nmMenuLine + tr > td .nmTableTd .nmLineV3 a {
+    color: #3c4858;
+}
+/*
+.nmPage .nmMenuLine + tr > td:last-child {
+    background: white;
+    padding: 30px!important; }
+
+.nmPage .nmMenuLine + tr > td:first-child .nmTable {
+    border: none;
+    background: none; }
+
+.nmPage .nmMenuLine + tr > td:first-child td.nmTitle {
+    background: #e0e6ed!important;
+    text-transform: uppercase;
+    padding: 10px;
+    font-weight: bold; }
+
+.nmPage .nmMenuLine + tr > td:first-child > table {
+    width: 270px!important; }
+
+.nmPage .nmMenuLine + tr .nmTable .nmLineV3 {
+    padding: 0; }
+
+.nmPage .nmMenuLine + tr .nmTable .nmLineV3 table td span {
+    display: block;
+    color: #3c4858;
+    padding: 8px 10px; }
+
+.nmPage .nmMenuLine + tr .nmTable .nmLineV3 table td span img {
+    display: none; }*/
+
+/*
+.nmPage .nmMenuLine > td > table td + td {
+    padding-left: 10px; }
+
+.nmPage .nmMenuLine .nmTextTitle {
+    color: white; }
+
+.nmPage .nmMenuLine + tr > td {
+    padding: 0!important; }
+

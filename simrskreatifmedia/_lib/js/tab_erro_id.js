@@ -1,0 +1,32 @@
+Nm_erro = {
+  "lang_jscr_dcml" : "Desimal",
+  "lang_jscr_decm" : "Sepersepuluh detik",
+  "lang_jscr_hour" : "Jam",
+  "lang_jscr_iday" : "Hari",
+  "lang_jscr_intg" : "Bilangan bulat dan",
+  "lang_jscr_ivcr" : "Nomor kartu kredit tidak valid",
+  "lang_jscr_ivdt" : "Data tidak valid:",
+  "lang_jscr_ivem" : "Email tidak valid:",
+  "lang_jscr_ivnb" : "Bilangan bulat tidak valid",
+  "lang_jscr_ivtm" : "Waktu tidak valid:",
+  "lang_jscr_ivv2" : "Data tidak valid:",
+  "lang_jscr_ivvl" : "Desimal tidak valid",
+  "lang_jscr_maxm" : "Maksimal",
+  "lang_jscr_maxm_date" : "Tanggal Maksimum",
+  "lang_jscr_minm" : "Minimal",
+  "lang_jscr_minm_date" : "Tanggal Minimum",
+  "lang_jscr_mint" : "Menit",
+  "lang_jscr_mnth" : "Bulan",
+  "lang_jscr_msfr" : "Formulir harus memiliki nama",
+  "lang_jscr_mslg" : "Login gagal",
+  "lang_jscr_msob" : "Objek Formulir ini harus memiliki nama",
+  "lang_jscr_mxdg" : "Jumlah digit melampaui yang diharapkan",
+  "lang_jscr_mxvl" : "Panjang maksimum terlampaui",
+  "lang_jscr_nnum" : "Field ini harus diisi angka",
+  "lang_jscr_nvlf" : "Tanda negatif harus berada di sebelah kiri nilai",
+  "lang_jscr_reqr" : "Field yang harus diisi",
+  "lang_jscr_secd" : "Detik",
+  "lang_jscr_wfix" : "- Apakah Anda ingin memperbaikinya ?"
+};
+
+//-------- Mens USR

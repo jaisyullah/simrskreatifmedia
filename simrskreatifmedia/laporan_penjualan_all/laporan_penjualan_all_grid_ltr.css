@@ -1,0 +1,13 @@
+.css_item_label {text-align:left;vertical-align:middle;justify-content:left;font-weight:bold;}
+.css_item_grid_line {vertical-align: top;text-align: left;}
+.css_namaitem_label {text-align:left;vertical-align:middle;justify-content:left;font-weight:bold;}
+.css_namaitem_grid_line {font-weight:bold;vertical-align: top;text-align: left;}
+.css_terpakai_label {text-align:right;vertical-align:middle;justify-content:right;font-weight:bold;}
+.css_terpakai_grid_line {vertical-align: top;text-align: right;}
+.css_ket_label {text-align:left;vertical-align:middle;justify-content:left;font-weight:bold;}
+.css_ket_grid_line {vertical-align: top;text-align: left;}
+.css_sc_field_0_label {text-align:right;vertical-align:middle;justify-content:right;font-weight:bold;}
+.css_sc_field_0_grid_line {text-align: right;}
+.css_total_label {text-align:right;vertical-align:middle;justify-content:right;font-weight:bold;}
+.css_total_grid_line {text-align: right;}
+.css_total_tot_ger {text-align: right;}

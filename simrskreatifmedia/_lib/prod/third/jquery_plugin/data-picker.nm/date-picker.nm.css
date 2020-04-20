@@ -1,0 +1,148 @@
+			.options-picker,
+			.options-picker:after,
+			.options-picker:before,
+			.options-picker *,
+			.options-picker *:before,
+			.options-picker *:after {
+				box-sizing: border-box;
+			}
+
+			.options-picker {
+				font-family: Arial;
+				font-size: 12px;
+				color: #444;
+				display: inline-block;
+				cursor: pointer;
+				position:relative;
+			}
+
+			.options-picker.opened > ul {
+				display: table;
+				z-index: 999;				
+			}
+
+			.options-picker.opened > .options-picker-arrow:after {
+				content: "\25b2";
+				-webkit-transform:scale(1.2,.7); /* Safari and Chrome */
+				-moz-transform:scale(1.2,.7); /* Firefox */
+				-ms-transform:scale(1.2,.7); /* IE 9 */
+				-o-transform:scale(1.2,.7); /* Opera */
+				transform:scale(1.2,.7); /* W3C */
+			}
+
+			.options-picker > .options-picker-link {
+				position: relative;
+				margin-right: 8px;
+				width: 70px;
+				overflow-x: hidden;
+				text-overflow: ellipsis;
+				white-space: nowrap;
+				color: #7398A7;
+				font-family: "Open Sans";
+				font-size: 12px;
+			}
+
+			.options-picker > .options-picker-link:hover {
+				background: #f1f1f1;
+			}
+
+			.options-picker > .options-picker-arrow {
+				position: absolute;
+				right: 5px;
+				top: 5px;
+			}
+
+			.options-picker > .options-picker-arrow:after {
+				content: "\25bc";
+				-webkit-transform:scale(1.2,.7); /* Safari and Chrome */
+				-moz-transform:scale(1.2,.7); /* Firefox */
+				-ms-transform:scale(1.2,.7); /* IE 9 */
+				-o-transform:scale(1.2,.7); /* Opera */
+				transform:scale(1.2,.7); /* W3C */
+				font-size: 11px;
+			}
+			
+			.options-picker2 > ul {
+				width: 500px;
+			}
+			
+			.options-picker1 > ul {
+				width: 250px;
+			}
+			
+			.options-picker > ul {
+				display: none;
+				list-style: none;
+				margin: 0;
+				padding: 0;
+				position: absolute;
+				border: 1px solid #ddd;
+				background: #f5f5f5;
+				padding: 5px;
+				box-shadow: 4px 4px 0px rgba(0,0,0,.05);
+			}
+
+			.options-picker2-left > ul {
+				margin-left: -420px;				
+			}
+
+			.options-picker1-left > ul {
+				margin-left: -175px;				
+			}
+
+			.options-picker > ul > li {
+				display: table-cell;
+				float: left;
+				padding: 6px;
+				padding-left: 28px;
+				font-size: 13px;
+				color: black;
+				cursor: pointer;
+			}
+			
+			.options-picker1 > ul > li {
+				width: 100%;
+			}
+
+			.options-picker2 > ul > li {
+				width: 50%;
+			}
+
+			.options-picker > ul > li.active,
+			.options-picker > ul > li.active:hover {
+				background: white;
+				color: black;
+				position: relative;
+				cursor: default;
+			}
+			
+			.options-picker > ul > li.active:before {
+				content: "\2714";
+				font-size: 16px;
+				position: absolute;
+				top: 7px;
+				left: 8px;
+				color: #9CCB3B;
+			}
+
+			.options-picker > ul > li.divider,
+			.options-picker > ul > li.divider:hover {
+				width: 100%;
+				font-size: 9px;
+				color: #555;
+				letter-spacing: 1px;
+				text-transform: uppercase;
+				background: #E9E9E9;
+				margin: 5px 0;
+			}
+
+			.options-picker > ul > li:hover {
+				background: #4285f4;
+				color: white;
+			}
+
+			.options-picker > ul > li > small {
+				opacity: .5;
+				display: block;
+				margin-top: 3px;
+			}

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <!--SC_PAGE_CHARSET-->
+    <title>Sign-Up</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="{SC_LIB_CURRENT}form/css/form02.css" />
+    <link rel="stylesheet" type="text/css" href="{SC_LIB_CURRENT}libs/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="{SC_LIB_CURRENT}libs/css/styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <form class="well form-horizontal" action=" " method="post"  id="contact_form" {SC_FORM_ATTR}>
+                <!--SC_FORM_HIDDEN-->
+                <fieldset>
+
+                  <!-- Form Name -->
+                  <legend>Contact Us</legend>
+
+                  <!-- Text input-->
+
+                  <div class="form-group">
+                    <label class="col-md-4 control-label">First Name</label>  
+                    <div class="col-md-4 inputGroupContainer">
+                    <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                    <input  name="first_name" placeholder="First Name" class="form-control {SC_FIELD_CLASS}" {SC_FIELD_INFO_first_name} type="text">
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Text input-->
+
+                  <div class="form-group">
+                    <label class="col-md-4 control-label" >Last Name</label> 
+                      <div class="col-md-4 inputGroupContainer">
+                      <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                    <input name="last_name" placeholder="Last Name" class="form-control {SC_FIELD_CLASS}" {SC_FIELD_INFO_last_name} type="text">
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Text input-->
+                         <div class="form-group">
+                    <label class="col-md-4 control-label">E-Mail</label>  
+                      <div class="col-md-4 inputGroupContainer">
+                      <div class="input-group">
+                          <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                    <input name="email" placeholder="E-Mail Address" class="form-control {SC_FIELD_CLASS}" {SC_FIELD_INFO_email} type="text">
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <!-- Text input-->
+
+                  <div class="form-group">
+                    <label class="col-md-4 control-label">Phone #</label>  
+                      <div class="col-md-4 inputGroupContainer">
+                      <div class="input-group">
+                          <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+                    <input name="phone" placeholder="(845)555-1212" class="form-control {SC_FIELD_CLASS}" {SC_FIELD_INFO_phone} type="text">
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Text input-->
+
+                  <div class="form-group">
+                    <label class="col-md-4 control-label">Address</label>  
+                      <div class="col-md-4 inputGroupContainer">
+                      <div class="input-group">
+                          <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+                    <input name="address" placeholder="Address" class="form-control {SC_FIELD_CLASS}" {SC_FIELD_INFO_address} type="text">
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Text input-->
+
+                  <div class="form-group">
+                    <label class="col-md-4 control-label">City</label>  
+                      <div class="col-md-4 inputGroupContainer">
+                      <div class="input-group">
+                          <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+                    <input name="city" placeholder="city" class="form-control {SC_FIELD_CLASS}" {SC_FIELD_INFO_city} type="text">
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Text input-->
+
+                  <div class="form-group">
+                    <label class="col-md-4 control-label">Zip Code</label>  
+                      <div class="col-md-4 inputGroupContainer">
+                      <div class="input-group">
+                          <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+                    <input name="zip" placeholder="Zip Code" class="form-control {SC_FIELD_CLASS}" {SC_FIELD_INFO_zip_code} type="text">
+                      </div>
+                  </div>
+                  </div>
+
+                  <!-- Text input-->
+                  <div class="form-group">
+                    <label class="col-md-4 control-label">Website or domain name</label>  
+                     <div class="col-md-4 inputGroupContainer">
+                      <div class="input-group">
+                          <span class="input-group-addon"><i class="glyphicon glyphicon-globe"></i></span>
+                    <input name="website" placeholder="Website or domain name" class="form-control {SC_FIELD_CLASS}" {SC_FIELD_INFO_website_or_domain_name} type="text">
+                      </div>
+                    </div>
+                  </div>
+
+                 <!-- Text area -->
+
+                  <div class="form-group">
+                    <label class="col-md-4 control-label">Description</label>
+                      <div class="col-md-4 inputGroupContainer">
+                      <div class="input-group">
+                          <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+                            <textarea class="form-control" name="comment" placeholder="Project Description" {SC_FIELD_INFO_description}></textarea>
+                    </div>
+                    </div>
+                  </div>
+
+                  <!-- Success message -->
+                  <div class="alert alert-success" role="alert" id="success_message">Success <i class="glyphicon glyphicon-thumbs-up"></i> Thanks for contacting us, we will get back to you shortly.</div>
+
+                  <!-- Button -->
+                  <div class="form-group">
+                    <label class="col-md-4 control-label"></label>
+                    <div class="col-md-4">
+                      <input type="button" class="btn btn-warning col-md-12 col-sm-12 col-xs-12" {SC_FORM_SUBMIT_CALL} value="Send"/><span class="glyphicon glyphicon-send"></span>
+                    </div>
+                  </div>
+
+                </fieldset>
+            </form>
+        </div>    
+    <SCRIPT type="text/javascript" src="{SC_LIB_SCRIPTCASE}samples/libs/bootstrap/js/bootstrap.min.js'); ?>"></SCRIPT>
+    <SCRIPT type="text/javascript" src="{SC_LIB_SCRIPTCASE}samples/form/js/form02.js"></SCRIPT>
+    
+    <div class="alert-message negative">
+        <span class="message"></span>
+        <span class="close">&times;</span>
+      </div>
+      
+    <!--SC_JS_LIB-->
+    <script type="text/javascript" src="{SC_LIB_CURRENT}libs/js/error.js"></script>
+    </body>
+</html>

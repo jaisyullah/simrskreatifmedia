@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>		
+		<title>{lang_page_title}</title>
+		<meta descryption="{lang_login_txt}" />
+		<link rel="stylesheet" href="{SC_LIB_PROJECT}gradebook/main.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!--SC_PAGE_CHARSET-->
+		<!--SC_JS_LIB-->
+	</head>
+
+	<body class="page-background" style="background-image:url('{SC_LIB_PROJECT}gradebook/gradebook-bg.jpg');">
+		<div class="page">
+			<div class="container-small container-alpha">
+				<div class="background">
+					<div class="content">
+						<h1>
+							{lang_sc_gradebook}
+						</h1>
+						<p>
+							{lang_login_txt}
+						</p>
+						<p>
+							{lang_page_button_download}
+						</p>
+					</div>
+				</div>
+
+				<form class="form" action="" {SC_FORM_ATTR}>
+				<!--SC_FORM_HIDDEN-->					
+					<div class="control">
+						<label class="label" for="name">{lang_sec_users_fild_login}</label>
+						<input class="input {SC_FIELD_CLASS}" type="text" placeholder="{lang_sec_users_fild_login}" {SC_FIELD_INFO_login}>
+					</div>
+
+					<div class="control">
+						<label class="label" for="pass">Senha</label>
+						<input class="input {SC_FIELD_CLASS}" type="password" placeholder="Senha" {SC_FIELD_INFO_pswd}>
+					</div>
+
+					<div class="submit">
+						<button class="button" type="submit" {SC_FORM_SUBMIT_INFO}>{lang_teachers_fld_login}</button>
+					</div>
+					<!-- Idiomas -->
+					<div class="flag-lang">
+						<a class="flags" href="../login/login.php?lang=en"><img src="{SC_LIB_PROJECT}gradebook/en_us.png"></a>
+						<a class="flags" href="../login/login.php?lang=pt"><img src="{SC_LIB_PROJECT}gradebook/pt_br.png"></a>
+						<a class="flags" href="../login/login.php?lang=es"><img src="{SC_LIB_PROJECT}gradebook/es_es.png"></a>
+					</div>
+					<hr style="margin: 25px 0 20px;">
+					<div id='message'>
+						<p style="color:#333;font-size:12px;">{lang_parents_fld_login} / {lang_sec_users_fild_pswd}</p>
+						<p style="color:#333;font-size:12px;"><b>{lang_sec_users_fld_priv_admin}:</b> admin / 1234</p>
+						<p style="color:#333;font-size:12px;"><b>{lang_classes_fld_idteachers}:</b> teacher / 1234</p>	
+						<p style="color:#333;font-size:12px;"><b>{lang_students_x_classes_fld_idstudents}:</b> student / 1234</p>
+						<p style="color:#333;font-size:12px;"><b>{lang_parents_x_students_fld_idparents}:</b> parent / 1234</p>					
+					</div>
+				</form>				
+			</div>
+		</div>
+		<div class="copyright">
+			<p>{lang_page_copyright}</p>
+		</div>
+	</body>
+</html>

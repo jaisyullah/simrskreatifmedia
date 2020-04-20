@@ -1,0 +1,32 @@
+Nm_erro = {
+  "lang_jscr_dcml" : "ทศนิยม",
+  "lang_jscr_decm" : "1/10 วินาที",
+  "lang_jscr_hour" : "ชั่วโมง",
+  "lang_jscr_iday" : "วัน",
+  "lang_jscr_intg" : "Integers and",
+  "lang_jscr_ivcr" : "รูปแบบหมายเลขบัตรเครดิตไม่ถูกต้อง",
+  "lang_jscr_ivdt" : "รูปแบบข้อมูลไม่ถูกต้อง:",
+  "lang_jscr_ivem" : "รูปแบบอีเมลล์ไมู่ถูกต้อง:",
+  "lang_jscr_ivnb" : "รูปแบบจำนวนเต็มไม่ถูกต้อง",
+  "lang_jscr_ivtm" : "รูปแบบเวลาไม่ถูกต้อง:",
+  "lang_jscr_ivv2" : "รูปแบบข้อมูลไม่ถูกต้อง:",
+  "lang_jscr_ivvl" : "รูปแบบเลขฐานสิบไม่ถูกต้อง",
+  "lang_jscr_maxm" : "สูงสุด",
+  "lang_jscr_maxm_date" : "จำนวนวันสูงสุด",
+  "lang_jscr_minm" : "ต่ำสุด",
+  "lang_jscr_minm_date" : "จำนวนวันต่ำสุด",
+  "lang_jscr_mint" : "นาที",
+  "lang_jscr_mnth" : "เดือน",
+  "lang_jscr_msfr" : "ฟอร์มนี้ต้องระบุชื่อ",
+  "lang_jscr_mslg" : "login ไม่ถูกต้อง",
+  "lang_jscr_msob" : "object นี้ต้องระบุชื่อ",
+  "lang_jscr_mxdg" : "จำนวนรวมมีค่ามากกว่าค่าที่กำหนดไว้",
+  "lang_jscr_mxvl" : "ความยาวมากกว่าค่าที่กำหนดไว้",
+  "lang_jscr_nnum" : "field นี้ต้องเป็นตัวเลขเท่านั้น",
+  "lang_jscr_nvlf" : "เครื่องหมายลบต้องอยู่ด้านซ้ายมือ",
+  "lang_jscr_reqr" : "field นี้ห้ามว่าง",
+  "lang_jscr_secd" : "วินาที",
+  "lang_jscr_wfix" : "- คุณต้องการแก้ไข?"
+};
+
+//-------- Mens USR

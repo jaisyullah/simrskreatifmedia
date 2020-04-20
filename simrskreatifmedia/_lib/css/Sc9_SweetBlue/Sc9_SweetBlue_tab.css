@@ -1,0 +1,15 @@
+.scTabPage { background-color: #fafbfe; background-image: none; opacity: 1; filter: alpha(opacity=100) }
+.scTabTable { background-color: #FFFFFF; background-image: none; opacity: 1; filter: alpha(opacity=100); border-color: #E0E6ED; border-style: none; border-width: 0 }
+.scTabTableApls { border-width: 0 }
+.scTabLine { background-color: none; background-image: none; background-position: center center; opacity: 1; filter: alpha(opacity=100); border-color: #e0e6ed; border-style: solid; border-width: 0 0 1px 0; width: 100%; margin: 0; padding: 5px 0 0 20px; list-style-type: none; box-sizing: border-box }
+.scTabHeader { background-color: #727cf5; background-image: none; opacity: 1; filter: alpha(opacity=100); border-color: #727cf5; border-style: solid; border-width: 1px }
+.scTabHeaderFont { color: #FFFFFF; font-family: 'Nunito', sans-serif; font-size: 13px; padding: 0; letter-spacing: 1px; text-decoration: none }
+.scTabActive { list-style: none; top: 1px; background-color: none; background-image: none; background-position: center center; opacity: 1; filter: alpha(opacity=100); border-width: 1px 1px 1px 1px; border-color: #e0e6ed #e0e6ed #f9fafc #e0e6ed; border-style: solid; border-collapse: collapse; padding: 5px 17px; margin: 1px 0 0 1px; height: 21px; line-height: 20px; min-height: 21px; -moz-border-radius: 4px 4px 0 0; -webkit-border-radius: 4px 4px 0 0; border-radius: 4px 4px 0 0; display: inline-block; position: relative }
+.scTabActive a { color: #000; font-family: 'Nunito', sans-serif; font-size: 12px; font-weight: bold; text-decoration: none; font-style: normal }
+.scTabInactive { list-style: none; top: 1px; background-color: #e3eaef8a; background-image: none; background-position: center center; opacity: 1; filter: alpha(opacity=100); border-width: 1px 1px 0 1px; border-color: #e3eaef; border-style: solid; border-collapse: collapse; padding: 5px 17px; margin: 1px 0 0 1px; height: 21px; line-height: 20px; min-height: 21px; -moz-border-radius: 4px 4px 0 0; -webkit-border-radius: 4px 4px 0 0; border-radius: 4px 4px 0 0; display: inline-block; position: relative }
+.scTabInactive a { color: #666; font-family: 'Nunito', sans-serif; font-size: 12px; font-weight: bold; text-decoration: none; font-style: normal }
+.scTabActiveLink, .scTabActiveLink a { color: #6c757d; font-family: 'Nunito', sans-serif; font-size: 13px; font-style: normal; text-decoration: none; padding: 2px 5px; margin: 3px 1px; display: inline-block; background-color: #E0E6ED; border-style: none; cursor: default }
+.scTabInactiveLink, .scTabInactiveLink a { color: #6c757d; font-family: 'Nunito', sans-serif; font-size: 13px; font-style: normal; text-decoration: none; padding: 2px 5px; margin: 3px 1px; display: inline-block; background-color: #F2F2F2; border-style: none }
+.scTabInactiveLink:hover, .scTabInactiveLink:hover a { cursor: pointer; text-decoration: underline }
+.scTab_space_wi { width: 1px }
+.scTab_space_he { height: 1px }

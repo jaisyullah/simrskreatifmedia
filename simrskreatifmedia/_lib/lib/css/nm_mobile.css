@@ -1,0 +1,720 @@
+body > div, body > form, body > table {
+    overflow-x: hidden;
+    opacity: 0 !important;
+}
+
+body.ready > * {
+    transition: opacity ease 1s;
+    opacity: 1 !important;
+}
+
+body.locked, html.locked {
+    overflow: hidden;
+    height: 100vh;
+}
+
+* {
+    border-collapse: collapse;
+}
+
+.scGridBorder, .scFilterBorder , .scFormBorder {
+    border-color: transparent !important;
+    border-style: none !important;
+    border-width: 0px !important;
+    border-collapse: collapse !important;
+    padding: 0 !important;
+}
+
+.scGridPage > table, .scFilterPage > table , .scFormPage > table , .scFormPage > form > table {
+    width: 100%;
+}
+
+#scrolltop-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    box-sizing: content-box;
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    height: 3.5em;
+    width: 3.5em;
+    border-radius: 100%;
+    box-shadow: .1em .1em .1em rgba(0,0,0,.2);
+    transition: all ease .3s;
+}
+
+#scrolltop-button.right {
+    right: -50px;
+}
+
+#scrolltop-button.left {
+    left: -50px;
+}
+
+#scrolltop-button.low {
+    bottom: 20px;
+}
+
+#scrolltop-button.high {
+    bottom: 70px;
+}
+
+#scrolltop-button.right.active {
+    right: 20px;
+}
+
+#scrolltop-button.left.active {
+    left: 20px;
+}
+
+#scrolltop-button:active {
+    margin: 0 -1px -1px 0;
+    box-shadow: none;
+}
+#scrolltop-button:after {
+    content: "❯";
+    transform: rotate(-90deg);
+    text-align: center;
+    padding-left: 2px;
+    padding-bottom: 2px;
+    font-family: Arial;
+}
+
+.modal-pane-container.scGridPage, .modal-pane-container.scFilterPage , .modal-pane-container.scFormPage {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    transition: all ease .4s;
+    top: 0;
+    left: 0;
+    transform: translate3d(0, 150%, 0);
+    opacity: 1;
+    filter: alpha(opacity=100);
+    background: #fefefe;
+    margin: 0;
+}
+.modal-pane-container.active {
+    transform: translate3d(0, 0, 0);
+    z-index: 15;
+}
+
+.modal-pane-container > .modal-pane-wrapper{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.modal-pane-container > .modal-pane-wrapper > .modal-pane-topbar{
+    height: 40px;
+    position: relative;
+    white-space: nowrap;
+
+}
+.modal-pane-container > .modal-pane-wrapper > .modal-pane-topbar > .close-button-box{
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+    line-height: 34px;
+    color: #fefefe;
+    text-align: center;
+    /*font-weight: bold;*/
+    font-size: 25px;
+    width: 40px;
+}
+.modal-pane-container > .modal-pane-wrapper > .modal-pane-topbar > .close-button-box:hover{
+    background: rgba(255,255,255,.2);
+}
+.modal-pane-container > .modal-pane-wrapper > .modal-pane-topbar > .title-box {
+    display: inline-block;
+    vertical-align: middle;
+    max-height: 40px;
+    padding: 0 0 0 15px;
+    font-weight: bold;
+    color: #fefefe;
+    text-align: center;
+    font-size: 14px;
+    white-space: normal;
+}
+.modal-pane-container > .modal-pane-wrapper > .modal-pane-content{
+    overflow: scroll;
+    flex-grow: 1;
+    position: relative;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.modal-pane-container > .modal-pane-wrapper > .modal-pane-content, body, html{
+    -webkit-overflow-scrolling:touch !important;
+}
+.modal-pane-container > .modal-pane-wrapper > .modal-pane-content > td{
+    display: block;
+    position: relative;
+}
+.modal-pane-container > .modal-pane-wrapper > .modal-pane-content .sc_ui_sortable, .modal-pane-container > .modal-pane-wrapper > .modal-pane-content .sc_ui_sortable_ord{
+    display: block;
+    min-width: 0;
+}
+.modal-pane-container > .modal-pane-wrapper > .modal-pane-content .scAppDivContent.css_scAppDivContentText table{
+    width: 100%;
+}
+.modal-pane-container > .modal-pane-wrapper > .modal-pane-content .scAppDivContent.css_scAppDivContentText #select_orig, .modal-pane-container > .modal-pane-wrapper > .modal-pane-content .scAppDivContent.css_scAppDivContentText #select_orig + td{
+    width: 50%;
+}
+.modal-pane-container > .modal-pane-wrapper > .modal-pane-header{
+
+}
+.modal-pane-container > .modal-pane-wrapper > .modal-pane-footer{
+
+}
+
+#summary_body > td, #sc_grid_body{
+    padding:0px!important;
+}
+.scGridPage, .scFilterPage, .scFormPage{
+    width: 100%;
+    margin:0px!important;
+    position: relative;
+}
+#summary_body > .scGridTabelaTd{
+    display: block !important;
+    width: 100%;
+    overflow-x: scroll;
+}
+#sc_grid_body, #summary_body > td{
+    overflow-x:scroll!important;
+}
+td#sc_grid_toobar_bot{
+    /*display:none!important;*/
+}
+#sc_grid_toobar_top td+td.scGridToolbarPadding{
+    /*display:none!important;*/
+}
+.scGridRefinedSearchMoldura .scAppDivToolbarInput {
+    height: 0px !important;
+}
+.scGridFooter{
+    /*display:none!important;*/
+}
+
+.scGridHeaderFont {
+    overflow: hidden;
+    max-width: 50%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.scFilterHeaderFont {
+    overflow: hidden;
+    max-width: 50%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.scFormHeaderFont {
+    overflow: hidden;
+    max-width: 50%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.scGridToolbarPadding {
+    /*white-space: normal;*/
+    /*line-height: 40px;*/
+}
+
+.scGridToolbarPadding > a {
+    white-space: nowrap;
+}
+
+.scGridToolbar, .scFilterToolbar , .scFormToolbar { /*, .scGridToolbar > table, .scGridToolbar > tr, .scGridToolbar > td, .scGridToolbar > tbody {*/
+    width: 100%;
+    display: block;
+    overflow-x: scroll;
+}
+
+.scAjaxDiv {
+    text-align: center;
+}
+
+*{
+    box-sizing: border-box !important;
+}
+
+.headerOptions {
+    width: 3.5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    position: relative;
+    height: 100%;
+    transition: all ease .2s;
+}
+
+.headerOptions > div {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.headerOptions:active {
+    background: rgba(255,255,255,.2);
+}
+
+.headerOptions .optsDots {
+    content: "";
+    position: relative;
+    overflow: visible;
+    height: 5px;
+    width: 5px;
+    padding: 0;
+    margin: 0;
+    background: currentColor;
+    display: block;
+    border-radius: 100%;
+}
+
+.headerOptions .optsDots:after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    height: 5px;
+    width: 5px;
+    padding: 0;
+    margin: 0;
+    background: currentColor;
+    display: block;
+    border-radius: 100%;
+}
+
+.headerOptions .optsDots:before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 0;
+    height: 5px;
+    width: 5px;
+    padding: 0;
+    margin: 0;
+    background: currentColor;
+    display: block;
+    border-radius: 100%;
+}
+
+.overlayToolbar {
+    display: none;
+    background-color: rgba(0,0,0,.5);
+    height: 150%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 8;
+}
+
+
+
+
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    40% {
+        -moz-transform: translateX(30px);
+        -ms-transform: translateX(30px);
+        -webkit-transform: translateX(30px);
+        transform: translateX(30px);
+    }
+    60% {
+        -moz-transform: translateX(15px);
+        -ms-transform: translateX(15px);
+        -webkit-transform: translateX(15px);
+        transform: translateX(15px);
+    }
+}
+
+@keyframes flashing {
+    0%{
+        color: #fff;
+    }
+    30% {
+        color: rgba(255,255,255, .1);
+    }
+    60%{
+        color: #fff;
+    }
+    100%{
+        color: #fff;
+    }
+}
+
+.bnc_arrow {
+    font-size: 65px;
+    color: #fff;
+    position: relative;
+    text-align: center;
+    padding-left: 2px;
+    padding-bottom: 2px;
+    font-family: Arial;
+    font-weight: bold;
+    margin-top: -8px;
+    margin-right: -100px;
+    background-size: contain;
+    animation: bounce 2s infinite, flashing 2s infinite .2s;
+}
+.bnc_arrow:after, .bnc_arrow:before {
+    content: "‹";
+    position: absolute;
+    top: 0;
+    text-align: center;
+    padding-left: 2px;
+    padding-bottom: 2px;
+    font-family: Arial;
+    background-size: contain;
+}
+.bnc_arrow:after {
+    right: -10px;
+    animation: flashing 2s infinite 0s;
+}
+.bnc_arrow:before {
+    left: -10px;
+    animation: flashing 2s infinite .4s;
+}
+
+#slide_signal {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    pointer-events: none;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 170px;
+    background: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,.4));
+}
+
+/*.SC_SubMenuButton {*/
+    /*background: rgba(0,0,0,.2);*/
+    /*position: fixed;*/
+    /*left: 0px !important;*/
+    /*top: 0px !important;*/
+    /*width: 100% !important;*/
+    /*height: 100% !important;*/
+    /*display: block;*/
+/*}*/
+
+.SC_SubMenuButton, #id_dynamic_search_fields {
+    width: calc(100% - 60px) !important;
+    left: 50% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    transform: translateX(-50%);
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px 10px rgba(0,0,0,.3);
+    z-index: 100;
+    position: fixed !important;
+}
+.SC_SubMenuButton tr td, #id_dynamic_search_fields tr td {
+    border: none;
+}
+.SC_SubMenuButton tr td div *, #id_dynamic_search_fields tr td div *{
+    font-size: 14px;
+}
+.SC_SubMenuButton tr td:after, #id_dynamic_search_fields tr td:after {
+    content: ' ';
+    display: block;
+    width: calc(100% - 0px);
+    margin: 0;
+    height: 1px;
+    border: none;
+    background: rgba(0,0,0,.13);
+}
+.SC_SubMenuButton tr:first-child td, #id_dynamic_search_fields tr:first-child td {
+    padding-top: 10px;
+    border-radius: 5px 5px 0 0;
+}
+.SC_SubMenuButton tr:first-child, #id_dynamic_search_fields tr:first-child {
+    border-radius: 5px 5px 0 0;
+}
+.SC_SubMenuButton tr:last-child td, #id_dynamic_search_fields tr:last-child td {
+    padding-bottom: 10px;
+    border-radius: 0 0 5px 5px;
+}
+.SC_SubMenuButton tr:last-child, #id_dynamic_search_fields tr:last-child {
+    border-radius: 0 0 5px 5px;
+}
+.SC_SubMenuButton tr:only-child td, #id_dynamic_search_fields tr:only-child td {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-radius: 5px;
+}
+.SC_SubMenuButton tr:only-child, #id_dynamic_search_fields tr:only-child {
+    border-radius: 5px;
+}
+.SC_SubMenuButton tr:last-child td:after, #id_dynamic_search_fields tr:last-child td:after {
+    display: none;
+}
+.SC_SubMenuButton .scBtnGrpText, #id_dynamic_search_fields .scBtnGrpText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 42px;
+}
+
+.SC_SubMenuButton:before, #id_dynamic_search_fields:before {
+    content: ' ';
+    height: 15px;
+    width: 15px;
+    top: -10px;
+    background-color: inherit;
+    transform: rotate(90deg);
+}
+
+.submenuOverlay {
+    background-color: rgba(0,0,0,0);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 150%;
+    width: 100%;
+    z-index: 0;
+}
+
+.blockUI.blockOverlay {
+    background-color: rgba(0,0,0,.6) !important;
+}
+
+body #quicksearchph_top img {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.scGridFieldEvenVert, .scGridFieldOddVert {
+    white-space: normal;
+    word-break: break-all;
+}
+body .scGridLabelVert a img, body .scGridLabel a img {
+    opacity: 1;
+}
+
+.scGridRefinedSearchCampo td img {
+    opacity: 1 !important;
+    margin: 0 10px 0 0;
+}
+
+.scFilterLabelOdd > span:not(.SC_Field_label_Mob),
+.scFilterLabelOdd > span:not(.SC_Field_label_Mob) > select,
+.scFilterLabelOdd > div,
+.scFilterLabelOdd > input[type="text"],
+.scFilterLabelOdd > textarea,
+.scFilterLabelOdd > select:not(.SC_Cond_Selector),
+.scFilterLabelEven > span:not(.SC_Field_label_Mob),
+.scFilterLabelEven > span:not(.SC_Field_label_Mob) > select,
+.scFilterLabelEven > div,
+.scFilterLabelEven > input[type="text"], .scFilterLabelEven > span > input[type="text"],
+.scFilterLabelEven > textarea, .scFilterLabelEven > span> textarea,
+.scFilterLabelEven > select:not(.SC_Cond_Selector) {
+    width: 100% !important;
+    margin: 2px 0;
+}
+
+.scFilterLabelOdd .sc.switch,
+.scFilterLabelEven .sc.switch {
+    height: 25px;
+    vertical-align: middle;
+    flex-direction: row;
+    align-items: center;
+}
+
+.scFilterLabelOdd .sc.switch > span,
+.scFilterLabelEven .sc.switch > span {
+    width: 30px;
+}
+
+.scFilterLabelOdd .sc.radio > span,
+.scFilterLabelEven .sc.radio > span {
+    width: 20px;
+    height: 20px;
+}
+
+.scFilterLabelOdd .sc.radio > span:after,
+.scFilterLabelEven .sc.radio > span:after {
+    width: 10px;
+    height: 10px;
+    top: 4px;
+    left: 4px;
+}
+
+.scFilterLabelOdd .sc.radio > input:checked + span,
+.scFilterLabelEven .sc.radio > input:checked + span {
+    background: transparent;
+}
+
+.scFilterLabelOdd .sc.switch,
+.scFilterLabelEven .sc.switch,
+.scFilterLabelOdd .sc.radio,
+.scFilterLabelEven .sc.radio {
+    height: 25px;
+    vertical-align: middle;
+    flex-direction: row;
+    align-items: center;
+}
+
+.scFilterLabelOdd .select2-container,
+.scFilterLabelEven .select2-container {
+    width: 100% !important;
+}
+
+/*tr:not(:first-child) > .scFilterLabelOdd:before,*/
+/*tr:not(:first-child) > .scFilterLabelEven:before {*/
+    /*content: ' ';*/
+    /*display: block;*/
+    /*width: 100%;*/
+    /*height: 1px;*/
+    /*margin-right: auto;*/
+    /*margin-left: auto;*/
+    /*margin-top: 20px;*/
+    /*margin-bottom: 10px;*/
+    /*background-color: rgba(0,0,0,0.1);*/
+/*}*/
+
+tr > .scFilterLabelOdd,
+tr > .scFilterLabelEven {
+    padding: 15px 10px 10px 10px !important;
+    border: solid 1px rgba(0,0,0,0.07) !important;
+    margin: 10px 0 !important;
+    border-radius: 3px;
+    filter: brightness(.99);
+    /*box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);*/
+}
+
+.scFilterLabelOdd > .SC_Cond_Selector,
+.scFilterLabelEven > .SC_Cond_Selector {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: transparent;
+    border: solid 0px rgba(0,0,0,0.1);
+    border-width: 0 0px 1px 0px;
+    border-radius: 0;
+    width: auto !important;
+    margin-top: 10px;
+    margin-right: 10px;
+    font-weight: bold;
+    color: inherit;
+    text-align: right;
+    padding: 5px;
+    max-width: 50%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.SC_Field_label_Mob {
+    max-width: 50%;
+    overflow: auto;
+    white-space: normal;
+    word-break: break-word;
+}
+
+
+/*LOADER*/
+
+.loader-sc {
+    position: relative;
+    opacity: 1;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 75px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.loader-wrapper {
+    position: fixed;
+    opacity: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+}
+body.ready .loader-wrapper {
+    opacity: 0;
+    display: none;
+}
+
+.loader-animation .dot {
+    width: 10px;
+    height: 10px;
+    background: rgba(0,0,0,.5);
+    border-radius: 50%;
+    position: absolute;
+    top: calc(50% - 5px);
+}
+
+.loader-animation .dot1 {
+    left: 0px;
+    -webkit-animation: dot-jump 0.5s cubic-bezier(0.77, 0.47, 0.64, 0.28) alternate infinite;
+    animation: dot-jump 0.5s cubic-bezier(0.77, 0.47, 0.64, 0.28) alternate infinite;
+}
+
+.loader-animation .dot2 {
+    left: 20px;
+    -webkit-animation: dot-jump 0.5s 0.2s cubic-bezier(0.77, 0.47, 0.64, 0.28) alternate infinite;
+    animation: dot-jump 0.5s 0.2s cubic-bezier(0.77, 0.47, 0.64, 0.28) alternate infinite;
+}
+
+.loader-animation .dot3 {
+    left: 40px;
+    -webkit-animation: dot-jump 0.5s 0.4s cubic-bezier(0.77, 0.47, 0.64, 0.28) alternate infinite;
+    animation: dot-jump 0.5s 0.4s cubic-bezier(0.77, 0.47, 0.64, 0.28) alternate infinite;
+}
+
+@-webkit-keyframes dot-jump {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    100% {
+        -webkit-transform: translateY(-15px);
+        transform: translateY(-15px);
+    }
+}
+
+@keyframes dot-jump {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    100% {
+        -webkit-transform: translateY(-15px);
+        transform: translateY(-15px);
+    }
+}
+body .scGridToolbar {
+    padding: 0;
+}
+
+body #TB_iframeContent {
+    clear: both;
+    border: none;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}

@@ -1,0 +1,140 @@
+.scFormPage { background-image: none; opacity: 1; filter: alpha(opacity=100); color: #6c757d; font-family: 'Nunito', sans-serif; font-size: 13px; margin: 20px; text-decoration: none }
+.scFormBorder { background-color: #FFFFFF; background-image: none; opacity: 1; filter: alpha(opacity=100); padding: 0; margin: css_form_moldura_margin; border-collapse: collapse; border-color: #E0E6ED; border-style: none; border-width: 1px; -moz-box-shadow: 0 0 35px 0 rgba(154,161,171,.15); -webkit-box-shadow: 0 0 35px 0 rgba(154,161,171,.15); box-shadow: 0 0 35px 0 rgba(154,161,171,.15) }
+.scFormPageText { color: #6c757d; font-family: 'Nunito', sans-serif; font-size: 13px; text-decoration: none }
+.scFormColorPaleteItem { background-size: contain; cursor: pointer; width: 16px; height: 16px; display: inline-block; margin: 0 2px 0 0; border-width: 1px; border-style: solid; border-color: #000 }
+.scFormColorPaleteItemChecked { background-image: url(../../img/scriptcase__NM__ico__NM__check_checkbox.png) }
+.scFormHeader { background-color: #727cf5; background-image: none; opacity: 1; filter: alpha(opacity=100); border-color: #727cf5; border-style: solid; border-width: 1px }
+.scFormHeaderFont { color: #FFFFFF; font-family: 'Nunito', sans-serif; font-size: 13px; text-decoration: none }
+.scFormFooter { background-image: none; opacity: 1; filter: alpha(opacity=100) }
+.scFormFooterFont { color: #999999; font-family: 'Nunito', sans-serif; font-size: 13px; font-weight: bold; text-decoration: none }
+.scFormToolbarNav { background-image: none; opacity: 1; filter: alpha(opacity=100); color: #8492A6; font-family: 'Nunito', sans-serif; font-size: 14px; font-weight: bold; text-decoration: none; padding: 12px; text-align: center; height: 34px; line-height: 10px; display: inline-block; box-sizing: border-box }
+.scFormToolbarNavOpen { background-color: #727cf5 !important; background-image: none; opacity: 1; filter: alpha(opacity=100); color: #fff; font-family: 'Nunito', sans-serif; font-size: 14px; font-weight: bold; text-decoration: none; border-color: #727cf5; border-style: none; padding: 12px; -moz-border-radius: 30px; -webkit-border-radius: 30px; border-radius: 30px; text-align: center; height: 34px; line-height: 10px; display: inline-block; box-sizing: border-box }
+.scFormToolbar { background-color: #fff; background-image: none; opacity: 1; filter: alpha(opacity=100); padding: 20px; border-color: #E0E6ED; border-style: none; border-width: 0; margin: -2px -1px }
+.scFormToolbarPadding { padding: 20px }
+.scFormToolbarInput { background-color: #f9fafc; box-shadow: 0 2px 6px 0 rgba(227,234,239,.5); background-image: none; opacity: 1; filter: alpha(opacity=100); border-color: rgba(0,0,0,.05); border-style: solid; border-width: 1px; color: #313a46; font-family: 'Nunito', sans-serif; font-size: 13px; padding: 0 10px; text-decoration: none; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; height: 34px; line-height: 34px }
+.scFormToolbarInput:focus { background-image: none; opacity: 1; filter: alpha(opacity=100); border-color: #c1c9d0; color: #313a46; box-shadow: none }
+.scFormToolbarInputWm { color: #313a46 }
+.scFormTable { background-color: #FFFFFF; box-shadow: 0 0 35px 0 rgba(154,161,171,.15); background-image: none; opacity: 1; filter: alpha(opacity=100); border-collapse: collapse; border-color: #E0E6ED; border-style: none; border-width: 0; margin: 20px auto; width: 95% }
+.scFormTableTd { padding: 0 }
+.scFormLabelLink { color: #FFFFFF; font-family: 'Nunito', sans-serif; font-size: 13px; font-weight: bold; text-decoration: none; vertical-align: middle }
+.scFormLabelOdd { background-color: #FFFFFF; background-image: none; opacity: 1; filter: alpha(opacity=100); border-style: none; color: #8492A6; font-family: 'Nunito', sans-serif; font-size: 13px; padding: 10px 15px; text-decoration: none; vertical-align: top }
+.scFormHelpOdd { background-image: none; opacity: 1; filter: alpha(opacity=100); color: #6c757d; font-family: 'Nunito', sans-serif; font-size: 13px; padding: 0 4px; text-decoration: none }
+.scFormLabelOddMult { background-color: #f1f3fa; box-shadow: 0 0 35px 0 rgba(154,161,171,.15); background-image: none; border-color: #fff; border-style: solid; border-width: 1px; color: #6c757d; font-family: 'Nunito', sans-serif; font-size: 13px; font-weight: bold; padding: 12px 15px; text-decoration: none; vertical-align: middle }
+.scFormHelpOddMult { background-image: none; opacity: 1; filter: alpha(opacity=100); color: #6c757d; font-family: 'Nunito', sans-serif; font-size: 13px; padding: 0 4px; text-decoration: none }
+.scFormLabelOddMult:hover { background-color: #f9fafd; box-shadow: 0 0 5px 0 rgba(154,161,171,.5); background-image: none; opacity: 1; filter: alpha(opacity=100); color: #8492A6; text-decoration: none; border-color: #fff; border-style: solid; border-width: 1px }
+.scFormHelpOddMult:hover { background-image: none; opacity: 1; filter: alpha(opacity=100); color: #6c757d; font-family: 'Nunito', sans-serif; font-size: 13px; padding: 0 4px; text-decoration: none }
+.scFormLabelOddFormat { color: #8492A6; font-family: 'Nunito', sans-serif; font-size: 13px; text-decoration: none }
+.scFormLabelOddFormatMult { color: #6c757d; font-family: 'Nunito', sans-serif; font-size: 13px; font-weight: bold; text-decoration: none }
+.scFormRequiredOdd { color: #9f3a38; font-family: 'Nunito', sans-serif; font-size: 13px; font-weight: bold }
+.scFormRequiredOddMult { color: #9f3a38; font-family: 'Nunito', sans-serif; font-size: 13px; font-weight: bold }
+.scFormRequiredOddColor { color: #9f3a38; font-family: 'Nunito', sans-serif; font-size: 13px; font-weight: bold }
+.scFormRequiredOddColorMult { color: #9f3a38; font-family: 'Nunito', sans-serif; font-size: 13px; font-weight: bold }
+.scFormObjectOdd, .ui-dropdownchecklist-selector-wrapper > .ui-dropdownchecklist-selector { background-color: #f9fafc; box-shadow: 0 2px 6px 0 rgba(227,234,239,.5); background-image: none; opacity: 1; filter: alpha(opacity=100); border-color: rgba(0,0,0,.05); border-style: solid; border-width: 1px; color: #313a46; font-family: 'Nunito', sans-serif; font-size: 13px; padding: 7px 10px; text-decoration: none; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px }
+.select2-container--default .select2-selection { background-color: #f9fafc; box-shadow: 0 2px 6px 0 rgba(227,234,239,.5); background-image: none; opacity: 1; filter: alpha(opacity=100); border-color: rgba(0,0,0,.05); border-style: solid; border-width: 1px; color: #313a46; font-family: 'Nunito', sans-serif; font-size: 13px; text-decoration: none; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px }
+.scFormPage .ui-menu .ui-menu-item, .scFormTable .select2-container--default .select2-selection--single .select2-selection__rendered, .scFormPage .select2-container--default .select2-results__option[aria-selected="true"] { color: #313a46 }
+.jSignature { background-color: #f9fafc }
+.scFormPage .ui-menu .ui-menu-item, .scFormPage .select2-container .select2-dropdown, .scFormPage .select2-container--default .select2-results__option[aria-selected="true"] { background-color: #f9fafc; border-color: rgba(0,0,0,.05) }
+.scFormObjectOddMult, .ui-dropdownchecklist-selector-wrapper > .ui-dropdownchecklist-selector { background-color: #f9fafc; box-shadow: 0 2px 6px 0 rgba(227,234,239,.5); background-image: none; opacity: 1; filter: alpha(opacity=100); border-color: rgba(0,0,0,.05); border-style: solid; border-width: 1px; color: #313a46; font-family: 'Nunito', sans-serif; font-size: 13px; padding: 7px 10px; text-decoration: none; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px }
+.scFormTable .select2-container--default .select2-selection--single .select2-selection__rendered { color: #313a46 }
+.scFormObjectOddSpin { font-family: 'Nunito', sans-serif !important; font-size: 13px !important }
+.scFormObjectOddMultSpin { font-family: 'Nunito', sans-serif !important; font-size: 13px !important }
+.scFormObjectFocusOdd, .ui-dropdownchecklist-selector-wrapper > .ui-dropdownchecklist-selector:focus { background-color: #F9FAFC; background-image: none; opacity: 1; filter: alpha(opacity=100); border-color: transparent; border-style: solid; border-width: 1px; color: #6c757d; font-family: 'Nunito', sans-serif; font-size: 13px; padding: 7px 10px; text-decoration: none; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6) }
+.scFormObjectFocusOddMult, .ui-dropdownchecklist-selector-wrapper > .ui-dropdownchecklist-selector:focus { background-color: #F9FAFC; background-image: none; opacity: 1; filter: alpha(opacity=100); border-color: transparent; border-style: solid; border-width: 1px; color: #6c757d; font-family: 'Nunito', sans-serif; font-size: 13px; padding: 7px 10px; text-decoration: none; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; box-shadow: none }
+.scFormDataOdd { background-color: #FFFFFF; background-image: none; opacity: 1; filter: alpha(opacity=100); color: #6c757d; font-family: 'Nunito', sans-serif; font-size: 13px; padding: 6px 4px; text-decoration: none; display: css_form_campo_impar_simples_display }
+.scFormDataHelpOdd { background-image: none; opacity: 1; filter: alpha(opacity=100); color: #6c757d; font-family: 'Nunito', sans-serif; font-size: 13px; padding: 0 4px; margin: 3px 0 0 0; text-decoration: none; letter-spacing: 1px; text-transform: uppercase; display: inline-block }
+.scFormDataOddMult { background-color: #FFFFFF; background-image: none; opacity: 1; filter: alpha(opacity=100); border-style: none; color: #6c757d; font-family: 'Nunito', sans-serif; font-size: 13px; padding: 6px 4px; text-decoration: none }
+.scFormDataHelpOddMult { background-image: none; opacity: 1; filter: alpha(opacity=100); color: #6c757d; font-family: 'Nunito', sans-serif; font-size: 13px; padding: 0 4px; text-decoration: none }
+.scFormDataFontOdd { color: #6c757d; font-family: 'Nunito', sans-serif; font-size: 13px; text-decoration: none }
+.scFormDataFontOdd input[type=checkbox] + label, .scFormDataFontOdd input[type=radio] + label { position: relative; top: -1px }
+.scFormDataFontOddMult { color: #6c757d; font-family: 'Nunito', sans-serif; font-size: 13px; text-decoration: none }
+.scFormLinkOdd { color: #6c757d; text-decoration: underline }
+.scFormLinkOddMult { color: #6c757d; text-decoration: underline }
+.scFormLabelLinkOdd { text-decoration: none }
+.scFormLabelLinkOddMult { color: #6c757d; text-decoration: none }
+.scFormInputError { background-color: #FFF6F6; background-image: none; opacity: 1; filter: alpha(opacity=100); color: #9f3a38; border-color: #e0b4b4 }
+.scFormInputErrorMult { background-color: #FFF6F6; background-image: none; opacity: 1; filter: alpha(opacity=100); color: #9f3a38; border-color: #e0b4b4 }
+.scFormInputDisabled, .ui-dropdownchecklist-selector-wrapper > .ui-state-disabled { background-color: #CCCCCC; background-image: none; opacity: 1; filter: alpha(opacity=100); color: #6c757d }
+.scFormInputDisabledMult, .ui-dropdownchecklist-selector-wrapper > .ui-state-disabled { background-color: #CCCCCC; background-image: none; opacity: 1; filter: alpha(opacity=100); color: #6c757d }
+.ui-dropdownchecklist-selector-wrapper > .ui-state-disabled > .ui-dropdownchecklist-text { color: #6c757d }
+.scFormDataDragNDrop { background-color: #F9FAFC; background-image: none; opacity: 1; filter: alpha(opacity=100); border-color: #A8A8A8; border-style: dashed; border-width: 2px; color: #6c757d; font-family: 'Nunito', sans-serif; font-size: 13px; padding: 25px; text-decoration: none; margin: 15px 4px }
+.scFormMessageTable { background-color: #FFFAC1; background-image: none; opacity: 1; filter: alpha(opacity=100); border-collapse: collapse; border-color: #DBCE9C; border-style: none; border-width: 0; height: 40px; width: 280px }
+.scFormMessageTitle { background-image: none; opacity: 1; filter: alpha(opacity=100); border-style: none; color: #000; font-family: 'Nunito', sans-serif; font-size: 13px; font-weight: bold; padding: 4px; text-decoration: none; vertical-align: middle }
+.scFormMessageTitleFont { color: #000; font-family: 'Nunito', sans-serif; font-size: 13px; font-weight: bold; text-decoration: none }
+.scFormMessageMessage { background-image: none; opacity: 1; filter: alpha(opacity=100); color: #000; font-family: 'Nunito', sans-serif; font-size: 13px; font-weight: bold; padding: 10px; text-decoration: none }
+.scFormMessageMessageFont { color: #000; font-family: 'Nunito', sans-serif; font-size: 13px; font-weight: bold; text-decoration: none }
+.scFormErrorTable { background-color: #FEDEE5; background-image: none; opacity: 1; filter: alpha(opacity=100); border-color: #E0E6ED; border-style: none; border-width: 0; height: 30px; width: 320px }
+.scFormErrorTitle { background-image: none; opacity: 1; filter: alpha(opacity=100); border-style: none; color: #823040; font-family: 'Nunito', sans-serif; font-size: 13px; font-weight: bold; padding: 4px; text-decoration: none; vertical-align: middle }
+.scFormErrorTitleFont { color: #823040; font-family: 'Nunito', sans-serif; font-size: 13px; font-weight: bold; text-decoration: none }
+.scFormErrorMessage { background-image: none; opacity: 1; filter: alpha(opacity=100); color: #823040; font-family: 'Nunito', sans-serif; font-size: 13px; font-weight: bold; padding: 10px; text-decoration: none }
+.scFormErrorMessageFont { color: #823040; font-family: 'Nunito', sans-serif; font-size: 13px; font-weight: bold; text-decoration: none }
+.scFormErrorLine { background-image: none; opacity: 1; filter: alpha(opacity=100); color: #823040; font-family: 'Nunito', sans-serif; font-size: 13px; font-weight: bold; padding: 12px 15px; letter-spacing: 0px; text-decoration: none }
+.scFormFieldErrorTable { background-color: #FFFFFF; background-image: none; opacity: 1; filter: alpha(opacity=100); border-collapse: collapse; border-color: #E0E6ED; border-style: none; border-width: 0; -moz-border-radius: css_fielderror_radius; -webkit-border-radius: css_fielderror_radius; border-radius: css_fielderror_radius; position: relative }
+.scFormFieldErrorMessage { background-image: none; opacity: 1; filter: alpha(opacity=100); color: #6c757d; font-family: 'Nunito', sans-serif; font-size: 13px; text-decoration: none; vertical-align: middle }
+.scFormBlock { background-color: #E3EAEF; background-image: none; opacity: 1; filter: alpha(opacity=100); border-color: #e3eaef; border-style: solid; border-width: 0 0 1px 0; color: #6c757d; font-family: 'Nunito', sans-serif; font-size: 13px; font-weight: bold; padding: 12px 15px; text-decoration: none; vertical-align: middle }
+.scFormBlockFont { color: #6c757d; font-family: 'Nunito', sans-serif; font-size: 13px; font-weight: bold; text-decoration: none }
+.scFormBlockAlign { color: #6c757d; font-family: 'Nunito', sans-serif; font-size: 13px; font-weight: bold; text-decoration: none; vertical-align: middle }
+.scFormProcess { color: #6c757d; font-family: 'Nunito', sans-serif; font-size: 13px; text-decoration: none }
+.scFormProcessFixed { background-color: #FFF; border-style: none; height: 26px; padding-top: 13px; position: absolute; text-align: center; width: 350px }
+.scFormHelpPage { background-color: #fafbfe; background-image: none; background-repeat: repeat-x; opacity: 1; filter: alpha(opacity=100); color: #6c757d; font-family: 'Nunito', sans-serif; font-size: 13px; text-decoration: none }
+.scFormPopup { border-collapse: collapse; display: none; position: absolute; z-index: 50 }
+.scFormPopupCorner { height: 15px; width: 19px }
+.scFormPopupTopLeft { background-image: url(../../img/scriptcase__NM__help_topLeftCorner.png); padding: 0 }
+.scFormPopupTop { background-image: url(../../img/scriptcase__NM__help_topLine.png); padding: 0 }
+.scFormPopupTopRight { background-image: url(../../img/scriptcase__NM__help_topRightCorner.png); padding: 0 }
+.scFormPopupLeft { background-image: url(../../img/scriptcase__NM__help_leftColumn.png); padding: 0 }
+.scFormPopupRight { background-image: url(../../img/scriptcase__NM__help_rightColumn.png); padding: 0 }
+.scFormPopupBottomLeft { background-image: url(../../img/scriptcase__NM__help_bottomLeftCorner.png); padding: 0 }
+.scFormPopupBottom { background-image: url(../../img/scriptcase__NM__help_bottomLine.png); padding: 0; text-align: center }
+.scFormPopupBottom img { display: block; margin: 0 auto }
+.scFormPopupBottomRight { background-image: url(../../img/scriptcase__NM__help_bottomRightCorner.png); padding: 0 }
+.scFormPopupContent { background-color: #FFFFFF; background-image: none; opacity: 1; filter: alpha(opacity=100); color: #6c757d; font-family: 'Nunito', sans-serif; font-size: 13px; font-style: normal; text-decoration: none }
+.scButtonMultiUploadSend { float: left }
+.scButtonMultiUploadSend:hover { cursor: pointer }
+.TB_overlayBG { background-color: #6e6e6e }
+#TB_window { border-style: none }
+.sc-cal-categ .sc-cal-categ-input-caret { position: absolute; cursor: default; top: 9px; right: 10px; font-size: 12px; transform: scale(1,0.75) }
+.sc-cal-categ { position: relative }
+.sc-cal-categ-item .sc-cal-categ-colorbox { width: 17px; height: 17px; float: left; margin-right: 10px }
+.sc-cal-categ > .sc-cal-categ-input { box-sizing: border-box; width: 100% !important; display: block !important }
+.sc-cal-categ-dropdown { position: absolute; top: 30px !important; left: 0px !important; width: 99% !important }
+.scFormACTable { border-collapse: collapse; border-color: #E0E6ED; border-style: solid; border-width: 1px }
+.scFormACTitle { background-color: #f2f2f2; background-image: none; opacity: 1; filter: alpha(opacity=100); border-color: #E0E6ED; border-style: solid; border-width: 1px 0; color: #6c757d; font-family: 'Nunito', sans-serif; font-size: 13px; padding: 8px 4px; text-decoration: none }
+.ac_results { background-color: #FFFFFF; background-image: none; opacity: 1; filter: alpha(opacity=100); border-collapse: collapse; border-color: #E0E6ED; border-style: solid; border-width: 1px; color: #6c757d; font-family: 'Nunito', sans-serif; font-size: 13px; overflow: hidden; padding: 0; text-decoration: css_ajaxac_linha_par_text_decoration; z-index: 99999 }
+.ac_results ul { list-style: none; list-style-position: outside; margin: 0; padding: 0; width: 100% }
+.ac_results li { cursor: default; display: block; margin: 0; overflow: hidden; padding: 2px 5px; line-height: 16px }
+.ac_odd { background-color: #FFFFFF; background-image: none; opacity: 1; filter: alpha(opacity=100); color: #6c757d; font-family: 'Nunito', sans-serif; font-size: 13px }
+.ac_over { background-color: #E0E6ED; background-image: none; opacity: 1; filter: alpha(opacity=100); color: #6c757d; font-family: 'Nunito', sans-serif; font-size: 13px }
+.ui-dropdownchecklist-text { color: #313a46; font-family: 'Nunito', sans-serif; font-size: 13px; text-decoration: none }
+.ui-dropdownchecklist-selector { background-color: #f9fafc; background-image: none; opacity: 1; filter: alpha(opacity=100); color: #313a46; font-family: 'Nunito', sans-serif; font-size: 13px }
+.ui-dropdownchecklist-dropcontainer { background-color: #f9fafc; background-image: none; opacity: 1; filter: alpha(opacity=100); color: #313a46; font-family: 'Nunito', sans-serif; font-size: 13px }
+.scBtnPassField { margin: 10px 5px }
+#sc_b_summary_b { font-size: 13px }
+.fileinput-button-padding { margin-top: 5px }
+.ui-front { z-index: 9999 }
+#sc_b_navpage_t,#sc_b_navpage_b { padding: 0 }
+.scAjaxDiv { background-image: none; opacity: 1; filter: alpha(opacity=100); color: #6c757d; font-family: 'Nunito', sans-serif; font-size: 13px; text-decoration: none; border-collapse: collapse; border-style: none; padding: 15px 0 0 0 }
+.lcs_checkbox_switch { display: inline-block; position: relative; overflow: hidden; transition: all .2s ease-in-out; width: 29px; height: 15px; cursor: pointer; background-color: #DDDDDD; background-image: none; margin: 5px 7px }
+.lcs_checkbox_switch:after { content: "\002714"; display: inline-block; position: absolute; overflow: hidden; top: 1px; left: 5px; font-size: 9px; transition: all .2s; opacity: 0; filter: alpha(opacity=0); color: #6c757d }
+.lcs_checkbox_switch.lcs_on { background-color: #66afe9; background-image: none }
+.lcs_checkbox_switch.lcs_on:after { opacity: 1; filter: alpha(opacity=100) }
+.lcs_checkbox_switch .lcs_cursor { display: inline-block; position: absolute; overflow: hidden; top: 1px; left: 1px; z-index: 10; transition: all .2s linear; width: 13px; height: 13px; background-color: #FFFFFF; background-image: none }
+.lcs_checkbox_switch.lcs_off .lcs_cursor { display: inline-block; position: absolute; overflow: hidden; top: 1px; left: 1px; z-index: 10; transition: all .2s linear; width: 13px; height: 13px; background-color: #FFFFFF; background-image: none }
+.lcs_checkbox_switch.lcs_on .lcs_cursor  { left: calc(100% - 1px); transform: translateX(-100%) }
+.lcs_radio_switch { display: inline-block; position: relative; overflow: hidden; transition: all .2s ease-in-out; width: 12px; height: 12px; border-width: 1px; border-color: #66afe9; border-style: solid; cursor: pointer; background-color: rgba(0,0,0,0); background-image: none; margin: 5px 7px }
+.lcs_radio_switch.lcs_off { display: inline-block; position: relative; overflow: hidden; transition: all .2s ease-in-out; width: 12px; height: 12px; border-width: 1px; border-color: #66afe9; border-style: solid; cursor: pointer; background-color: rgba(0,0,0,0); background-image: none; margin: 5px 7px }
+.lcs_radio_switch.lcs_on { background-color: rgba(0,0,0,0); background-image: none }
+.lcs_radio_switch .lcs_cursor { display: inline-block; position: absolute; overflow: hidden; top: -1px; left: -1px; z-index: 10; transition: all .1s linear; transform: scale(0); width: 14px; height: 14px; border-width: 1px; background-color: #66afe9; background-image: none }
+.lcs_radio_switch.lcs_off .lcs_cursor { display: inline-block; position: absolute; overflow: hidden; top: -1px; left: -1px; z-index: 10; transition: all .1s linear; transform: scale(0); width: 14px; height: 14px; border-width: 1px; background-color: #66afe9; background-image: none }
+.lcs_radio_switch.lcs_on .lcs_cursor  { transform: scale(1); left: -1px }
+.lcs_switch.lcs_on { box-shadow: none }
+.lcs_checkbox_switch.lcs_switch.lcs_off { background-color: rgba(178, 178, 178, 0.4); box-shadow: 0px 0px 2px rgba(164, 164, 164, 0.8) inset }
+.sc.switch, .sc.radio { margin: 2px 5px 2px 0 }
+.sc.switch input, .sc.radio input { position: absolute!important }
+.sc.switch span { min-width: 22px }
+.sc.radio span { min-width: 12px; min-height: 12px }
+.ui-slider-horizontal { background-color: #dee2e6; background-image: none; opacity: 1; filter: alpha(opacity=100); border-color: #FFFFFF !important; border-style: none; border-collapse: collapse; margin: 0 auto; height: .3em !important }
+.ui-slider-horizontal > .ui-slider-range { background-color: #727cf5; background-image: none; opacity: 1; filter: alpha(opacity=100); border-collapse: collapse }
+.ui-slider-horizontal > .ui-state-default { background: #727cf5 !important; background-image: none; opacity: 1; filter: alpha(opacity=100); border-color: #FFFFFF !important; border-collapse: collapse; margin: 0 0 0 -7px !important; -moz-border-radius: 0; -webkit-border-radius: 0; border-radius: 0; top: -4px !important; outline: none }
+.ui-slider-horizontal > .ui-slider-handle { width: 0.5em !important; height: 0.8em !important }
+.ui-slider-horizontal > .ui-state-hover { background-image: none; opacity: 1; filter: alpha(opacity=100); border-collapse: collapse }
+.ui-slider-horizontal > .ui-state-active { background-image: none; opacity: 1; filter: alpha(opacity=100); border-collapse: collapse }

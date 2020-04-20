@@ -1,0 +1,32 @@
+Nm_erro = {
+  "lang_jscr_dcml" : "Decimals",
+  "lang_jscr_decm" : "Desena de segon",
+  "lang_jscr_hour" : "Hora",
+  "lang_jscr_iday" : "Dia",
+  "lang_jscr_intg" : "Sencers i",
+  "lang_jscr_ivcr" : "Número de targeta de crèdit no vàlid",
+  "lang_jscr_ivdt" : "Dades invàlides:",
+  "lang_jscr_ivem" : "Correu invàlid:",
+  "lang_jscr_ivnb" : "Nombre sencer invàlid",
+  "lang_jscr_ivtm" : "Hora invàlida:",
+  "lang_jscr_ivv2" : "Valor Invàlid:",
+  "lang_jscr_ivvl" : "Decimal Invàlid!",
+  "lang_jscr_maxm" : "Màx",
+  "lang_jscr_maxm_date" : "Data màxima",
+  "lang_jscr_minm" : "Min",
+  "lang_jscr_minm_date" : "Data mínima",
+  "lang_jscr_mint" : "Minuts",
+  "lang_jscr_mnth" : "Mes",
+  "lang_jscr_msfr" : "El formulari ha de tenir un nom",
+  "lang_jscr_mslg" : "Falta l'inici de sessió;",
+  "lang_jscr_msob" : "Faltar definir un nom per a aquest objecte del formulari!",
+  "lang_jscr_mxdg" : "Quantitat de dígits superior a l'esperada",
+  "lang_jscr_mxvl" : "Longitud màxima superada",
+  "lang_jscr_nnum" : "El camp és numèric",
+  "lang_jscr_nvlf" : "El signe negatiu ha d'estar a l'esquerra del valor",
+  "lang_jscr_reqr" : "Camp obligatori",
+  "lang_jscr_secd" : "Segons",
+  "lang_jscr_wfix" : "- Desitja corregir?"
+};
+
+//-------- Mens USR

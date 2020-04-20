@@ -1,0 +1,32 @@
+Nm_erro = {
+  "lang_jscr_dcml" : "Decimāli",
+  "lang_jscr_decm" : "Sekundes desmitdaļa",
+  "lang_jscr_hour" : "Stunda",
+  "lang_jscr_iday" : "Diena",
+  "lang_jscr_intg" : "Veseli skaitļi un",
+  "lang_jscr_ivcr" : "Nederīgs Kredītkartes numurs",
+  "lang_jscr_ivdt" : "Nederīgi dati:",
+  "lang_jscr_ivem" : "Nederīgs e-pasts:",
+  "lang_jscr_ivnb" : "Nederīgs vesels skaitlis",
+  "lang_jscr_ivtm" : "Nederīgs laiks:",
+  "lang_jscr_ivv2" : "Nederīgi dati:",
+  "lang_jscr_ivvl" : "Nederīgs decimāls",
+  "lang_jscr_maxm" : "Mksimālais",
+  "lang_jscr_maxm_date" : "Maksimālā datums",
+  "lang_jscr_minm" : "Minimālais",
+  "lang_jscr_minm_date" : "Minimālais datums",
+  "lang_jscr_mint" : "Minūtes",
+  "lang_jscr_mnth" : "Mēnesis",
+  "lang_jscr_msfr" : "Form jābūt vārds",
+  "lang_jscr_mslg" : "login trūkst;",
+  "lang_jscr_msob" : "Veidlapai ir jābūt nosaukumam",
+  "lang_jscr_mxdg" : "Ciparu skaits pārsniedz paredzamo",
+  "lang_jscr_mxvl" : "Maksimālais garums pārsniegts",
+  "lang_jscr_nnum" : "Lauks ir ciparisks",
+  "lang_jscr_nvlf" : "Negatīvai zīmei ir jābūt pa kreisi no vērtības",
+  "lang_jscr_reqr" : "Obligāti aizpildāms lauks",
+  "lang_jscr_secd" : "Sekundes",
+  "lang_jscr_wfix" : "Vai jūs vēlaties labot?"
+};
+
+//-------- Mens USR

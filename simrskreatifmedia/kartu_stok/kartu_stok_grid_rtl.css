@@ -1,0 +1,21 @@
+.css_kadaluarsa_label {text-align:center;vertical-align:middle;justify-content:center;font-weight:bold;}
+.css_kadaluarsa_grid_line {vertical-align: top;text-align: center;}
+.css_transaksi_label {text-align:center;vertical-align:middle;justify-content:center;font-weight:bold;}
+.css_transaksi_grid_line {vertical-align: top;text-align: center;}
+.css_trancode_label {text-align:left;vertical-align:middle;justify-content:left;font-weight:bold;}
+.css_trancode_grid_line {vertical-align: top;text-align: right;}
+.css_kategori_label {text-align:left;vertical-align:middle;justify-content:left;font-weight:bold;}
+.css_kategori_grid_line {vertical-align: top;text-align: right;}
+.css_deskripsi_label {text-align:left;vertical-align:middle;justify-content:left;font-weight:bold;}
+.css_deskripsi_grid_line {font-weight:bold;vertical-align: top;text-align: right;}
+.css_masuk_label {text-align:left;vertical-align:middle;justify-content:left;font-weight:bold;}
+.css_masuk_grid_line {vertical-align: top;text-align: right;}
+.css_masuk_tot_ger {text-align: right;}
+.css_keluar_label {text-align:left;vertical-align:middle;justify-content:left;font-weight:bold;}
+.css_keluar_grid_line {vertical-align: top;text-align: right;}
+.css_keluar_tot_ger {text-align: right;}
+.css_kumulatif_label {text-align:right;vertical-align:middle;justify-content:right;font-weight:bold;}
+.css_kumulatif_grid_line {vertical-align: top;text-align: right;}
+.css_kumulatif_tot_ger {text-align: right;}
+.css_cumulatif_label {text-align:;vertical-align:middle;justify-content:;font-weight:bold;}
+.css_cumulatif_grid_line {text-align: center;}

@@ -1,0 +1,8 @@
+.scCalendarPrintDate { text-align: right }
+.scCalendarPrintTime { text-align: right }
+.scCalendarPrintEvent { text-align: right }
+#calendar_mini .fc-day-header { text-align: center }
+#calendar_mini .fc-day-top { text-align: center }
+#calendar_mini .fc-state-highlight { text-align: center }
+.scCalendarCategoryTitle { text-align: right }
+.scCalendarCategoryItem { text-align: right }

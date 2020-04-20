@@ -1,0 +1,32 @@
+Nm_erro = {
+  "lang_jscr_dcml" : "Десетични",
+  "lang_jscr_decm" : "Десета от секундата",
+  "lang_jscr_hour" : "Час",
+  "lang_jscr_iday" : "Ден",
+  "lang_jscr_intg" : "Цели числа и",
+  "lang_jscr_ivcr" : "Невалиден номер на кредитна карта",
+  "lang_jscr_ivdt" : "Невалидна информация:",
+  "lang_jscr_ivem" : "Невалиден имейл адрес",
+  "lang_jscr_ivnb" : "Невалидно цяло число",
+  "lang_jscr_ivtm" : "Невалидно време:",
+  "lang_jscr_ivv2" : "Невалидна информация:",
+  "lang_jscr_ivvl" : "Невалидна десетична част",
+  "lang_jscr_maxm" : "Макс.",
+  "lang_jscr_maxm_date" : "Максимална дата",
+  "lang_jscr_minm" : "Mин.",
+  "lang_jscr_minm_date" : "Минимална дата",
+  "lang_jscr_mint" : "Минути",
+  "lang_jscr_mnth" : "Месец",
+  "lang_jscr_msfr" : "Формата трябва да има име",
+  "lang_jscr_mslg" : "не сте влезли в приложението;",
+  "lang_jscr_msob" : "Този обект от формата трябва да има име",
+  "lang_jscr_mxdg" : "Величината на числата превишава очакваните",
+  "lang_jscr_mxvl" : "Макс. дължина е превишена",
+  "lang_jscr_nnum" : "Полето е числово",
+  "lang_jscr_nvlf" : "Отрицателният знак трябва да е отляво на стойността",
+  "lang_jscr_reqr" : "Задължително поле",
+  "lang_jscr_secd" : "Секунди",
+  "lang_jscr_wfix" : "- Искате ли да коригирате?"
+};
+
+//-------- Mens USR

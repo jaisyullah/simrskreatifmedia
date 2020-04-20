@@ -1,0 +1,35 @@
+.scGridToolbarPadding { text-align: right }
+.scGridHeaderFont { text-align: right }
+.scGridFooterFont { text-align: right }
+.scGridObjectOdd { text-align: right }
+.scGridBlock { text-align: right }
+.scGridTotalFont { text-align: right }
+.scGridSubtotalFont { text-align: right }
+.scGridFieldEvenFont { text-align: right }
+.scGridFieldEvenVert { text-align: right }
+.scGridFieldOddFont { text-align: right }
+.scGridFieldOddVert { text-align: right }
+.scGridLabelVert { text-align: right }
+.scGridLabelFont { text-align: right }
+.scGridRefinedSearchLabel { text-align: right }
+.scGridRefinedSearchCampoFont { text-align: right }
+.scGridRefinedSearchCampoFont:hover { text-align: right }
+.scGridRefinedSearchCampoFont:active { text-align: right }
+.scGridRefinedSearchVejaMaisFont { text-align: right }
+.scGridRefinedSearchRangeValues { text-align: center }
+.scGridRefinedSearchQuantidade { text-align: right }
+.scGridSummarySearchLabel { text-align: right }
+.scGridSummaryLabel { text-align: right }
+.scGridSummaryLineEven { text-align: left }
+.scGridSummaryLineOdd { text-align: left }
+.scGridSummaryGroupbyVisible { text-align: right }
+.scGridSummaryGroupbyInvisible { text-align: right }
+.scGridSummaryGroupbySeq { text-align: center }
+.SumoSelect > .CaptionCont { text-align: right }
+.SumoSelect .select-all { text-align: right }
+.SumoSelect .no-match { text-align: right }
+.SumoSelect > .optWrapper > .options li.opt.selected { text-align: right }
+.SumoSelect > .optWrapper > .options li.opt { text-align: right }
+.SumoSelect > .optWrapper.multiple > .MultiControls > p.btnOk { text-align: center }
+.SumoSelect > .optWrapper.multiple > .MultiControls { text-align: css_summarysearch_multiselectbuttonline_text_alignrtl }
+.SumoSelect > .optWrapper.multiple > .MultiControls > p.btnCancel { text-align: center }

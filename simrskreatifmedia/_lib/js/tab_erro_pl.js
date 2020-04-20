@@ -1,0 +1,32 @@
+Nm_erro = {
+  "lang_jscr_dcml" : "Dziesiętne",
+  "lang_jscr_decm" : "Dziesiętna część sekundy",
+  "lang_jscr_hour" : "Godzina",
+  "lang_jscr_iday" : "Dzień",
+  "lang_jscr_intg" : "Całkowite i",
+  "lang_jscr_ivcr" : "Błędny numer karty kredytowej",
+  "lang_jscr_ivdt" : "Błędne dane:",
+  "lang_jscr_ivem" : "Błędny adres e-mail:",
+  "lang_jscr_ivnb" : "Błędna liczba całkowita",
+  "lang_jscr_ivtm" : "Błędny czas:",
+  "lang_jscr_ivv2" : "Błędna data:",
+  "lang_jscr_ivvl" : "Błędna dziesiętna",
+  "lang_jscr_maxm" : "Maks",
+  "lang_jscr_maxm_date" : "Maksymalna dana",
+  "lang_jscr_minm" : "Min",
+  "lang_jscr_minm_date" : "Minimalna data",
+  "lang_jscr_mint" : "Minuty",
+  "lang_jscr_mnth" : "Miesiąc",
+  "lang_jscr_msfr" : "Forma musi mieć nazwę",
+  "lang_jscr_mslg" : "Brak loginu",
+  "lang_jscr_msob" : "Obiekt z tej formy musi mieć nazwę",
+  "lang_jscr_mxdg" : "Przekroczono ilość cyfr",
+  "lang_jscr_mxvl" : "Przekroczono maksymalną długość",
+  "lang_jscr_nnum" : "To pole jest numeryczne",
+  "lang_jscr_nvlf" : "Znak ujemny musi być z lewej strony",
+  "lang_jscr_reqr" : "Wymagane pole",
+  "lang_jscr_secd" : "Sekundy",
+  "lang_jscr_wfix" : "- Czy chcesz poprawić?"
+};
+
+//-------- Mens USR

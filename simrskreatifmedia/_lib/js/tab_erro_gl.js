@@ -1,0 +1,32 @@
+Nm_erro = {
+  "lang_jscr_dcml" : "Decimais",
+  "lang_jscr_decm" : "Décima de segundo",
+  "lang_jscr_hour" : "Hora",
+  "lang_jscr_iday" : "Día",
+  "lang_jscr_intg" : "Enteiros e",
+  "lang_jscr_ivcr" : "Número da tarxeta de crédito non válido",
+  "lang_jscr_ivdt" : "Data non válida:",
+  "lang_jscr_ivem" : "E-mail non válido:",
+  "lang_jscr_ivnb" : "Enteiro non válido",
+  "lang_jscr_ivtm" : "Tempo non válida:",
+  "lang_jscr_ivv2" : "Data non válida:",
+  "lang_jscr_ivvl" : "Decimal non válido",
+  "lang_jscr_maxm" : "Max",
+  "lang_jscr_maxm_date" : "Data máxima",
+  "lang_jscr_minm" : "Min",
+  "lang_jscr_minm_date" : "Data mínima",
+  "lang_jscr_mint" : "Minutos",
+  "lang_jscr_mnth" : "Mes",
+  "lang_jscr_msfr" : "O formulario debe ter un nome",
+  "lang_jscr_mslg" : "sesión perdida;",
+  "lang_jscr_msob" : "Este obxecto debe ter un nome",
+  "lang_jscr_mxdg" : "A cantidade de díxitos supera o esperado",
+  "lang_jscr_mxvl" : "Lonxitude máxima superada",
+  "lang_jscr_nnum" : "O campo é numérico",
+  "lang_jscr_nvlf" : "O sinal negativo debe estar na esquerda do valor",
+  "lang_jscr_reqr" : "Campo obrigatorio",
+  "lang_jscr_secd" : "Segundos",
+  "lang_jscr_wfix" : "- Quere corrixir?"
+};
+
+//-------- Mens USR

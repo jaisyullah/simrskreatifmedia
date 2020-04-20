@@ -1,0 +1,32 @@
+Nm_erro = {
+  "lang_jscr_dcml" : "Децимали",
+  "lang_jscr_decm" : "Десетинка од секунда",
+  "lang_jscr_hour" : "Час",
+  "lang_jscr_iday" : "Ден",
+  "lang_jscr_intg" : "Цели броеви и",
+  "lang_jscr_ivcr" : "Невалиден број на Кредитна Картичка",
+  "lang_jscr_ivdt" : "Невалиден датум:",
+  "lang_jscr_ivem" : "Невалидна адреса на е-пошта:",
+  "lang_jscr_ivnb" : "Невалиден цел број",
+  "lang_jscr_ivtm" : "Невалидно време:",
+  "lang_jscr_ivv2" : "Невалиден податок:",
+  "lang_jscr_ivvl" : "Невалидни децимали",
+  "lang_jscr_maxm" : "Макс.",
+  "lang_jscr_maxm_date" : "Максимален датум",
+  "lang_jscr_minm" : "Мин.",
+  "lang_jscr_minm_date" : "Минимален датум",
+  "lang_jscr_mint" : "Минути",
+  "lang_jscr_mnth" : "Месец",
+  "lang_jscr_msfr" : "Формата мора да има име",
+  "lang_jscr_mslg" : "Недостига логин;",
+  "lang_jscr_msob" : "Оваа Форма мора да има име",
+  "lang_jscr_mxdg" : "Бројот на цифри е поголем од очекуваниот",
+  "lang_jscr_mxvl" : "Максималната должина е надмината",
+  "lang_jscr_nnum" : "Полето е нумеричко",
+  "lang_jscr_nvlf" : "Негативниот предзнак мора да биде лево пред вредноста",
+  "lang_jscr_reqr" : "Задолжително поле",
+  "lang_jscr_secd" : "Секунди",
+  "lang_jscr_wfix" : "- Дали сакате да корегирате?"
+};
+
+//-------- Mens USR

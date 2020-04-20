@@ -1,0 +1,15 @@
+.scTabPage { background-color: #3D3D3F; background-image: none; opacity: 1; filter: alpha(opacity=100) }
+.scTabTable { background-color: #FFFFFF;padding: 20px 20px 30px 20px; background-image: none; opacity: 1; filter: alpha(opacity=100); border-color: #d0d0d0; border-style: solid; border-width: 1px 1px 1px 1px }
+.scTabTableApls { border-width: 0 }
+.scTabLine { background-color: #FFFFFF; background-image: none; background-position: bottom center; opacity: 1; filter: alpha(opacity=100); border-color: #DFDFDF; border-style: solid; border-width: 0 0 1px 0; width: 100%; margin: 0; padding: 3px 0 0; list-style-type: none }
+.scTabHeader { background-color: #f9f9f9; background-image: none; opacity: 1; filter: alpha(opacity=100) }
+.scTabHeaderFont { color: #16a085; font-family: Arial, sans-serif; font-size: 16px; font-weight: bold; padding: 0; letter-spacing: 1px; text-decoration: none }
+.scTabActive { list-style: none; background-color: #FFFFFF; background-image: none; background-position: center center; opacity: 1; filter: alpha(opacity=100); border-width: 1px 1px 0 1px; border-color: #817F80; border-style: solid; border-collapse: collapse; padding: 4px 15px; margin: 1px 0 0 1px; height: 21px; min-height: 21px;line-height:20px; -moz-border-radius: 4px 4px 0 0; -webkit-border-radius: 4px 4px 0 0; border-radius: 4px 4px 0 0; display: inline-block; position: static }
+.scTabActive a { color: #333; font-family: Arial, sans-serif; font-size: 12px; font-weight: bold; text-decoration: none; font-style: normal }
+.scTabInactive { list-style: none; background-color: #808080; background-image: none; opacity: 1; filter: alpha(opacity=100); border-width: 1px 1px 0 1px; border-color: #817F80 #817F80 #8A8A8A; border-style: solid; border-collapse: collapse; padding: 4px 15px; margin: 1px 0 0 1px; height: 21px; min-height: 21px;line-height:20px; -moz-border-radius: 3px 3px 0 0; -webkit-border-radius: 3px 3px 0 0; border-radius: 3px 3px 0 0; display: inline-block; position: static }
+.scTabInactive a { color: #fff; font-family: Arial, sans-serif; font-size: 12px; font-weight: bold; text-decoration: none; font-style: normal }
+.scTabActiveLink, .scTabActiveLink a { color: #16a085; font-family: Arial, sans-serif; font-size: 13px; font-style: normal; text-decoration: underline; padding: 3px; margin: 3px 1px; display: inline-block }
+.scTabInactiveLink, .scTabInactiveLink a { color: #16a085; font-family: Arial, sans-serif; font-size: 13px; font-style: normal; text-decoration: none; padding: 3px; margin: 3px 1px; display: inline-block }
+.scTabInactiveLink:hover, .scTabInactiveLink:hover a { cursor: pointer; text-decoration: underline }
+.scTab_space_wi { width: 1px }
+.scTab_space_he { height: 1px }

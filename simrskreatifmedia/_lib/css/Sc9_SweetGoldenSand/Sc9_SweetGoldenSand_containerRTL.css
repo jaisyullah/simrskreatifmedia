@@ -1,0 +1,10 @@
+.scContainerHeaderFont { text-align: right }
+.scContainerFooterFont { text-align: right }
+.scContainerIndexTitle { text-align: center }
+.scContainerIndexPosText { text-align: center }
+.scContainerIndexNegText { text-align: center }
+.scContainerIndexNeuText { text-align: center }
+.scContainerIndexDimension { text-align: center }
+.scContainerIndexMetricPos { text-align: center }
+.scContainerIndexMetricNeg { text-align: css_container_indexmetricneg_text_alignrtl }
+.scContainerIndexMetricNeu { text-align: center }

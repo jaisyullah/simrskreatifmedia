@@ -1,0 +1,1137 @@
+<html>
+<head>
+<title> Document Generator Class :: [RTF PDF] </title>
+</head>
+<body>
+<STYLE TYPE="text/css" MEDIA=screen>
+<!--
+body, td {
+    background : #F2FFFA;
+    color : #000000;
+    font-size:12px;
+    font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+
+pre {
+    font-family : courier new, sans-serif;
+    font-size : 10pt;
+    color : #23368D;
+    background : white;
+    border: solid black 1px;
+}
+
+CODE {
+    font-family : courier new, sans-serif;
+    font-size : 10pt;
+    color : #6633FF;
+}
+.cd {
+    font-family : courier new, sans-serif;
+    font-size : 10pt;
+    color : #6633FF;
+}
+
+.toc {
+	font: 13px/19px Verdana, Geneva, Helvetica, Arial, sans-serif;
+}
+
+.level2 {
+	margin: 0px,0px,0px,25px;
+}
+.level3 {
+	margin: 0px,0px,0px,50px;
+}
+
+-->
+</STYLE>
+
+<h1>Document Generator Class [RTF PDF]</h1><br>
+<a href="http://paggard.com/projects/doc.generator/">http://paggard.com/projects/doc.generator/</a>
+<hr>
+<div class="toc">
+<ul>
+    <li><a href="#INTRODUCTION">Introduction</a>
+    <li><a href="#KEY_FEATURES">Key Features</a>
+    <li><a href="#REQUIREMENTS">Requirements</a>
+    <li><a href="#USAGE">Usage Example</a>
+    <li><a href="#CHARSETS">Multiple character sets support</a>
+    <li><a href="#RULES">Rules</a>
+    <li><a href="#TAGS_REFERENCE">Tags Reference</a>
+        <ul>
+        <li><a href="#TR_GENERAL_TAGS">General tags</a>
+		<ul>
+			<li><a href="#TR_BOLD_TEXT">Bold text</a>
+			<li><a href="#TR_ITALIC_TEXT">Italic text</a>
+			<li><a href="#TR_UNDERLINED_TEXT">Underlined text</a>
+			<li><a href="#TR_SUPERSCRIPT">Superscript</a>
+			<li><a href="#TR_SUBSCRIPT">Subscript</a>
+			<li><a href="#TR_NEW_LINE">New line</a>
+			<li><a href="#TR_HR">Horizontal rule</a>
+		</ul>
+        <li><a href="#TR_FONT_TAG">Font tag</a>
+        <li><a href="#TR_PARAGRAPH_TAG">Paragraph tag</a>
+        <li><a href="#TR_IMAGE_TAG">Image tag</a>
+        <li><a href="#TR_TABLE_TAGS">Table tags</a>
+        <li><a href="#TR_MULTI_PAGE_CONTROL">Multi-page control</a>
+		<ul>
+			<li><a href="#TR_PAGE_BREAK">Page break</a>
+			<li><a href="#TR_HEADERS_FOOTERS">Headers and footers</a>
+			<li><a href="#TR_PAGE_NUMBERS">Page numbers</a>
+			<li><a href="#TR_DOCUMENT_SECTIONS">Document sections</a>
+		</ul>
+        <li><a href="#TR_HYPERLINKS">Hyperlinks</a>
+        <li><a href="#TR_FOOTNOTES">Footnotes</a>
+        <li><a href="#HIDDENT_TEXT">Hidden text</a>
+        </ul>
+</ul>
+<h4>Additional materials</h4>
+<ul>
+    <li><a href="#CONFIG">Main Configuration File</a>
+    <li><a href="#CREDITS">Author &amp; Copyright</a>
+</ul>
+</div>
+<hr>
+<div align=right>[<a href="javascript:self.scroll(0,0);" style="font-size: 8pt"><b>^&nbsp;up</b></a>]</div>
+<div class="level1">
+<p><h2><a name="INTRODUCTION">Introduction</h2><br>
+Document Generator Class is aiming to unify the generation of the printable documents using the common file formats - RTF and PDF.
+There are a lot of situations, when there is a need of some application which could form certain information in a format, which could be easily downloaded from internet server and then opened, printed or saved by any internet user, and this class can help the owners of various web services to accommodate this need.
+
+<p>This script is written in PHP and uses no additional components (plugins or else). Only if you are planning to generate documents in different character sets - you will need to make sure that 'mbstring' extension (which is included into the standard PHP distribution packet) is enabled in your PHP.ini file. The script works on Unix or Win32 platforms and require only PHP 4.x.x (or later) installed. As there is no plugins required for the script to work, it could be easily installed on server, or even be used in a local network to create some reports, or anything else. </p>
+
+<p>The script uses special markup language, based on XML rules. The language is very flexible and allow to create perfect-looking documents as there are a lot of options available to control document look. </p>
+
+<p>With this script it is possible to create very complicated tables having full control over their look at the same time. It is possible to merge cells, change background color, control width and height of the cells. Even nested tables are supported, only you need to remember that this is not HTML, and nested tables will not always look like they do in HTML.</p>
+
+<p>The script supports images (.JPG and .PNG) which could be inserted into your document. Besides it supports multiple pages layout with page numbering, headers and footers. </p>
+
+<p><font color="red"><b>IMPORTANT!</b></font>: PDF driver is currently under development, and does not yet support all the features the RTF driver does. For the list of current known issues and differencies, please, consult the online list:
+<a href="http://paggard.com/projects/doc.generator/pdf_known_issues.html" target="_blank">http://paggard.com/projects/doc.generator/pdf_known_issues.html</a>
+</p>
+
+</div>
+
+<hr>
+<div align=right>[<a href="javascript:self.scroll(0,0);" style="font-size: 8pt"><b>^&nbsp;up</b></a>]</div>
+
+<div class="level1">
+<p><h2><a name="KEY_FEATURES">Key Features</h2>	
+Here is the list of supported features:
+<ul>
+	<li>Font face, style, size, color control
+	<li>Advanced paragraphs control
+	<li>Document sections and multipage control
+	<li>Page numbering
+	<li>Document headers and footers, including support for facing pages
+	<li>PNG & JPG images support
+	<li>Tables support including row and col spans and nested tables
+	<li>Hyperlinks within and outside the document
+	<li>Footnotes
+	<li>Hidden text
+	<li>Columns
+	<li>Tabulations
+	<li>Symbols support
+	<li>Multilanguage support, including UTF-8
+	<li>HTML entities support
+</ul>
+
+and the list will be growing.
+
+</div>
+
+<hr>
+<div align=right>[<a href="javascript:self.scroll(0,0);" style="font-size: 8pt"><b>^&nbsp;up</b></a>]</div>
+
+<div class="level1">
+<p><h2><a name="REQUIREMENTS">Requirements</h2>	
+The script has minimum requirements to run. The only main requirement is PHP 4.x.x or later installed. The script does not require additional modules, only if you plan to use different languages - you need to make sure that "<font color=red>mbstring</font>" PHP extention is enabled. This extension is included into the default PHP package, but you need to make sure that it is enabled on the server where you plan to use the script. 
+<p>the script can work on any operation system that has PHP engine installed.
+
+</div>
+
+<hr>
+<div align=right>[<a href="javascript:self.scroll(0,0);" style="font-size: 8pt"><b>^&nbsp;up</b></a>]</div>
+
+<div class="level1">
+
+<p><h2><a name="USAGE">Usage Example</h2>
+The script installation is pretty simple. As it uses only PHP, it doesn't have any other requirements. To install the script you should only unpack in a server folder and that's all - it is ready to use. If you are planning to save the ready documents on your server - you will need to make sure that the target folder has the correct permissions for writing.
+
+
+<p>To generate document you'll need just a few lines of PHP code. You should create a Class object, then pass XML template to it and receive ready document code. After that you could either pass this code to the user as a file stream or save it to disk for future use. </p>
+
+<p>There are many ways how you can create XML template for the Generator - you can create is dynamically during the execution of the PHP script, store is into the php variable and then pass to the Generator, or you can create the template, store it on disc and then use by the Generator. If you are not sure what is the best way for your task - you can always <a href="mailto:&#112;&#97;&#103;&#103;&#97;&#114;&#100;&#64;&#112;&#97;&#103;&#103;&#97;&#114;&#100;&#46;&#99;&#111;&#109;" title="&#112;&#97;&#103;&#103;&#97;&#114;&#100;&#64;&#112;&#97;&#103;&#103;&#97;&#114;&#100;&#46;&#99;&#111;&#109;">consult with me</a>. </p>
+
+<p>Here is the simplest example of using the script, in this example ready XML template stored on disc will be used and the result file will be passed to user as a file stream:</p>
+
+
+</p>
+<p>
+This is very simple example of creation of an .rtf file:
+
+<pre><code><span style="color: #0000BB">&lt;?php
+<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">require_once&nbsp;</span><span style="color: #DD0000">"document_generator/cl_xml2driver.php"</span><span style="color: #007700">;
+<br />
+<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #6F6F6F">//&nbsp;this&nbsp;will&nbsp;be&nbsp;the&nbsp;name&nbsp;of&nbsp;our&nbsp;RTF&nbsp;file:
+<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$file_rtf&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">"Test.rtf"</span><span style="color: #007700">;
+<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #6F6F6F">//&nbsp;HTTP&nbsp;headers&nbsp;saying&nbsp;that&nbsp;it&nbsp;is&nbsp;a&nbsp;file&nbsp;stream:
+<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">Header</span><span style="color: #007700">(</span><span style="color: #DD0000">"Content-type:&nbsp;application/octet-stream"</span><span style="color: #007700">);
+<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #6F6F6F">//&nbsp;passing&nbsp;the&nbsp;name&nbsp;of&nbsp;the&nbsp;streaming&nbsp;file:
+<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">Header</span><span style="color: #007700">(</span><span style="color: #DD0000">"Content-Disposition:&nbsp;attachment;&nbsp;filename=$file_rtf"</span><span style="color: #007700">);
+<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #6F6F6F">//&nbsp;example&nbsp;XML&nbsp;template
+<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$file&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">"example_template.xml"</span><span style="color: #007700">;
+<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$xml_template&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">join</span><span style="color: #007700">(</span><span style="color: #DD0000">""</span><span style="color: #007700">,</span><span style="color: #0000BB">file</span><span style="color: #007700">(</span><span style="color: #0000BB">$file</span><span style="color: #007700">));
+<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #6F6F6F">//&nbsp;creating&nbsp;class&nbsp;object&nbsp;specifying&nbsp;the&nbsp;driver&nbsp;type&nbsp;-&nbsp;"RTF"
+<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$xml&nbsp;</span><span style="color: #007700">=&nbsp;new&nbsp;</span><span style="color: #0000BB">nDOCGEN</span><span style="color: #007700">(</span><span style="color: #0000BB">$xml_template</span><span style="color: #007700">,</span><span style="color: #DD0000">"RTF"</span><span style="color: #007700">);
+<br />
+<br />&nbsp;&nbsp;&nbsp;&nbsp;echo&nbsp;</span><span style="color: #0000BB">$xml</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">get_result_file</span><span style="color: #007700">();
+<br /></span><span style="color: #0000BB">?&gt;
+</span></code></pre>
+</p>
+
+<p>Another example of the script shows how to save RTF file to disc:</p>
+
+<p><pre><code><span style="color: #0000BB">&lt;?php
+<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">require_once&nbsp;</span><span style="color: #DD0000">"document_generator/cl_xml2driver.php"</span><span style="color: #007700">;
+<br />
+<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #6F6F6F">//&nbsp;this&nbsp;will&nbsp;be&nbsp;the&nbsp;name&nbsp;of&nbsp;our&nbsp;RTF&nbsp;file:
+<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$file_rtf&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">"Test.rtf"</span><span style="color: #007700">;
+<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #6F6F6F">//&nbsp;example&nbsp;XML&nbsp;template
+<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$file&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">"example_template.xml"</span><span style="color: #007700">;
+<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$xml_template&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">join</span><span style="color: #007700">(</span><span style="color: #DD0000">""</span><span style="color: #007700">,</span><span style="color: #0000BB">file</span><span style="color: #007700">(</span><span style="color: #0000BB">$file</span><span style="color: #007700">));
+<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #6F6F6F">//&nbsp;creating&nbsp;class&nbsp;object&nbsp;specifying&nbsp;the&nbsp;driver&nbsp;type&nbsp;-&nbsp;"RTF"
+<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$xml&nbsp;</span><span style="color: #007700">=&nbsp;new&nbsp;</span><span style="color: #0000BB">nDOCGEN</span><span style="color: #007700">(</span><span style="color: #0000BB">$xml_template</span><span style="color: #007700">,</span><span style="color: #DD0000">"RTF"</span><span style="color: #007700">);
+<br />
+<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$fp&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">fopen</span><span style="color: #007700">(</span><span style="color: #0000BB">$file_rtf</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">"w"</span><span style="color: #007700">);
+<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">fwrite</span><span style="color: #007700">(</span><span style="color: #0000BB">$fp</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$xml</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">get_result_file</span><span style="color: #007700">());
+<br />&nbsp;&nbsp;&nbsp;&nbsp;@</span><span style="color: #0000BB">fclose</span><span style="color: #007700">(</span><span style="color: #0000BB">$fp</span><span style="color: #007700">);
+<br /></span><span style="color: #0000BB">?&gt;
+</span></code></pre></p>
+
+<p>PDF files are generated with the same code - only you will need to give 'PDF' as driver name, and have '.pdf' extention for the target file.<br>
+Other sample scripts, showing different ways of using the script - you can find in the distribution package.</p>
+
+<div class="level2">
+<p><h3><a name="TR_BOLD_TEXT">Using temporary files</h3>
+PHP is using <code>memory_limit</code>, which is by default set to '8M', but this may not be enough if you are dealing with the large files with a lot of images. To be able to handle these situations the script can use temporary directories instead of memory. Also, this greatly increases the generation time of files with a lot of images.
+<p>To turn this feature on you will need to set the path to your temporary dir in the <a href="#CONFIG">main configuration file</a>, like this:
+<br><code>$temp_dir = "tmp/";</code>
+<br><b><font color=red>*</font></b> be sure to include the trailing slash!
+<br><b><font color=red>*</font></b> you should set the permissions so, that the script will be able to create files in this directory!
+<p>If using temporary directory, you should not use <code>$xml-&gt;get_result_file();</code> function anymore. Instead, you will need to use one of the functions below:<br>
+<code>$xml-&gt;get_doc_stream();</code> - for streaming the file to the user or <br>
+<code>$xml-&gt;get_doc_to_file("path/to/file/","file_name");</code> - for saving the file to disc
+
+<p>Below are the modified usage examples to be used with temporary directories:
+
+<p><b>Simple example of creation of an .xls file and streaming it ot the user with <code>temp_dir</code>:</b>
+
+<pre><code><span style="color: #000000"><span style="color: #0000BB">&lt;?php
+<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">require_once&nbsp;</span><span style="color: #DD0000">"document_generator/cl_xml2driver.php"</span><span style="color: #007700">;
+<br />
+<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #6F6F6F">//&nbsp;this&nbsp;will&nbsp;be&nbsp;the&nbsp;name&nbsp;of&nbsp;our&nbsp;RTF&nbsp;file:
+<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$file_rtf&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">"Test.rtf"</span><span style="color: #007700">;
+<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #6F6F6F">//&nbsp;HTTP&nbsp;headers&nbsp;saying&nbsp;that&nbsp;it&nbsp;is&nbsp;a&nbsp;file&nbsp;stream:
+<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">Header</span><span style="color: #007700">(</span><span style="color: #DD0000">"Content-type:&nbsp;application/octet-stream"</span><span style="color: #007700">);
+<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #6F6F6F">//&nbsp;passing&nbsp;the&nbsp;name&nbsp;of&nbsp;the&nbsp;streaming&nbsp;file:
+<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">Header</span><span style="color: #007700">(</span><span style="color: #DD0000">"Content-Disposition:&nbsp;attachment;&nbsp;filename=$file_rtf"</span><span style="color: #007700">);
+<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #6F6F6F">//&nbsp;example&nbsp;XML&nbsp;template
+<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$file&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">"example_template.xml"</span><span style="color: #007700">;
+<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$xml_template&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">join</span><span style="color: #007700">(</span><span style="color: #DD0000">""</span><span style="color: #007700">,</span><span style="color: #0000BB">file</span><span style="color: #007700">(</span><span style="color: #0000BB">$file</span><span style="color: #007700">));
+<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #6F6F6F">//&nbsp;creating&nbsp;class&nbsp;object&nbsp;specifying&nbsp;the&nbsp;driver&nbsp;type&nbsp;-&nbsp;"RTF"
+<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$xml&nbsp;</span><span style="color: #007700">=&nbsp;new&nbsp;</span><span style="color: #0000BB">nDOCGEN</span><span style="color: #007700">(</span><span style="color: #0000BB">$xml_template</span><span style="color: #007700">,</span><span style="color: #DD0000">"RTF"</span><span style="color: #007700">);
+<br />&nbsp;&nbsp;&nbsp;&nbsp;
+<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$xml</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">get_doc_stream</span><span style="color: #007700">();
+<br /></span><span style="color: #0000BB">?&gt;
+<br /></span></span>
+</code></pre>
+</p>
+<p><b>Example of the script shows how to save RTF file to disc with <code>temp_dir</code>:</b></p>
+
+<p><pre><code><span style="color: #0000BB">&lt;?php
+<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">require_once&nbsp;</span><span style="color: #DD0000">"document_generator/cl_xml2driver.php"</span><span style="color: #007700">;
+<br />
+<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #6F6F6F">//&nbsp;this&nbsp;will&nbsp;be&nbsp;the&nbsp;name&nbsp;of&nbsp;our&nbsp;RTF&nbsp;file:
+<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$file_rtf&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">"temp_dir.rtf"</span><span style="color: #007700">;
+<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #6F6F6F">//&nbsp;example&nbsp;XML&nbsp;template
+<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$file&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">"example_template.xml"</span><span style="color: #007700">;
+<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$xml_template&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">join</span><span style="color: #007700">(</span><span style="color: #DD0000">""</span><span style="color: #007700">,</span><span style="color: #0000BB">file</span><span style="color: #007700">(</span><span style="color: #0000BB">$file</span><span style="color: #007700">));
+<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #6F6F6F">//&nbsp;creating&nbsp;class&nbsp;object&nbsp;specifying&nbsp;the&nbsp;driver&nbsp;type&nbsp;-&nbsp;"RTF"
+<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$xml&nbsp;</span><span style="color: #007700">=&nbsp;new&nbsp;</span><span style="color: #0000BB">nDOCGEN</span><span style="color: #007700">(</span><span style="color: #0000BB">$xml_template</span><span style="color: #007700">,</span><span style="color: #DD0000">"RTF"</span><span style="color: #007700">);
+<br />
+<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$xml</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">get_doc_to_file</span><span style="color: #007700">(</span><span style="color: #DD0000">""</span><span style="color: #007700">,</span><span style="color: #0000BB">$file_rtf</span><span style="color: #007700">);
+<br />&nbsp;&nbsp;&nbsp;&nbsp;echo&nbsp;</span><span style="color: #DD0000">"Generated&nbsp;file&nbsp;&lt;b&gt;"</span><span style="color: #007700">.</span><span style="color: #0000BB">$file_rtf</span><span style="color: #007700">.</span><span style="color: #DD0000">"&lt;/b&gt;&nbsp;was&nbsp;saved&nbsp;to&nbsp;disc."</span><span style="color: #007700">;
+<br /></span><span style="color: #0000BB">?&gt;
+<br /></span></code></pre></p>
+
+
+
+</div>
+
+
+</div>
+
+<hr>
+<div align=right>[<a href="javascript:self.scroll(0,0);" style="font-size: 8pt"><b>^&nbsp;up</b></a>]</div>
+
+<div class="level1">
+
+<p><h2><a name="CHARSETS">Multiple character sets support</h2>
+The script supports different character sets for your documents. to enable the support of this feature <code>$multilingual_support</code> variable in the <a href="#CONFIG">configuration file</a> should be set to '<code>true</code>'.<font color=red> Another requirement</font> - you need to have "<font color=red>mbstring</font>" PHP extention enabled. This extension is included into the default PHP package, but you need to make sure that it is enabled on the server where you plan to use the script.  For the XML to be able to process the templates in character sets other than  ANSI, you will need to provide additional 'encoding' option in the main xml tag, something like this:<br>
+<pre>
+&lt;?xml version="1.0"  encoding="ISO-8859-1" ?&gt;
+...
+</pre>
+or
+<pre>
+&lt;?xml version="1.0"  encoding="UTF-8" ?&gt;
+...
+</pre>
+Idealy, the 'encoding option should represent the actual encoding of the contents of the template. If the correct encoding is provided, the script will do the decoding and inserting automatically. Also, there are some advanced controls in the <a href="#CONFIG">configuration file</a>, but they are just in case of some 'fine tuning'.
+
+<p><b><font color=red>IMPORTANT!</font></b> - If you are not sure, if the necessary language is supported - you can always <a href="mailto:&#112;&#97;&#103;&#103;&#97;&#114;&#100;&#64;&#112;&#97;&#103;&#103;&#97;&#114;&#100;&#46;&#99;&#111;&#109;" title="&#112;&#97;&#103;&#103;&#97;&#114;&#100;&#64;&#112;&#97;&#103;&#103;&#97;&#114;&#100;&#46;&#99;&#111;&#109;">contact me directly</a> and ask for support - I'm always willing to help. Also - the 'multilingual' capabilities of RTF and PDF formats are different, that is why <font color=red>PDF may not support all the languages that RTF does</font>.
+</p>
+
+
+<p>In addition to all said above, there is a way to insert single UNICODE characters directly from template without even enabling the <code>$multilingual_support</code>. This can be done either by using HTML entities or by using the character UNICODE number in a construction like this: <code>&amp;#U</code>+UNICODE_NUMBER. Example:
+<pre>
+EURO SIGN : &amp;#U8364
+</pre>
+The unicode numbers for different characters can be found in the Internet, here is an example page:<br>
+<a href="http://www.pemberley.com/janeinfo/latin1.html" target=_blank>http://www.pemberley.com/janeinfo/latin1.html</a>
+
+</div>
+
+<hr>
+<div align=right>[<a href="javascript:self.scroll(0,0);" style="font-size: 8pt"><b>^&nbsp;up</b></a>]</div>
+
+<div class="level1">
+
+<p><h2><a name="RULES">Rules</h2>
+When creating a template for Document Generator you should stick to the following rules:
+<ol>
+	<li>Every template should have the very first line like this: <code>&lt;?xml version="1.0" ?&gt;</code><br>
+	If you are dealing with various character sets, you might need to add the 'encoding' option:<br>
+	<code>&lt;?xml version="1.0" encoding="ISO-8859-1" ?&gt;</code> or <br>
+	<code>&lt;?xml version="1.0" encoding="UTF-8" ?&gt;</code>
+	<li>The template body should always be enclosed into <code>&lt;DOC&gt; .... &lt;/DOC&gt;</code> tag.
+	<li>Every tag should have a closing tag :<br>
+	<code>&lt;DOC&gt; ... &lt;/DOC&gt;</code> or <code>&lt;BR /&gt;</code>.
+	<li>All options in the tags should be enclosed into quotes :<br>
+	<code>&lt;font face=<font color=red>"</font>roman<font color=red>"</font>&gt;</code> some text <code>&lt;/font&gt;</code>
+	<li>RTF driver allows to use short paragraph tag: <code>&lt;P /&gt;</code>, while PDF driver requires that all paragraph text should be included into <code>&lt;P&gt;</code> ... <code>&lt;/P&gt;</code> tags. Keep this in mind if you are planning to use the same templates for generating RTF & PDF files.
+	<li>Do not try to use "impossible" tables. If table tags are placed incorrectly - the result is unpredictable.
+	<li>Nested tables can not have the widthts given in'%' - only specific measurements will work.
+</ol>
+</p>
+</div>
+
+
+<hr>
+<div align=right>[<a href="javascript:self.scroll(0,0);" style="font-size: 8pt"><b>^&nbsp;up</b></a>]</div>
+<div class="level1">
+
+<p><h2><a name="TAGS_REFERENCE">Tags Reference</h2>
+To prepare a good-looking document you will need to use different tags which allow apply different formatting properties to your document.</p>
+</div>
+
+
+<div class="level2">
+<hr>
+<div align=right>[<a href="javascript:self.scroll(0,0);" style="font-size: 8pt"><b>^&nbsp;up</b></a>]</div>
+
+<p><h3><a name="TR_GENERAL_TAGS">DOCUMENT tag</h3>
+This is the main tag for the template. Each template should have its body enclosed into this tag. The tag defines the global document options and configuration.
+
+<p><b>usage:</b> <code>&lt;DOC <font color=red>config_file=</font> 
+[title]
+[subject]
+[author]
+[manager]
+[company]
+[operator]
+[category]
+[keywords]
+[comment]
+ /&gt;</code><br>
+
+<p>
+<ul>
+	<li><code>config_file=</code> - this option is oligatory and should contain path to the <a href="#CONFIG">configuration file</a>
+	<li><code>title=</code> - document property 'Title'<br>
+	<li><code>subject=</code> - document property 'Subject'<br>
+	<li><code>author=</code> - document property 'Author'<br>
+	<li><code>manager=</code> - document property 'Manager'<br>
+	<li><code>company=</code> - document property 'Company'<br>
+	<li><code>operator=</code> - document property 'Operator'<br>
+	<li><code>category=</code> - document property 'Category'<br>
+	<li><code>keywords=</code> - document property 'Keywords'<br>
+	<li><code>comment=</code> - document property 'Comments'<br>
+</ul>
+<p><b>example:</b> <br>
+
+<pre>
+&lt;?xml version="1.0" ?&gt;
+&lt;DOC
+config_file="document_generator/doc_config.inc"
+title="Test Document"
+subject="Illustrating the Generator Features"
+author="Paggard.com"
+manager="Paggard"
+company="Paggard.com"
+operator="scripting"
+category="general documents"
+keywords="rtf php create generator"
+comment="for testing purposes"
+&gt;
+...<br>
+template body<br>
+...<br>
+&lt;/DOC&gt;
+</pre>
+</p>
+
+
+</div>
+</div>
+
+
+<div class="level2">
+<hr>
+<div align=right>[<a href="javascript:self.scroll(0,0);" style="font-size: 8pt"><b>^&nbsp;up</b></a>]</div>
+
+<p><h3><a name="TR_GENERAL_TAGS">General tags</h3>
+General tags are used to design your text in general. With the help of these tags you can create bold, italic, underlined text. Besides it is possible to create subscript and superscript, and insert line-breaks. These tags are identical to HTML tags. 
+
+
+</div>
+
+
+<div class="level3">
+<p><h3><a name="TR_BOLD_TEXT">Bold text</h3>
+<b>purpose:</b> to create bold text <br>
+<b>usage:</b> <code>&lt;b&gt;</code>this text will be bold<code>&lt;/b&gt;</code>
+</p>
+</div>
+
+<div class="level3">
+<p><h3><a name="TR_ITALIC_TEXT">Italic text</h3>
+<b>purpose:</b> to create italic text <br>
+<b>usage:</b> <code>&lt;i&gt;</code>this text will be italic<code>&lt;/i&gt;</code>
+</p>
+</div>
+
+<div class="level3">
+<p><h3><a name="TR_UNDERLINED_TEXT">Underlined text</h3>
+<b>purpose:</b> to underline text<br>
+<b>usage:</b> <code>&lt;u&gt;</code>this text will be underlined<code>&lt;/u&gt;</code>
+</p>
+</div>
+
+<div class="level3">
+<p><h3><a name="TR_SUPERSCRIPT">Superscript</h3>
+<b>purpose:</b> to create superscript text <br>
+<b>usage:</b> <code>&lt;sup&gt;</code>this text will be lifted up<code>&lt;/sup&gt;</code>
+</p>
+</div>
+
+<div class="level3">
+<p><h3><a name="TR_SUBSCRIPT">Subscript</h3>
+<b>purpose:</b> to create subscript text <br>
+<b>usage:</b> <code>&lt;sub&gt;</code>this text will be lowered<code>&lt;/sub&gt;</code>
+</p>
+</div>
+
+<div class="level3">
+<p><h3><a name="TR_NEW_LINE">New line</h3>
+<b>purpose:</b> to start new line<br>
+<b>usage:</b> <code>&lt;br /&gt;</code>This is a new line. <br>
+
+<font color=red><b>*</b></font> Do not mix this tag with paragraph tag, it is just a line break. 
+</p>
+</div>
+
+<div class="level3">
+<p><h3><a name="TR_HR">Horizontal rule</h3>
+<b>purpose:</b> to create horisontal rule<br>
+<b>usage:</b> <code>&lt;hr [size] [style] /&gt;</code><br>
+<p>It is possible to control the thickness and style of the rule. </p>
+<p>
+<ul>
+	<li><code>size=</code> - numeric value to control thickness 
+	<li><code>style=</code> - the code for the line style. Can be one of the following:<br>
+	<ul>
+			<li> <code>SHADOWED</code>: Shadowed.
+			<li> <code>DOUBLE</code>: Double.
+			<li> <code>DOTTED</code>: Dotted.
+			<li> <code>DASHED</code>: Dashed.
+			<li> <code>HAIRLINE</code>: Hairline.
+			<li> <code>INSET</code>: Inset.
+			<li> <code>DASH</code>: Dash (small).
+			<li> <code>DOT</code>: Dot dash.
+			<li> <code>DDDASH</code>: Dot dot dash.
+			<li> <code>OUTSET</code>: Outset.
+			<li> <code>TRIPLE</code>: Triple.
+			<li> <code>WAVY</code>: Wavy.
+			<li> <code>DOUBLEW</code>: Double wavy.
+			<li> <code>STRIPED</code>: Striped.
+			<li> <code>EMBOSS</code>: Emboss.
+			<li> <code>ENGRAVE</code>: Engrave.
+	</ul>
+</ul>
+<p><b>example:</b> <br>
+
+<pre>
+&lt;hr size="50" style="DOTTED" /&gt;
+</pre>
+</p>
+
+</p>
+</div>
+
+
+<div class="level2">
+<hr>
+<div align=right>[<a href="javascript:self.scroll(0,0);" style="font-size: 8pt"><b>^&nbsp;up</b></a>]</div>
+
+<p><h3><a name="TR_FONT_TAG">Font tag</h3>
+<p><b>purpose:</b> This tag is used to set font parameters of the text <br>
+<b>usage:</b> <code>&lt;font [size] [face] [color]&gt;</code>any text<code>&lt;/font&gt;</code> 
+</p>
+<p>It is possible to control the size, face and color of the font. Size should be in points. Font color should be only in <code>#XXXXXX</code> format, no color names like "<code>black</code>", "<code>red</code>" or alike. </p>
+<p>
+<ul>
+	<li><code>face="symbol"</code> - Symbols 
+	<li><code>face="arial"</code> - Arial 
+	<li><code>face="arial"</code> - Arial 
+	<li><code>face="roman"</code> - Times New Roman 
+	<li><code>face="cur"</code> - Courier 
+	<li><code>face="courier"</code> - Courier New 
+	<li><code>face="seriff"</code> - Microsoft Sans Serif 
+	<li><code>face="garamond"</code> - Garamond 
+	<li><code>face="verdana"</code> - Verdana 
+	<li><code>face="helvetica"</code> - Helvetica 
+</ul>
+</p>
+
+<p><b>example:</b> <br>
+
+<pre>
+&lt;font size="14" face="roman" color="#FF0000"&gt;
+This text will be 14 point in size and have face Times New Roman and the text will be red 
+&lt;/font&gt;
+</pre>
+</p>
+
+
+</p>
+</div>
+
+
+<div class="level2">
+<hr>
+<div align=right>[<a href="javascript:self.scroll(0,0);" style="font-size: 8pt"><b>^&nbsp;up</b></a>]</div>
+
+<p><h3><a name="TR_PARAGRAPH_TAG">Paragraph tag</h3>
+<p><b>purpose:</b> This tag is used to set paragraph formatting <br>
+<b>usage:</b> <code>&lt;p [align] [before] [after] [lines] [lindent] [rindent] [findent] [lead] [tsize]&gt;</code>Paragraph text 
+</p>
+<p>
+<ul>
+	<li><code>align=</code> - paragraph alignment
+	<ul>
+		<li><code>right</code> - right aligned
+		<li><code>left</code> - left aligned
+		<li><code>center</code> - centered
+		<li><code>justify</code> - justified 
+	</ul>
+	<li><code>before=</code> - space before(mm)
+	<li><code>after=</code> - space after(mm)
+	<li><code>lines=</code> - space between lines(mm), if 0 - minimal is taken
+	<li><code>lindent=</code> - left indent (mm)
+	<li><code>rindent=</code> - right indent (mm)
+	<li><code>findent=</code> - first line indent (mm)
+</ul>
+</p>
+
+<p>Below are the tabulation controls, they are used to control position and the filling of the tabulations <code>&lt;tab&gt;</code> </p>
+
+<p>
+<ul>
+	<li><code>lead=</code> - determines the filling for the tabulation, if there are several tabulations within the paragraph, the leadings values should be divided by ","
+	<ul>
+		<li><code>dot</code>
+		<li><code>mdot</code>
+		<li><code>hyph</code>
+		<li><code>ul</code>
+		<li><code>th</code>
+		<li><code>eq</code> 
+	</ul>
+	<li><code>tsize=</code> - tabulation sizes (mm) - if there are several tabulations within the paragraph, the sizes values should be divided by ","
+	<li><code>talign=</code> - tab alignment
+	<ul>
+		<li><code>right</code>
+		<li><code>center</code>
+		<li><code>decimal</code> 
+	</ul>
+
+</ul>
+</p>
+<p><b>tabulation example:</b> <br>
+
+<pre>
+<code>&lt;p lead="dot,dot" tsize="50,100" /&gt;</code>Name<code>&lt;tab /&gt;</code>price1<code>&lt;tab /&gt;</code>price2
+<code>&lt;p lead="dot,dot" tsize="50,100" /&gt;</code>Customer 1<code>&lt;tab /&gt;</code>23<code>&lt;tab /&gt;</code>56
+<code>&lt;p lead="dot,dot" tsize="50,100" /&gt;</code>Customer 2<code>&lt;tab /&gt;</code>40<code>&lt;tab /&gt;</code>60
+</pre>
+To understand the system of tabulations it is better to perform some tests by yourself 
+</p>
+<p><b>paragraph example: </b>
+
+<pre>
+<code>&lt;p align="right" before="10" after="0" lines="0" lindent="10" rindent="0" findent="-5" &gt;</code>
+This paragraph will be right-aligned, the space before the paragraph will be 10 millimeters, 
+the space after the paragraph will be minimal, space between lines - minimal, 
+the paragraph will be indented from left margin by 10 millimeters, from right margin - 
+by 0 millimeters and the first line of the paragraph protrudes by 5 millimeters. 
+<code>&lt;/p&gt;</code>
+</pre>
+</p>
+
+</p>
+</div>
+
+
+<div class="level2">
+<hr>
+<div align=right>[<a href="javascript:self.scroll(0,0);" style="font-size: 8pt"><b>^&nbsp;up</b></a>]</div>
+
+<p><h3><a name="TR_IMAGE_TAG">Image tag</h3>
+<p><b>purpose:</b> This tag is used to images into your document <br>
+<b>usage:</b> <code>&lt;img <font color=red>src= width= height=</font> [border] [wrap] [align] [anchor] [left] [top] [space] [script]&gt;</code>
+</p>
+
+<p>With the help of this tag you can insert images into your documents. The script supports two image formats - .JPG and .PNG. The images can be inserted either from a local disk, from internet or can be generated by the some other script. The script provides full control over image size, position and alignment. Besides special option is introduced to control text wrapping. Also, in the configuration file there is a possibility to limit the maximum image size. </p>
+
+<p>
+<ul>
+	<li><code>src=</code> - image URL or local path (obligatory) 
+	<li><code>width=</code> - image width in mm (obligatory) 
+	<li><code>height=</code> - image height in mm (obligatory) 
+	<li><code>wrap=</code> - text wrap type 
+	<ul>
+		<li><code>no</code> - none (wrap as if image isn't present) - no wrap, image is behind the text
+		<li><code>around</code> - wrap tightly around shape 
+		<li><code>updown</code> - wrap around top and bottom of shape (no text allowed beside shape)
+	</ul>
+	<li><code>align=</code> - image align 
+	<ul>
+		<li><code>center</code> - centered 
+		<li><code>right</code> - right aligned 
+		<li><code>left</code> - left aligned 
+	</ul>
+	<li><code>border=</code> - image border 
+	<ul>
+		<li><code>0</code> - no image border 
+		<li><code>1</code> - the image will have border 
+	</ul>
+	<li><code>anchor=</code> - image anchor 
+	<ul>
+		<li><code>para</code> - anchor is linked to the current paragraph 
+		<li><code>page</code> - anchor is linked to the current page 
+		<li><code>margin</code> - anchor is linked to the margins of the page 
+		<li><code>INCELL</code> - this anchor is used to place an image within a table cell. 
+	</ul>
+	<li><code>left=</code> - position of shape from the left of the anchor in mm 
+	<li><code>top=</code> - position of shape from top of the anchor in mm 
+	<li><code>space=</code> - wrapping dispance from the image in mm 
+	<li><code>script=</code> - <font color=red><b>***</b></font>this option is for images that are generated dynamically by scripts.
+	<ul>
+		<li><code>jpg</code> - set this parameter if the generated image is JPG format
+		<li><code>png</code> - set this parameter if the generated image is PNG format
+	</ul>
+</ul>
+</p>
+
+<p><font color=red><b>*</b></font> mm - means millimeters, don't try to use pixels as in HTML the page have certain size in millimeters and all the measurements should be in millimeters.<br>
+<font color=red><b>**</b></font> obligatory - means that this option must be present in this tag to guarantee correct image representation. 
+<br>
+<font color=red><b>***</b></font> if you are using script-generated images - make sure that you are using '<code>http://</code>' call, because the script first should be executed by server and generate an image, and after that this image will be read by Generator.
+</p>
+<p><b>example:</b> <br>
+
+<pre>
+1. <code>&lt;img src="logo.png" width="60" height="14" wrap="around" align="left" border="1" anchor="page" /&gt;</code>
+2. <code>&lt;img
+	src="http://your_server.com/get_image.php?get_var=345" 
+	script="jpg" width="60" height="14" 
+	wrap="around" align="left" border="1" anchor="page" 
+   /&gt;</code>
+</pre>
+</p>
+
+</p>
+</div>
+
+
+<div class="level2">
+<hr>
+<div align=right>[<a href="javascript:self.scroll(0,0);" style="font-size: 8pt"><b>^&nbsp;up</b></a>]</div>
+
+<p><h3><a name="TR_TABLE_TAGS">Table tags</h3>
+
+<p><b>purpose:</b> This tag is used to create tables in your document. <br>
+<b>usage:</b> <code>&lt;table [border] [align] [valign] [width] [bgcolor] [bord_color] [color] [rowkeep] [tablekeep]&gt;<br>
+   <dd>&lt;tr [border] [align] [valign] [bgcolor] [color]&gt;<br>
+      <dd>&lt;td [border] [align] [valign] [bgcolor] [color]&gt;</code>table cell text<code>&lt;/td&gt;<br>
+   <dd>&lt;/tr&gt;<br>
+<dd>&lt;/table&gt;  </code>
+</p>
+<p>These tag gives you the possibility to create very complicated and good-looking tables.  You can also 'nest' the table tags to include one table into the cell of another table - but in this case make sure the table widths do not conflict with each other.
+
+<ul>
+	<li><code>&lt;table [border] [align] [valign] [width] [bgcolor] [bord_color] [color] [rowkeep] [tablekeep]&gt;</code>...<code>&lt;/table&gt;</code> - the whole table settings 
+	<ul>
+		<li><code>border=</code> - table border (<code>0</code> - no; <code>1</code> - yes - or string value like "<code>t,b,r,l</code>" - means: <b>t</b>op,<b>b</b>ottom,<b>r</b>ight,<b>l</b>eft border)
+		<li><code>bord_color=</code> - table border color in HEX - example - <code>#ff00ff</code>
+		<li><code>align=</code> - horizontal table alignment on the page
+		<ul>
+			<li><code>right</code> - right aligned 
+			<li><code>left</code> - left aligned 
+			<li><code>center</code> - centered 
+			<li><code>justify</code> - justified 
+		</ul>
+		<li><code>valign=</code> - vertical alignment for all the table cells 
+		<ul>
+			<li><code>top</code> - top aligned
+			<li><code>middle</code> - middle aligned
+			<li><code>bottom</code> - bottom aligned 
+		</ul>
+		<li><code>width=</code> - table width (either in mm or in percent from page width - example - 50%) 
+		<li><code>bgcolor=</code> - table background in percent from black - example - 50 (50% of gray) 
+		<li><code>color=</code> - table background color in HEX - example - <code>#ff00ff</code>
+		<li><code>rowkeep=</code> <code>yes</code>- prevent table rows from splitting between pages 
+		<li><code>tablekeep=</code> <code>yes</code>- keeps all table rows on single page 
+	</ul>
+	<li><code>&lt;tr [height] [border] [align] [valign] [bgcolor] [color]&gt;</code> ... <code>&lt;/tr&gt;</code> - table row settings
+	<ul>
+		<li><code>height=</code> - vertical height of a given row
+		<li><code>border=</code> - row border (<code>0</code> - no; <code>1</code> - yes - or string value like "<code>t,b,r,l</code>" - means: <b>t</b>op,<b>b</b>ottom,<b>r</b>ight,<b>l</b>eft border) - if omitted - is taken from table settings
+
+		<li><code>align=</code> - horizontal alignment for the row - if omitted - is taken from default settings 
+		<ul>
+			<li><code>right</code> - right aligned 
+			<li><code>left</code> - left aligned 
+			<li><code>center</code> - centered 
+			<li><code>justify</code> - justified 
+		</ul>
+		<li><code>valign=</code> - vertical alignment for the text in row cells - if omitted - is taken from table settings 
+		<ul>
+			<li><code>top</code> - top aligned 
+			<li><code>middle</code> - middle aligned 
+			<li><code>bottom</code> - bottom aligned 
+		</ul>
+		<li><code>bgcolor=</code> - row background in percent from black - example - 50 (50% of gray - if omitted - is taken from table settings 
+		<li><code>color=</code> - row background color in HEX - example - <code>#ff00ff</code> - if omitted the value is taken from table settings
+	</ul>
+	<li><code>&lt;td [border] [align] [valign] [bgcolor] [color]&gt;</code>cell text<code>&lt;/td &gt;</code>- cell settings
+	<ul>
+		<li><code>colspan=</code> - number of colomns spanned by the cell
+		<li><code>rowspan=</code> -number of rows spanned by the cell
+		<li><code>border=</code> - cell border (<code>0</code> - no; <code>1</code> - yes - or string value like "<code>t,b,r,l</code>" - means: <b>t</b>op,<b>b</b>ottom,<b>r</b>ight,<b>l</b>eft border) - if omitted - is taken from row settings 
+		<li><code>align=</code> - horizontal alignment for the cell - if omitted - is taken from row settings 
+		<ul>
+			<li><code>right</code> - right aligned 
+			<li><code>left</code> - left aligned 
+			<li><code>center</code> - centered 
+			<li><code>justify</code> - justified 
+		</ul>
+		<li><code>valign=</code> - vertical alignment for the cell - if omitted - is taken from row settings 
+		<ul>
+			<li><code>top</code> - top aligned 
+			<li><code>middle</code> - middle aligned 
+			<li><code>bottom</code> - bottom aligned 
+		</ul>
+		<li><code>width=</code> - cell width (either in mm or in percent from table width - example - 30%)
+
+		<li><code>bgcolor=</code> - cell background in percent from black - example - <code>50</code> (50% of gray - if omitted - is taken from row settings 
+		<li><code>color=</code> - cell background color in HEX - example - <code>#ff00ff</code> - if omitted the value is taken from row settings
+	</ul>
+</ul>
+</p>
+<font color=red><b>*</b></font> be careful when using colspan and rowspan tags - if you're trying to build impossible table - the result will be unpredictable<br>
+<font color=red><b>**</b></font> if some options are omitted they are taken from the default settings, which are set in the configuration file 
+
+<p><b>example:</b> <br>
+
+<pre>
+<code>&lt;table width="100" border="1"&gt;
+   &lt;tr&gt;
+      &lt;td colspan="2" bgcolor="30" valign="top"&gt;</code>First cell<code>&lt;/td&gt;
+   &lt;/tr&gt;
+   &lt;tr&gt;
+      &lt;td align="left" color="#ff0000"&gt;</code>next cells<code>&lt;/td&gt;&lt;td align="right"&gt;</code>another one<code>&lt;/td&gt;
+   &lt;/tr&gt;
+&lt;/table&gt;</code>
+</pre>
+
+</p>
+
+</p>
+</div>
+
+
+
+<div class="level2">
+<hr>
+<div align=right>[<a href="javascript:self.scroll(0,0);" style="font-size: 8pt"><b>^&nbsp;up</b></a>]</div>
+
+<p><h3><a name="TR_MULTI_PAGE_CONTROL">Multi-page control</h3>
+Using this set of tags you will be able to create multi-paged documents with the possibility to control page layout. You can insert headers and footers, number the pages through the whole document, insert page breaks.
+</div>
+
+
+<div class="level3">
+<p><h3><a name="TR_PAGE_BREAK">Page break</h3>
+<p><b>purpose:</b> to start new page <br>
+<b>usage:</b> <code>&lt;page /&gt;</code> 
+</p>
+Just place this tag where you need to start a new page. 
+</p>
+</div>
+
+<div class="level3">
+<p><h3><a name="TR_HEADERS_FOOTERS">Headers and footers</h3>
+To avoid compatibility problems between RTF and PDF - headers and footest shoul always be defined either in the beginning of the template (after <code>&lt;DOC&gt;</code> tag) or right after the <code>&lt;SECTION&gt;</code> tag.
+<p>
+<b>purpose:</b> to create headers and footers for all the document pages <br>
+<b>usage:</b> <code>&lt;header&gt;</code>Your header text<code>&lt;/header&gt;</code><br>
+<dd><code>&lt;footer&gt;</code>Your footer text <code>&lt;/footer&gt;</code>  
+
+<p>The script supports 'facing' pages, when right and left pages can have separate headers and footers. the 'Facint pages' feature can be activated in the main configuration file. There are also additional controls for this feature. Once activated - you can use additional tags to define headers and footers:<br>
+<code>&lt;headerr&gt;</code>Your header text<code>&lt;/headerr&gt;</code> - to define header for right pages<br>
+<code>&lt;headerl&gt;</code>Your header text<code>&lt;/headerl&gt;</code> - to define header for left pages<br>
+<code>&lt;footerr&gt;</code>Your footer text<code>&lt;/footerr&gt;</code> - to define footer for right pages<br>
+<code>&lt;footerl&gt;</code>Your footer text<code>&lt;/footerl&gt;</code> - to define footer for left pages<br>
+
+
+<p>For header and footer you can use all the tags to describe text formatting bold, italic (general tags). You can even put tables and images into the page headers and footers - in this case these element will be repeated on every page. The alignment of header and footer is set in the <a href="#CONFIG">main configuration file</a>. Also - each document section can have separate set of headers and footers</p>
+</p>
+</div>
+
+<div class="level3">
+<p><h3><a name="TR_PAGE_NUMBERS">Page numbers</h3>
+Another feature of the script - page numbers. The settings are in the <a href="#CONFIG">main configuration file</a>. There is almost full control under the page numbers - start value, vertical and horizontal alignment. It is possible to enable or disable the page numbers autoinsetion, if disabled - you can insert the page number and the total number of pages using the following tags:<br>
+<code>&lt;cpagenum /&gt;</code> - current page number<br>
+<code>&lt;tpagenum /&gt;</code> - total number of pages
+
+<p>Also, page numbers can be controlled by <a href="#TR_DOCUMENT_SECTIONS">document sections<a>.
+</p>
+</div>
+
+<div class="level3">
+<p><h3><a name="TR_DOCUMENT_SECTIONS">Document sections</h3>
+
+<p>Another significant feature of the script is 'document sections'. The point is that you can handle different sections within one document. Every section can have its own page numbering, headers and footers. The section tag is much like page break tag - so they should not be put together, or you'll get an empty page within your document. </p>
+
+<p><b>usage:</b> <code>&lt;section [pn_start] [pn_align] [nobreak] [landscape] [columns]&gt;</code>
+
+<ul>
+	<li><code>pn_start=</code> - beginning page number 
+	<li><code>pn_align=</code> - [<code>left</code> / <code>center</code> / <code>right</code>] horisontal alignment of the page numbers 
+	<li><code>nobreak=</code> - [<code>yes</code>] applying new section without starting a new page 
+	<li><code>landscape=</code> - [<code>yes</code>] landscape page orientation within the section (default is portrait) 
+	<li><code>columns=</code> - [number of columns] the number of columns to divide the text within the section 
+</ul>
+</p>
+
+<p>To create headers and footers for the section, just place appropriate tags after the section tag. The vertical alignment of the page numbers through the whole document is set in the <a href="#CONFIG">configuration file</a>. </p>
+
+</p>
+</div>
+
+<div class="level2">
+<hr>
+<div align=right>[<a href="javascript:self.scroll(0,0);" style="font-size: 8pt"><b>^&nbsp;up</b></a>]</div>
+<p><h3><a name="TR_HYPERLINKS">Hyperlinks</h3>
+
+<p><b>purpose:</b> Hyperlinks can be used for providing navigation within and outside the document </p>
+<p>Navigation within the document:<br>
+<b>usage:</b> <code>&lt;a local="go_to_this_id"&gt;</code>any text<code>&lt;/a&gt;</code><br>
+<dd>. . . <br>
+<dd><code>&lt;id name="go_to_this_id" /&gt;</code>  <br>
+</p>
+
+<p>Navigation outside the document:<br>
+<b>usage:</b> <code>&lt;a file="path_to_file"&gt;</code>any text<code>&lt;/a&gt;</code> - mind that "<code>file</code>" should be one_word  
+</p>
+By using this feature you can organize something like table of contents or anything else with the possibility of jumping from one to the other parts of the documents. Also you can create links to the other documents to be opened using one mouse click. In MS Word you will need to do CTRL+Click to follow the link.
+
+</p>
+</div>
+
+<div class="level2">
+<hr>
+<div align=right>[<a href="javascript:self.scroll(0,0);" style="font-size: 8pt"><b>^&nbsp;up</b></a>]</div>
+<p><h3><a name="TR_FOOTNOTES">Footnotes</h3>
+
+<p><b>purpose:</b> Footnotes are used in printed documents to explain, comment on, or provide references for text in a document. You might use footnotes for detailed comments. Footnotes are located at the bottom of each page and has automatic numbering </p>
+<p>
+<b>usage:</b>
+Any paragraph text<code>&lt;footnote&gt;</code>your footnote text<code>&lt;/footnote&gt;</code> continuation of paragraph text.<br>
+
+<p>To control the appearance of the footnotes you can use special settings in the <a href="#CONFIG">configuration file</a> under the 'DEFAULT FOOTNOTES SETTINGS' section. You will be able to control color, font face, font size and font decoration. </p>
+<br>
+</p>
+
+</div>
+
+<div class="level2">
+<hr>
+<div align=right>[<a href="javascript:self.scroll(0,0);" style="font-size: 8pt"><b>^&nbsp;up</b></a>]</div>
+<p><h3><a name="HIDDENT_TEXT">Hidden text</h3>
+
+<p><b>purpose:</b> Another small feature, that allows you to hide the block of text. After the text is hidden it can be viewed in MS Word (for example) by using 'Show/Hide' button </p>
+<p>
+<b>usage:</b>
+ <code>&lt;hidden&gt;</code>the text you want to hide<code>&lt;/hidden&gt;</code><br>
+
+<br>
+</p>
+
+</div>
+
+
+<!-- ADDITIONAL MATERIALS -->
+<br><br>
+<h2>Additional materials</h2>
+
+
+<div class="level1">
+<hr>
+<div align=right>[<a href="javascript:self.scroll(0,0);" style="font-size: 8pt"><b>^&nbsp;up</b></a>]</div>
+
+<p><h2><a name="CONFIG">Main Configuration File</h2>
+
+Here is the example of the script configuration file with explanations.
+
+<pre><code><span style="color: #0000BB">&lt;?php
+<br /></span><span style="color: #6F6F6F">//&nbsp;&nbsp;&nbsp;&nbsp;CONFIGURATION&nbsp;FILE&nbsp;FOR&nbsp;DOCUMENT&nbsp;GENERATOR&nbsp;CLASS
+<br />//&nbsp;&nbsp;&nbsp;&nbsp;SOME&nbsp;OF&nbsp;THESE&nbsp;SETTINGS&nbsp;COULD&nbsp;BE&nbsp;OVERWRITTEN&nbsp;BY&nbsp;USING&nbsp;SPECIAL&nbsp;TAGS
+<br />//&nbsp;&nbsp;&nbsp;&nbsp;IN&nbsp;CASE&nbsp;OF&nbsp;OMMITTING&nbsp;THE&nbsp;TAGS,&nbsp;TEXT&nbsp;IS&nbsp;FORMATTED&nbsp;USING&nbsp;THESE&nbsp;SETTINGS
+<br />
+<br /></span><span style="color: #0000BB">$temp_dir&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">false</span><span style="color: #007700">;&nbsp;</span><span style="color: #6F6F6F">//&nbsp;this&nbsp;variable&nbsp;is&nbsp;used&nbsp;to&nbsp;reduce&nbsp;the&nbsp;memory&nbsp;usage&nbsp;when&nbsp;dealing&nbsp;
+<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;with&nbsp;great&nbsp;amount&nbsp;of&nbsp;images.&nbsp;This&nbsp;variable&nbsp;should&nbsp;contain
+<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;either&nbsp;'false'&nbsp;or&nbsp;the&nbsp;full&nbsp;path&nbsp;to&nbsp;the&nbsp;temp&nbsp;directory&nbsp;
+<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;WITH&nbsp;TRAILING&nbsp;SLASH&nbsp;-&nbsp;like&nbsp;this&nbsp;:&nbsp;"tmp/"
+<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;please,&nbsp;monitor&nbsp;this&nbsp;directory&nbsp;as&nbsp;though&nbsp;the&nbsp;temporary&nbsp;files&nbsp;
+<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;are&nbsp;deleted&nbsp;automatically,&nbsp;there&nbsp;is&nbsp;still&nbsp;a&nbsp;chance&nbsp;that&nbsp;
+<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;some&nbsp;of&nbsp;them&nbsp;can&nbsp;remain&nbsp;due&nbsp;to&nbsp;some&nbsp;external&nbsp;reasons&nbsp;
+<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;that&nbsp;can&nbsp;not&nbsp;be&nbsp;controlled&nbsp;by&nbsp;the&nbsp;script
+<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;IMPORTANT!!!
+<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;if&nbsp;using&nbsp;temporary&nbsp;directory&nbsp;you&nbsp;should&nbsp;not&nbsp;use&nbsp;'get_rtf()'&nbsp;function
+<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;use&nbsp;either&nbsp;$xml-&gt;get_doc_stream();&nbsp;&nbsp;or&nbsp;
+<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;$xml-&gt;get_doc_to_file("path/to/file/","file_name");&nbsp;
+<br />
+<br />
+<br />
+<br />/////
+<br />//&nbsp;ATTENTION!
+<br />//&nbsp;all&nbsp;measurements&nbsp;are&nbsp;given&nbsp;in&nbsp;millimeters,&nbsp;but&nbsp;you&nbsp;can&nbsp;use&nbsp;the&nbsp;following&nbsp;units:
+<br />//&nbsp;&nbsp;'cm'&nbsp;&nbsp;&nbsp;:&nbsp;//centimeters&nbsp;
+<br />//&nbsp;&nbsp;'mm'&nbsp;&nbsp;&nbsp;:&nbsp;//millimeters&nbsp;
+<br />//&nbsp;&nbsp;'q'&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;//alias&nbsp;of&nbsp;'kyu'
+<br />//&nbsp;&nbsp;'kyu'&nbsp;&nbsp;:&nbsp;//Q/kyu&nbsp;
+<br />//&nbsp;&nbsp;'in'&nbsp;&nbsp;&nbsp;:&nbsp;//inches
+<br />//&nbsp;&nbsp;'pt'&nbsp;&nbsp;&nbsp;:&nbsp;//alias&nbsp;of&nbsp;'pts'&nbsp;(points)
+<br />//&nbsp;&nbsp;'pts'&nbsp;&nbsp;:&nbsp;//points
+<br />//&nbsp;&nbsp;'picas':&nbsp;//picas&nbsp;
+<br />//&nbsp;&nbsp;'twips':&nbsp;//twips&nbsp;
+<br />/////
+<br />
+<br />//&nbsp;ALSO&nbsp;-&nbsp;you&nbsp;can&nbsp;set&nbsp;special&nbsp;units&nbsp;everywhere,&nbsp;example:
+<br />//&nbsp;&nbsp;$pg_height="12in";&nbsp;//&nbsp;will&nbsp;mean&nbsp;12&nbsp;inches
+<br />//&nbsp;&nbsp;&lt;table&nbsp;width=2cm&gt;&nbsp;//&nbsp;will&nbsp;set&nbsp;table&nbsp;width&nbsp;to&nbsp;2&nbsp;cm
+<br />//&nbsp;and&nbsp;alike.
+<br />
+<br />
+<br /></span><span style="color: #0000BB">$default_units&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">"mm"</span><span style="color: #007700">;&nbsp;</span><span style="color: #6F6F6F">//&nbsp;default&nbsp;measurement&nbsp;units&nbsp;
+<br />
+<br />//---------------------------------------------------
+<br />//&nbsp;DEFAULT&nbsp;PAGE&nbsp;SETTINGS
+<br />//---------------------------------------------------
+<br /></span><span style="color: #0000BB">$pg_width</span><span style="color: #007700">=</span><span style="color: #0000BB">210</span><span style="color: #007700">;&nbsp;&nbsp;&nbsp;</span><span style="color: #6F6F6F">//&nbsp;page&nbsp;width&nbsp;(mm)
+<br /></span><span style="color: #0000BB">$pg_height</span><span style="color: #007700">=</span><span style="color: #0000BB">297</span><span style="color: #007700">;&nbsp;&nbsp;</span><span style="color: #6F6F6F">//&nbsp;page&nbsp;height&nbsp;(mm)
+<br /></span><span style="color: #0000BB">$mar_left</span><span style="color: #007700">=</span><span style="color: #0000BB">19</span><span style="color: #007700">;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #6F6F6F">//&nbsp;left&nbsp;margin&nbsp;width&nbsp;(mm)
+<br /></span><span style="color: #0000BB">$mar_right</span><span style="color: #007700">=</span><span style="color: #0000BB">19</span><span style="color: #007700">;&nbsp;&nbsp;&nbsp;</span><span style="color: #6F6F6F">//&nbsp;right&nbsp;margin&nbsp;width&nbsp;(mm)
+<br /></span><span style="color: #0000BB">$mar_top</span><span style="color: #007700">=</span><span style="color: #0000BB">19</span><span style="color: #007700">;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #6F6F6F">//&nbsp;top&nbsp;margin&nbsp;height&nbsp;(mm)
+<br /></span><span style="color: #0000BB">$mar_bott</span><span style="color: #007700">=</span><span style="color: #0000BB">19</span><span style="color: #007700">;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #6F6F6F">//&nbsp;bottom&nbsp;margin&nbsp;height&nbsp;(mm)
+<br />
+<br /></span><span style="color: #0000BB">$facing_pages&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">1</span><span style="color: #007700">;&nbsp;</span><span style="color: #6F6F6F">//&nbsp;1&nbsp;-&nbsp;activates&nbsp;activates&nbsp;odd/even&nbsp;headers&nbsp;and&nbsp;gutters;
+<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;0&nbsp;-&nbsp;deactivates
+<br /></span><span style="color: #0000BB">$gutter_width&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">5</span><span style="color: #007700">;&nbsp;</span><span style="color: #6F6F6F">//&nbsp;Gutter&nbsp;width&nbsp;(when&nbsp;$facing_pages&nbsp;is&nbsp;activated)
+<br /></span><span style="color: #0000BB">$rtl_gutter&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">1</span><span style="color: #007700">;&nbsp;&nbsp;&nbsp;</span><span style="color: #6F6F6F">//&nbsp;if&nbsp;1&nbsp;-&nbsp;Gutter&nbsp;is&nbsp;positioned&nbsp;on&nbsp;the&nbsp;right
+<br />
+<br />
+<br /></span><span style="color: #0000BB">$page_orientation&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">"portrait"</span><span style="color: #007700">;&nbsp;</span><span style="color: #6F6F6F">//&nbsp;portrait&nbsp;or&nbsp;landscape
+<br />//$page_orientation&nbsp;=&nbsp;"landscape";&nbsp;//&nbsp;portrait&nbsp;or&nbsp;landscape
+<br />
+<br /></span><span style="color: #0000BB">$header_align&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">"right"</span><span style="color: #007700">;&nbsp;</span><span style="color: #6F6F6F">//&nbsp;default&nbsp;header&nbsp;align&nbsp;-&nbsp;"left",&nbsp;"right",&nbsp;"center"
+<br /></span><span style="color: #0000BB">$footer_align&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">"left"</span><span style="color: #007700">;&nbsp;</span><span style="color: #6F6F6F">//&nbsp;default&nbsp;footer&nbsp;align&nbsp;-&nbsp;"left",&nbsp;"right",&nbsp;"center"
+<br /></span><span style="color: #0000BB">$head_y</span><span style="color: #007700">=</span><span style="color: #0000BB">1</span><span style="color: #007700">;&nbsp;</span><span style="color: #6F6F6F">//&nbsp;space&nbsp;between&nbsp;the&nbsp;top&nbsp;edge&nbsp;of&nbsp;the&nbsp;page&nbsp;and&nbsp;the&nbsp;top&nbsp;header&nbsp;(mm)
+<br /></span><span style="color: #0000BB">$foot_y</span><span style="color: #007700">=</span><span style="color: #0000BB">10</span><span style="color: #007700">;&nbsp;</span><span style="color: #6F6F6F">//&nbsp;space&nbsp;between&nbsp;the&nbsp;bottom&nbsp;edge&nbsp;of&nbsp;the&nbsp;page&nbsp;and&nbsp;the&nbsp;bottom&nbsp;footer&nbsp;(mm)
+<br />
+<br /></span><span style="color: #0000BB">$page_numbers&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">1</span><span style="color: #007700">;&nbsp;</span><span style="color: #6F6F6F">//&nbsp;page&nbsp;numbers,&nbsp;if&nbsp;&nbsp;&lt;&nbsp;0&nbsp;-&nbsp;no&nbsp;page&nbsp;numbers;&nbsp;if&nbsp;&gt;=&nbsp;0&nbsp;page&nbsp;numbers&nbsp;start&nbsp;from&nbsp;the&nbsp;specified&nbsp;number
+<br /></span><span style="color: #0000BB">$page_numbers_valign&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">"bottom"</span><span style="color: #007700">;&nbsp;</span><span style="color: #6F6F6F">//&nbsp;vertical&nbsp;alignment&nbsp;of&nbsp;the&nbsp;page&nbsp;numbers&nbsp;("top"&nbsp;or&nbsp;"bottom")
+<br /></span><span style="color: #0000BB">$page_numbers_align&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">"center"</span><span style="color: #007700">;&nbsp;</span><span style="color: #6F6F6F">//&nbsp;horisontal&nbsp;alignment&nbsp;of&nbsp;the&nbsp;page&nbsp;numbers&nbsp;("left",&nbsp;"center",&nbsp;"right")
+<br />
+<br /></span><span style="color: #0000BB">$page_numbers_autoinsert&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">"0"</span><span style="color: #007700">;&nbsp;</span><span style="color: #6F6F6F">//&nbsp;0&nbsp;=&nbsp;disable,&nbsp;1&nbsp;=&nbsp;enable&nbsp;autoinsertion.&nbsp;
+<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;Use&nbsp;&lt;cpagenum&nbsp;/&gt;&nbsp;to&nbsp;insert&nbsp;pagenumber&nbsp;when&nbsp;disabled.&nbsp;
+<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;Use&nbsp;&lt;tpagenum&nbsp;/&gt;&nbsp;to&nbsp;insert&nbsp;the&nbsp;total&nbsp;number&nbsp;of&nbsp;pages.&nbsp;
+<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;Valign&nbsp;and&nbsp;align&nbsp;only&nbsp;work&nbsp;in&nbsp;enabled&nbsp;mode
+<br />
+<br />
+<br />//---------------------------------------------------
+<br />//&nbsp;DEFAULT&nbsp;HYPER&nbsp;LINK&nbsp;SETTINGS
+<br />//---------------------------------------------------
+<br /></span><span style="color: #0000BB">$h_link_color&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">"#009900"</span><span style="color: #007700">;&nbsp;</span><span style="color: #6F6F6F">//&nbsp;default&nbsp;color&nbsp;for&nbsp;hyper&nbsp;links
+<br /></span><span style="color: #0000BB">$h_link_fontf&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">"garamond"</span><span style="color: #007700">;&nbsp;</span><span style="color: #6F6F6F">//&nbsp;default&nbsp;link&nbsp;font&nbsp;face&nbsp;[arial,roman,sym,courier,seriff,garamond]
+<br /></span><span style="color: #0000BB">$h_link_fonts&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">"12"</span><span style="color: #007700">;&nbsp;</span><span style="color: #6F6F6F">//&nbsp;default&nbsp;link&nbsp;font&nbsp;size&nbsp;in&nbsp;pt
+<br /></span><span style="color: #0000BB">$h_link_fontd&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">"i"</span><span style="color: #007700">;&nbsp;</span><span style="color: #6F6F6F">//&nbsp;default&nbsp;link&nbsp;decoration&nbsp;[ul&nbsp;-&nbsp;underline,&nbsp;i&nbsp;-&nbsp;italic,&nbsp;b&nbsp;-&nbsp;old]
+<br />
+<br />//---------------------------------------------------
+<br />//&nbsp;DEFAULT&nbsp;FOOTNOTES&nbsp;SETTINGS
+<br />//---------------------------------------------------
+<br /></span><span style="color: #0000BB">$fnt_color&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">"#660099"</span><span style="color: #007700">;&nbsp;</span><span style="color: #6F6F6F">//&nbsp;default&nbsp;color&nbsp;for&nbsp;footnotes
+<br /></span><span style="color: #0000BB">$fnt_fontf&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">"garamond"</span><span style="color: #007700">;&nbsp;</span><span style="color: #6F6F6F">//&nbsp;default&nbsp;footnote&nbsp;font&nbsp;face&nbsp;[arial,roman,sym,courier,seriff,garamond]
+<br /></span><span style="color: #0000BB">$fnt_fonts&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">"10"</span><span style="color: #007700">;&nbsp;</span><span style="color: #6F6F6F">//&nbsp;default&nbsp;footnote&nbsp;font&nbsp;size&nbsp;in&nbsp;pt
+<br /></span><span style="color: #0000BB">$fnt_fontd&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">""</span><span style="color: #007700">;&nbsp;</span><span style="color: #6F6F6F">//&nbsp;default&nbsp;footnote&nbsp;decoration&nbsp;[ul&nbsp;-&nbsp;underline,&nbsp;i&nbsp;-&nbsp;italic,&nbsp;b&nbsp;-&nbsp;old]
+<br />
+<br />//---------------------------------------------------
+<br />//&nbsp;DEFAULT&nbsp;FONT&nbsp;AND&nbsp;PARAGRAPH&nbsp;SETTINGS
+<br />//---------------------------------------------------
+<br />
+<br /></span><span style="color: #0000BB">$font_face&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">"arial"</span><span style="color: #007700">;&nbsp;</span><span style="color: #6F6F6F">//&nbsp;default&nbsp;font&nbsp;face&nbsp;[arial,roman,sym,courier,seriff,garamond]
+<br /></span><span style="color: #0000BB">$font_size&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">"10"</span><span style="color: #007700">;&nbsp;&nbsp;</span><span style="color: #6F6F6F">//&nbsp;font&nbsp;size&nbsp;in&nbsp;pt
+<br /></span><span style="color: #0000BB">$def_par_before&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">"0"</span><span style="color: #007700">;&nbsp;</span><span style="color: #6F6F6F">//&nbsp;space&nbsp;before&nbsp;paragraph&nbsp;(mm)&nbsp;(better&nbsp;set&nbsp;to&nbsp;0,&nbsp;when&nbsp;using&nbsp;tables&nbsp;and&nbsp;set&nbsp;by&nbsp;tag)
+<br /></span><span style="color: #0000BB">$def_par_after&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">"0"</span><span style="color: #007700">;&nbsp;</span><span style="color: #6F6F6F">//&nbsp;space&nbsp;after&nbsp;paragraph&nbsp;(mm)&nbsp;(better&nbsp;set&nbsp;to&nbsp;0,&nbsp;when&nbsp;using&nbsp;tables&nbsp;and&nbsp;set&nbsp;by&nbsp;tag)
+<br /></span><span style="color: #0000BB">$def_par_align&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">"left"</span><span style="color: #007700">;&nbsp;</span><span style="color: #6F6F6F">//&nbsp;default&nbsp;paragraph&nbsp;align.&nbsp;
+<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;"left",&nbsp;"right",&nbsp;"center",&nbsp;"justify"
+<br />
+<br /></span><span style="color: #0000BB">$def_par_lines&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">0</span><span style="color: #007700">;&nbsp;</span><span style="color: #6F6F6F">//&nbsp;space&nbsp;between&nbsp;lines&nbsp;(mm).&nbsp;if&nbsp;0&nbsp;-&nbsp;minimal&nbsp;is&nbsp;taken
+<br /></span><span style="color: #0000BB">$def_par_lindent&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">"0"</span><span style="color: #007700">;&nbsp;</span><span style="color: #6F6F6F">//&nbsp;paragraph&nbsp;left&nbsp;indent&nbsp;(mm)&nbsp;(better&nbsp;set&nbsp;by&nbsp;tag)
+<br /></span><span style="color: #0000BB">$def_par_rindent&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">"0"</span><span style="color: #007700">;&nbsp;</span><span style="color: #6F6F6F">//&nbsp;paragraph&nbsp;right&nbsp;indent&nbsp;(mm)&nbsp;(better&nbsp;set&nbsp;by&nbsp;tag)
+<br /></span><span style="color: #0000BB">$def_par_findent&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">"0"</span><span style="color: #007700">;&nbsp;</span><span style="color: #6F6F6F">//&nbsp;first&nbsp;line&nbsp;indent&nbsp;(mm)&nbsp;(better&nbsp;set&nbsp;by&nbsp;tag)
+<br />
+<br />//---------------------------------------------------
+<br />//&nbsp;DEFAULT&nbsp;TABLE&nbsp;SETTINGS
+<br />//---------------------------------------------------
+<br /></span><span style="color: #0000BB">$tbl_def_border&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">1</span><span style="color: #007700">;&nbsp;</span><span style="color: #6F6F6F">//&nbsp;table&nbsp;border&nbsp;(1&nbsp;-&nbsp;yes;&nbsp;0&nbsp;-&nbsp;no)&nbsp;or&nbsp;string&nbsp;value:
+<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;"t,b,r,l"&nbsp;-&nbsp;means:&nbsp;top,bottom,right,left&nbsp;borders
+<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;you&nbsp;can&nbsp;vary&nbsp;these&nbsp;letters&nbsp;to&nbsp;get&nbsp;the&nbsp;result&nbsp;you&nbsp;need
+<br /></span><span style="color: #0000BB">$tbl_def_width&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">"100%"</span><span style="color: #007700">;&nbsp;</span><span style="color: #6F6F6F">//&nbsp;table&nbsp;width&nbsp;(in&nbsp;mm&nbsp;or&nbsp;in&nbsp;%&nbsp;from&nbsp;page&nbsp;width)
+<br /></span><span style="color: #0000BB">$tbl_def_cellpadding&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">0</span><span style="color: #007700">;&nbsp;</span><span style="color: #6F6F6F">//&nbsp;default&nbsp;cellpadding&nbsp;(mm)
+<br /></span><span style="color: #0000BB">$tbl_def_align&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">"left"</span><span style="color: #007700">;&nbsp;</span><span style="color: #6F6F6F">//&nbsp;default&nbsp;table&nbsp;align&nbsp;on&nbsp;the&nbsp;page&nbsp;(center,&nbsp;right,&nbsp;left)
+<br /></span><span style="color: #0000BB">$tbl_def_valign&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">"top"</span><span style="color: #007700">;</span><span style="color: #6F6F6F">//&nbsp;default&nbsp;vertical&nbsp;text&nbsp;align&nbsp;for&nbsp;all&nbsp;the&nbsp;cells&nbsp;(top,&nbsp;middle,&nbsp;bottom)
+<br /></span><span style="color: #0000BB">$tbl_def_bgcolor&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">"0"</span><span style="color: #007700">;&nbsp;</span><span style="color: #6F6F6F">//&nbsp;table&nbsp;background&nbsp;(0&nbsp;-&nbsp;no,&nbsp;or&nbsp;%&nbsp;from&nbsp;black)
+<br /></span><span style="color: #0000BB">$row_def_align&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">"left"</span><span style="color: #007700">;&nbsp;</span><span style="color: #6F6F6F">//&nbsp;default&nbsp;horizontal&nbsp;text&nbsp;align&nbsp;for&nbsp;all&nbsp;the&nbsp;cells&nbsp;(center,&nbsp;right,&nbsp;left)
+<br />
+<br />//---------------------------------------------------
+<br />//&nbsp;DEFAULT&nbsp;IMAGE&nbsp;SETTINGS
+<br />//---------------------------------------------------
+<br /></span><span style="color: #0000BB">$image_size&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">5000</span><span style="color: #007700">;&nbsp;</span><span style="color: #6F6F6F">//&nbsp;maximum&nbsp;allowed&nbsp;image&nbsp;size&nbsp;in&nbsp;kb
+<br />
+<br /></span><span style="color: #0000BB">$img_def_border&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">0</span><span style="color: #007700">;&nbsp;</span><span style="color: #6F6F6F">//&nbsp;image&nbsp;border&nbsp;(1&nbsp;-&nbsp;yes;&nbsp;0&nbsp;-&nbsp;no)
+<br /></span><span style="color: #0000BB">$img_def_src&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">""</span><span style="color: #007700">;&nbsp;&nbsp;</span><span style="color: #6F6F6F">//&nbsp;default&nbsp;image&nbsp;src&nbsp;(used&nbsp;when&nbsp;no,&nbsp;or&nbsp;a&nbsp;bad&nbsp;source&nbsp;specified)
+<br /></span><span style="color: #0000BB">$img_def_width&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">20</span><span style="color: #007700">;&nbsp;</span><span style="color: #6F6F6F">//&nbsp;default&nbsp;image&nbsp;width&nbsp;(mm)
+<br /></span><span style="color: #0000BB">$img_def_height&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">20</span><span style="color: #007700">;&nbsp;</span><span style="color: #6F6F6F">//&nbsp;default&nbsp;image&nbsp;height&nbsp;(mm)
+<br /></span><span style="color: #0000BB">$img_def_left&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">0</span><span style="color: #007700">;&nbsp;</span><span style="color: #6F6F6F">//&nbsp;space&nbsp;between&nbsp;the&nbsp;anchor&nbsp;and&nbsp;image&nbsp;left&nbsp;edge&nbsp;(mm)
+<br /></span><span style="color: #0000BB">$img_def_top&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">0</span><span style="color: #007700">;&nbsp;</span><span style="color: #6F6F6F">//&nbsp;space&nbsp;between&nbsp;the&nbsp;anchor&nbsp;and&nbsp;image&nbsp;top&nbsp;edge&nbsp;(mm)
+<br /></span><span style="color: #0000BB">$img_def_space&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">5</span><span style="color: #007700">;&nbsp;</span><span style="color: #6F6F6F">//&nbsp;space&nbsp;between&nbsp;the&nbsp;image&nbsp;and&nbsp;the&nbsp;text&nbsp;(mm)
+<br /></span><span style="color: #0000BB">$img_def_align&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">"left"</span><span style="color: #007700">;&nbsp;</span><span style="color: #6F6F6F">//&nbsp;image&nbsp;align&nbsp;on&nbsp;the&nbsp;page&nbsp;(center,&nbsp;right,&nbsp;left)
+<br /></span><span style="color: #0000BB">$img_def_wrap&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">"around"</span><span style="color: #007700">;&nbsp;</span><span style="color: #6F6F6F">//&nbsp;type&nbsp;of&nbsp;text&nbsp;wrapping&nbsp;for&nbsp;image&nbsp;(no,&nbsp;updown,&nbsp;around)
+<br /></span><span style="color: #0000BB">$img_def_anchor&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">"par"</span><span style="color: #007700">;&nbsp;</span><span style="color: #6F6F6F">//&nbsp;linking&nbsp;anchor&nbsp;for&nbsp;image
+<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;para&nbsp;=&nbsp;image&nbsp;is&nbsp;linked&nbsp;to&nbsp;the&nbsp;current&nbsp;paragraph
+<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;page&nbsp;=&nbsp;image&nbsp;is&nbsp;linked&nbsp;to&nbsp;the&nbsp;current&nbsp;page&nbsp;(top&nbsp;left&nbsp;page&nbsp;corner)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;margin&nbsp;=&nbsp;image&nbsp;is&nbsp;linked&nbsp;to&nbsp;margin&nbsp;(top&nbsp;left&nbsp;page&nbsp;corner&nbsp;including&nbsp;margins)
+<br />
+<br />
+<br />//---------------------------------------------------
+<br />//&nbsp;MULTILINGUAL&nbsp;SUPPORT
+<br />//---------------------------------------------------
+<br />
+<br /></span><span style="color: #0000BB">$multilingual_support&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">true</span><span style="color: #007700">;&nbsp;</span><span style="color: #6F6F6F">//&nbsp;if&nbsp;you&nbsp;need&nbsp;to&nbsp;create&nbsp;document&nbsp;with&nbsp;characters&nbsp;outside
+<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;ASCII&nbsp;table&nbsp;-&nbsp;uou&nbsp;need&nbsp;this&nbsp;to&nbsp;be&nbsp;'true'
+<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;also&nbsp;-&nbsp;you&nbsp;need&nbsp;to&nbsp;have&nbsp;'mbstring'&nbsp;PHP&nbsp;extention&nbsp;enabled
+<br />
+<br />/*
+<br />---&nbsp;ENCODING&nbsp;DEPENDENCIES&nbsp;---
+<br />
+<br />language&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;charset&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;encoding
+<br />==============================================
+<br />FRENCH&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ISO-8859-1
+<br />GERMAN&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ISO-8859-1
+<br />SPANISH&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ISO-8859-1
+<br />SWEDISH&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ISO-8859-1
+<br />RUSSIAN&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;204&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Windows-1251
+<br />*/
+<br />
+<br />
+<br />////&nbsp;&nbsp;FONT&nbsp;CHARACTER&nbsp;SET
+<br />
+<br /></span><span style="color: #0000BB">$default_charset&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">0</span><span style="color: #007700">;&nbsp;</span><span style="color: #6F6F6F">//&nbsp;sets&nbsp;default&nbsp;character&nbsp;set&nbsp;
+<br />/*
+<br />ANSI&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;0
+<br />Default&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;1
+<br />Symbol&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;2
+<br />Invalid&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;3
+<br />Mac&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;77
+<br />Shift&nbsp;Jis&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;128
+<br />Hangul&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;129
+<br />Johab&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;130
+<br />GB2312&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;134
+<br />Big5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;136
+<br />Greek&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;161
+<br />Turkish&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;162
+<br />Vietnamese&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;163
+<br />Hebrew&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;177
+<br />Arabic&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;178
+<br />Arabic&nbsp;Traditional&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;179
+<br />Arabic&nbsp;user&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;180
+<br />Hebrew&nbsp;user&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;181
+<br />Baltic&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;186
+<br />Russian&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;204
+<br />Thai&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;222
+<br />238Eastern&nbsp;European&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;238
+<br />PC&nbsp;437&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;254
+<br />OEM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;255
+<br />*/
+<br />
+<br /></span><span style="color: #0000BB">?&gt;</span></code></pre>
+
+</p>
+</div>
+
+
+
+
+
+
+<div class="level1">
+<hr>
+<div align=right>[<a href="javascript:self.scroll(0,0);" style="font-size: 8pt"><b>^&nbsp;up</b></a>]</div>
+
+<p><h2><a name="CREDITS">Author &amp; Copyright</h2>
+
+<b>License Agreement:</b>
+<p>If you buy Document Generator you can use it as you like it and anywhere you will need it. You can do what ever you want with it except selling the script itself. If you're going to include my script into some commercial project for selling, you should include the script price into the budget and every of your customer should together with your software buy the license for my script. It is also possible to buy a distribution license for the script. If you have other plans - we can discuss them.</p> 
+
+Vadim Kiparenko <a href="mailto:&#112;&#97;&#103;&#103;&#97;&#114;&#100;&#64;&#112;&#97;&#103;&#103;&#97;&#114;&#100;&#46;&#99;&#111;&#109;" title="&#112;&#97;&#103;&#103;&#97;&#114;&#100;&#64;&#112;&#97;&#103;&#103;&#97;&#114;&#100;&#46;&#99;&#111;&#109;">&#112;&#97;&#103;&#103;&#97;&#114;&#100;&#64;&#112;&#97;&#103;&#103;&#97;&#114;&#100;&#46;&#99;&#111;&#109;</a><br>
+If you will have any question of suggestions - feel free to <a href="mailto:&#112;&#97;&#103;&#103;&#97;&#114;&#100;&#64;&#112;&#97;&#103;&#103;&#97;&#114;&#100;&#46;&#99;&#111;&#109;" title="&#112;&#97;&#103;&#103;&#97;&#114;&#100;&#64;&#112;&#97;&#103;&#103;&#97;&#114;&#100;&#46;&#99;&#111;&#109;">contact me directly</a> - I'll try to respond as soon as possible.
+</p>
+<p>
+&copy; 2007. All Rights Reserved. This class is a commercial software, if you are interested in purchasing it - contact me.
+</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,7 @@
+index.php
+simrskreatifmedia
+form_jurnal_detail
+NAO
+form
+form_jurnal_detail
+LigMd5

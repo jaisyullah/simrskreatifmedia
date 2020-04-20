@@ -1,0 +1,205 @@
+.kanban-container,.kanban-container *{box-sizing:border-box}.kanban-board:after,.kanban-container:after{clear:both;content:""}.kanban-board,.kanban-item{transition:all .3s cubic-bezier(.23,1,.32,1)}.kanban-container{position:relative;width:auto}.kanban-container:after{display:block}.kanban-board{position:relative;float:left;background:#E2E4E6}.kanban-board.disabled-board{opacity:.3}.kanban-board.is-moving.gu-mirror{transform:rotate(3deg)}.kanban-board.is-moving.gu-mirror .kanban-drag{overflow:hidden;padding-right:50px}.kanban-board header{font-size:16px;padding:15px}.kanban-board header .kanban-title-board{font-weight:700;margin:0;padding:0;display:inline}.kanban-board header .kanban-title-button{float:right}.kanban-board .kanban-drag{min-height:200px;padding:20px;height:97%;}.kanban-board:after{display:block}.kanban-item{background:#fff;padding:15px;margin-bottom:20px}.kanban-item:hover{cursor:move}.kanban-item:last-child{margin:0}.kanban-item.is-moving.gu-mirror{transform:rotate(3deg);height:auto!important}.gu-mirror{position:fixed!important;margin:0!important;z-index:9999!important}.gu-hide{display:none!important}.gu-unselectable{-webkit-user-select:none!important;-moz-user-select:none!important;-ms-user-select:none!important;user-select:none!important}.gu-transit{opacity:.2!important;transform:rotate(0)!important}
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100%;
+    width: 100%;
+}
+#container {
+    height: 100%;
+    width: 100%;
+    margin-top: 20px;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #F9FAFC;
+}
+h1 {
+    font-size: 24px;
+    margin: 0 40px 0;
+    height: 60px;
+}
+.kanban-header {
+    height: 60px;
+    margin: 0 0 40px;
+    position: relative;
+    background: white;
+    box-shadow: 0 1px 2px 0 rgba(31,45,61,.15);
+}
+.kanban-container {
+    display: flex;
+    width: 100%!important;
+    min-height: 100%;
+    overflow-x: auto;
+    padding: 0 40px 40px;
+}
+.kanban-board-header {
+    padding: 20px!important;
+    color: #1FB6FF;
+}
+.kanban-board-header .kanban-title-board {
+    position: relative;
+    display: block !important;
+    cursor: move;
+}
+.kanban-board-header .kanban-title-board:before {
+    content: ".. .. .. ..";
+    line-height: 4px;
+    display: block;
+    position: absolute;
+    text-align: center;
+    width: 16px;
+    height: 16px;
+    top: -3px;
+    right: -3px;
+    color: #E0E6ED;
+    letter-spacing: -1px;
+}
+.kanban-board {
+    background: white;
+    box-shadow: 0 1px 2px 0 rgba(31, 45, 61, .15);
+    border-radius: 1px;
+    min-width: 250px !important;
+    margin-left: 0 !important;
+}
+.kanban-drag {
+    padding: 20px 20px 40px!important;
+}
+.kanban-title-button {
+    float: none!important;
+    position: absolute;
+    bottom: 10px;
+    width: calc(100% - 40px);
+    padding: 4px 10px;
+    background: #E0E6ED;
+    border-radius: 2px;
+    border: none;
+    text-align: center;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all .2s;
+}
+.kanban-title-button:hover {
+    background: #D3DCE6;
+}
+.kanban-item {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    border-radius: 1px;
+    margin: 0 0 5px;
+    border: 1px solid #E0E6ED;
+    transition: all .2s;
+    color: #3C4858;
+    position: relative;
+    padding: 10px 30px 10px 15px;
+}
+.kanban-item:after {
+    content: ".. .. .. .. .. .. .. .. .. .. .. .. .. .. ..";
+    overflow: hidden;
+    line-height: 4px;
+    display: block;
+    position: absolute;
+    text-align: center;
+    width: 16px;
+    height: calc(100% - 5px);
+    top: 0;
+    right: 0;
+    color: #E0E6ED;
+    letter-spacing: -1px;
+}
+.kanban-item:hover {
+    background: #F9FAFC;
+}
+.kanban-item > span {
+    display: flex;
+}
+.kanban-item span[data-type="textEdit"] {
+    transition: all .2s;
+}
+.kanban-item span[data-type="textEdit"],
+.kanban-item span[data-type="textEdit"] input {
+    cursor: text;
+    height: 20px;
+    width: 100%;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0 0 10px;
+    outline: 1px solid transparent;
+}
+.kanban-item span[data-type="textEdit"] input {
+    border: none;
+    background: none;
+}
+.kanban-item span[data-type="textEdit"]:hover {
+    outline: 1px solid #C0CCDA;
+}
+.kanban-item span[data-type="image"] {
+    background: none!important;
+    padding: 0!important;
+    display: inline-block;
+    margin: 0 0 10px;
+}
+.kanban-item span[data-type="image"] img {
+    width: 100%;
+    height: auto;
+    border-radius: 3px;
+}
+.trello .kanban-item {
+    justify-content: flex-start;
+    box-shadow: 0 1px 2px 0 rgba(31,45,61,.15);
+    border-color: #E5E9F2;
+}
+.trello .kanban-item:after {
+    display: none;
+}
+.trello .kanban-item span.tag {
+    font-size: 11px;
+    padding: 3px;
+    border-radius: 3px;
+    background: #7E5BEF;
+    color: white;
+}
+.trello .kanban-item span.tag + span.tag {
+    margin-left: 5px;
+}
+.trello .kanban-item span.tag.icon {
+    font-size: 11px;
+    padding: 3px 3px 3px 16px;
+    border-radius: 3px;
+    height: 18px;
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDMyIDMyIiBoZWlnaHQ9IjMycHgiIGlkPSJMYXllcl8xIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAzMiAzMiIgd2lkdGg9IjMycHgiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxwYXRoIGQ9Ik0zMS44ODEsMTIuNTU3Yy0wLjI3Ny0wLjc5OS0wLjk4OC0xLjM4NC0xLjg0NC0xLjUxMWwtOC4zMjYtMS4yMzhsLTMuNjE5LTcuNTE0ICBDMTcuNzExLDEuNTA1LDE2Ljg5NiwxLDE2LDFjLTAuODk2LDAtMS43MTEsMC41MDUtMi4wOTIsMS4yOTRsLTMuNjE5LDcuNTE0bC04LjMyNywxLjIzOGMtMC44NTUsMC4xMjctMS41NjYsMC43MTItMS44NDIsMS41MTEgIGMtMC4yNzUsMC44MDEtMC4wNjcsMS42ODMsMC41MzcsMi4yODVsNi4xMDIsNi4wOTJsLTEuNDE1LDguNDUxQzUuMiwzMC4yMzYsNS41NjksMzEuMDksNi4yOTIsMzEuNTg4ICBDNi42ODksMzEuODYxLDcuMTU2LDMyLDcuNjIzLDMyYzAuMzg0LDAsMC43NjktMC4wOTQsMS4xMTgtMC4yODFMMTYsMjcuODExbDcuMjYsMy45MDhDMjMuNjA5LDMxLjkwNiwyMy45OTQsMzIsMjQuMzc3LDMyICBjMC40NjcsMCwwLjkzNC0wLjEzOSwxLjMzMi0wLjQxMmMwLjcyMy0wLjQ5OCwxLjA5LTEuMzUyLDAuOTQ3LTIuMjAzbC0xLjQxNi04LjQ1MWw2LjEwNC02LjA5MiAgQzMxLjk0NywxNC4yMzksMzIuMTU0LDEzLjM1NywzMS44ODEsMTIuNTU3eiBNMjMuNTg4LDE5LjM2M2MtMC41MTIsMC41MS0wLjc0NCwxLjIyOS0wLjYyNywxLjkzNGwxLjQxNiw4LjQ1MWwtNy4yNi0zLjkwNiAgYy0wLjM0OC0wLjE4OC0wLjczMi0wLjI4MS0xLjExOC0wLjI4MWMtMC4zODQsMC0wLjc2OSwwLjA5NC0xLjExNywwLjI4MWwtNy4yNiwzLjkwNmwxLjQxNi04LjQ1MSAgYzAuMTE4LTAuNzA1LTAuMTE0LTEuNDI0LTAuNjI2LTEuOTM0bC02LjEwMi02LjA5Mmw4LjMyNi0xLjI0YzAuNzYxLTAuMTEzLDEuNDE2LTAuNTg5LDEuNzQzLTEuMjY4TDE2LDMuMjUxbDMuNjIsNy41MTMgIGMwLjMyOCwwLjY3OSwwLjk4MiwxLjE1NCwxLjc0MiwxLjI2OGw4LjMyOCwxLjI0TDIzLjU4OCwxOS4zNjN6IiBmaWxsPSIjMzMzMzMzIiBpZD0ic3RhciIvPjwvc3ZnPg==) no-repeat 2px center #E0E6ED;
+    background-size: 11px;
+    color: black;
+}
+.trello .kanban-item:before {
+    content: "";
+    display: inline-block;
+    height: 5px;
+    width: 50px;
+    border-radius: 5px;
+    margin: 0 0 5px;
+    background: #C0CCDA;
+}
+.trello .tag-pink:before {
+    background: #7E5BEF;
+}
+.trello .tag-green:before {
+    background: #29EB7F;
+}
+.trello .color0:before  {
+    background: #FF9588;
+}
+.trello .color1:before  {
+    background: #FFCB49;
+}
+.trello .color2:before  {
+    background: #94D9F6;
+}
+.trello .color3:before  {
+    background: #96C624;
+}

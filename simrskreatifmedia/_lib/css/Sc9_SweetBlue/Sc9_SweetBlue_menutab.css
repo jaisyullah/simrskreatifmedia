@@ -1,0 +1,15 @@
+.scTabCtrl { position: relative; top: 1px }
+.scTabLine { background-color: #f2f2f2; background-image: none; background-position: center center; opacity: 1; filter: alpha(opacity=100); border-color: #e0e6ed; border-style: solid; border-width: 0 0 1px 0; width: 100%; margin: 0; padding: 10px 0 0 0; list-style-type: none }
+.scTabActive { list-style: none; top: 0; background-color: #FFFFFF; background-image: none; background-position: center center; opacity: 1; filter: alpha(opacity=100); border-width: 1px 1px 0 1px; border-color: #e0e6ed; border-style: solid; border-collapse: collapse; padding: 5px 4px 2px 8px; margin: 1px 2px 0 2px; height: 23px; min-height: 23px; color: #6c757d; font-family: 'Nunito', sans-serif; font-size: 13px; text-decoration: none; font-style: normal; white-space: nowrap !important; display: inline-block !important }
+.scTabInactive { list-style: none; top: 0; background-color: transparent; background-image: none; background-position: center center; opacity: 1; filter: alpha(opacity=100); border-width: 1px 1px 0 1px; border-color: #e0e6ed; border-style: solid; border-collapse: collapse; padding: 5px 4px 2px 8px; margin: 1px 2px 0 2px; height: 22px; min-height: 22px; color: #6c757d; font-family: 'Nunito', sans-serif; font-size: 13px; text-decoration: none; font-style: normal; white-space: nowrap !important; display: inline-block !important }
+.scTabActiveLink, .scTabActiveLink a { color: #6c757d; font-family: 'Nunito', sans-serif; font-size: 13px; font-style: normal; text-decoration: underline; padding: 2px; margin: 2px; display: inline }
+.scTabInactiveLink, .scTabInactiveLink a { color: #6c757d; font-family: 'Nunito', sans-serif; font-size: 13px; font-style: normal; text-decoration: none; padding: 2px; margin: 2px; display: inline }
+.scTabCloseIcon { opacity: 1; filter: alpha(opacity=100); border-style: solid; border-width: 0; border-color: #B3B3B3 }
+.scTabCloseIcon:hover { opacity: 1; filter: alpha(opacity=100); border-style: solid; border-width: 0; border-color: #B3B3B3; background-color: #FC9D9D; background-image: none }
+.scTabCloseIconLTR:hover { padding: 0; margin: 0 0 0 5px }
+.scTabScroll { border-width: 0; border-style: none; border-color: #817F80; border-collapse: collapse; background-size: 16px; background-position: center center; background-repeat: no-repeat; padding: 15px; margin: 1px 4px; opacity: 1; filter: alpha(opacity=100); cursor: pointer }
+.scTabScroll.left { background-image: url(../../img/scriptcase__NM__ico__NM__sc_b_left_arrow.png) }
+.scTabScroll.right { background-image: url(../../img/scriptcase__NM__ico__NM__sc_b_right_arrow.png) }
+.scTabCloseIconRTL:hover { padding: 0; margin: 0 5px 0 0 }
+.scTabIcon { opacity: 1; filter: alpha(opacity=100); border-style: solid; border-width: 0; border-color: #B3B3B3 }
+.scTabText { display: inline-block; overflow: hidden; vertical-align: middle; white-space: nowrap }

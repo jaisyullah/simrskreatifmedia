@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Sign In</title>
+        <!--SC_PAGE_CHARSET-->
+        <link rel="stylesheet" type="text/css" href="{SC_LIB_CURRENT}login/css/login.css">
+        <link rel="stylesheet" type="text/css" href="{SC_LIB_CURRENT}libs/css/styles.css">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body class="page-background" style="background-image:url('{SC_LIB_CURRENT}login/img/bg-sample-login.jpg');">
+        <div class="page">
+            <div class="container-small container-color">
+                <div class="background">
+                    <div class="content">
+                        <h1>
+                            Sign In
+                        </h1>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est fugit consequatur exercitationem accusamus facere distinctio consequuntur! Suscipit, dolores, voluptas. Consequatur.
+                        </p>
+                        <p>
+                            <a href="#">Read more about us »</a>
+                        </p>
+                    </div>
+                </div>
+                <form class="form" action="" {SC_FORM_ATTR}>
+                    <!--SC_FORM_HIDDEN-->
+                    <h2>
+                        Sign In
+                    </h2>
+                    <div class="control">
+                        <label class="label" for="name">Name</label>
+                        <input class="input {SC_FIELD_CLASS}" {SC_FIELD_INFO_login} type="text" placeholder="Name" name="name">
+                    </div>
+                    <div class="control">
+                        <label class="label" for="pass">Password</label>
+                        <input class="input {SC_FIELD_CLASS}" {SC_FIELD_INFO_pswd} type="password" placeholder="Password" name="pass">
+                    </div>
+					<!--SC_CAPTCHA-->
+					<!--SC_REQUIRED_MSG-->
+                    <div class="submit">
+                        <input class="button" type="button" value="Submit" {SC_FORM_SUBMIT_CALL} />
+                    </div>
+                    {SC_FIELD_INFO_Links}
+                </form>
+            </div>
+        </div>
+        </div>
+         
+        <div class="alert-message negative">
+            <span class="message"></span>
+            <span class="close">&times;</span>
+        </div>
+        
+        <!--SC_JS_LIB-->
+        <script type="text/javascript" src="{SC_LIB_CURRENT}libs/js/error.js"></script>
+    </body>
+</html>

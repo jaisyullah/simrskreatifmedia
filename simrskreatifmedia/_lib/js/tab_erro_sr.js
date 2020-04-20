@@ -1,0 +1,32 @@
+Nm_erro = {
+  "lang_jscr_dcml" : "Децимале",
+  "lang_jscr_decm" : "Десетина секунде",
+  "lang_jscr_hour" : "Сат",
+  "lang_jscr_iday" : "Дан",
+  "lang_jscr_intg" : "Цели бројеви и",
+  "lang_jscr_ivcr" : "Неисправан број кредитне картице",
+  "lang_jscr_ivdt" : "Неисправни подаци",
+  "lang_jscr_ivem" : "Неисправна и-мејл адреса",
+  "lang_jscr_ivnb" : "Неисправан цео број",
+  "lang_jscr_ivtm" : "Неисправно време",
+  "lang_jscr_ivv2" : "Неисправни подаци",
+  "lang_jscr_ivvl" : "Неисправна децимала",
+  "lang_jscr_maxm" : "Максимум",
+  "lang_jscr_maxm_date" : "Максимални датум",
+  "lang_jscr_minm" : "Минимум",
+  "lang_jscr_minm_date" : "Минимални датум",
+  "lang_jscr_mint" : "Минути",
+  "lang_jscr_mnth" : "Месец",
+  "lang_jscr_msfr" : "Образац мора имати назив",
+  "lang_jscr_mslg" : "Недостаје приступ",
+  "lang_jscr_msob" : "Овај образац мора да има назив",
+  "lang_jscr_mxdg" : "Број цифара је превелик",
+  "lang_jscr_mxvl" : "Максимална дужина је прекорачена",
+  "lang_jscr_nnum" : "Поље је нумеричко",
+  "lang_jscr_nvlf" : "Негативни знак мора бити на левој страни вредности",
+  "lang_jscr_reqr" : "Неопходно поље",
+  "lang_jscr_secd" : "Секунде",
+  "lang_jscr_wfix" : "Да ли желите да исправите?"
+};
+
+//-------- Mens USR

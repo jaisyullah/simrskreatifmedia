@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>{#helpcaseinclude_dlg.dialog_title}</title>
+	<script type="text/javascript" src="../../tiny_mce_popup.js"></script>
+	<script>
+	tinyMCEPopup.requireLangPack();
+	var start_tag 	= '<!--#include file="';
+	var end_tag		= '" -->';
+	</script>
+	<base target="_self" />
+</head>
+<body style="display: none">
+	<table border="0" cellpadding="4" cellspacing="0">
+		<tr>
+			<td colspan="2" class="title">{#helpcaseinclude_dlg.title_desc}</td>
+		</tr>
+		<tr>
+			<td nowrap="nowrap">{#helpcaseinclude_dlg.file_desc}:</td>
+			<td><input name="hp_inc_file" type="text" id="hp_inc_file" value="" style="width: 200px" /></td>
+		</tr>
+	</table>
+
+	<div class="mceActionPanel">
+		<div style="float: left">
+			<input type="button" id="insert" name="insert" value="{#update}" onclick="tinyMCE.execCommand('mceInsertRawHTML', 0, start_tag + document.getElementById('hp_inc_file').value + end_tag); tinyMCEPopup.close();" />
+		</div>
+
+		<div style="float: right">
+			<input type="button" id="cancel" name="cancel" value="{#cancel}" onclick="tinyMCEPopup.close();" />
+		</div>
+	</div>
+</body>
+</html>

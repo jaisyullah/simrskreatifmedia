@@ -1,0 +1,61 @@
+ALTERACOES LAYERSMENU
+
+1) arquivo: ../lib/layersmenu.inc.php
+Na criação dos "DIV" foi inserida a chamada da funçaõ "NM_show_menu".
+
+linha 550: $this->tree[$cnt]['onmouseover'] = ' onmouseover="moveLayerX1(' . "'" . $this->tree[$cnt]['layer_label'] . "', '" . $menu_name . "') ; LMPopUp('" . $this->tree[$cnt]['layer_label'] . "'" . ', false);NM_show_menu(\'' . $menu_name . $this->tree[$cnt]['layer_label'] . '\');"';
+
+linha 595: $this->tree[$cnt]['onmouseover'] = ' onmouseover="moveLayerX(' . "'" . $this->tree[$cnt]['layer_label'] . "') ; moveLayerY('" . $this->tree[$cnt]['layer_label'] . "') ; LMPopUp('" . $this->tree[$cnt]['layer_label'] . "'". ', false);NM_show_menu(\'ref' . $this->tree[$cnt]['layer_label'] . '\');"';
+
+linha 597: $this->tree[$cnt]['onmouseover'] = ' onmouseover="LMPopUp(' . "'" . $this->tree[$this->tree[$cnt]['father_node']]['layer_label'] . "'" . ', true);NM_show_menu(\'ref' . $this->tree[$cnt]['layer_label'] . '\');"';
+
+linha 712: $this->tree[$cnt]['onmouseover'] = ' onmouseover="moveLayerX(' . "'" . $this->tree[$cnt]['layer_label'] . "') ; moveLayerY('" . $this->tree[$cnt]['layer_label'] . "') ; LMPopUp('" . $this->tree[$cnt]['layer_label'] . "'" . ', false);NM_show_menu(\'ref' . $this->tree[$cnt]['layer_label'] . '\');"';
+
+linha 752: $this->tree[$cnt]['onmouseover'] = ' onmouseover="moveLayerX(' . "'" . $this->tree[$cnt]['layer_label'] . "') ; moveLayerY('" . $this->tree[$cnt]['layer_label'] . "') ; LMPopUp('" . $this->tree[$cnt]['layer_label'] . "'" . ', false);NM_show_menu(\'ref' . $this->tree[$cnt]['layer_label'] . '\');"';
+
+linha 754: $this->tree[$cnt]['onmouseover'] = ' onmouseover="LMPopUp(' . "'" . $this->tree[$this->tree[$cnt]['father_node']]['layer_label'] . "'" . ', true);NM_show_menu(\'ref' . $this->tree[$cnt]['layer_label'] . '\');"';
+
+
+2) Arquivo: ../libjs/layersmenu.js
+
+na function "shutdown" foi inserida a chamada da function "NM_hide_menu();" 
+
+
+3) Arquivo: ../lib/layersmenu-common.inc.php
+
+a function "setIcondir" foi alterada para o código abaixo:
+
+function setIcondir($icondir)
+{
+/*
+        if ($icondir != '' && substr($icondir, -1) != '/') {
+                $icondir .= '/';
+        }
+        if ($icondir == '' || substr($icondir, 0, 1) != '/') {
+                $foobar = strpos($icondir, $this->dirroot);
+                if ($foobar === false || $foobar != 0) {
+                        $icondir = $this->dirroot . $icondir;
+                }
+        }
+*/
+        if (!is_dir($icondir)) {
+                $this->error("setIcondir: $icondir is not a directory.");
+                return false;
+        }
+//        $this->icondir = $icondir;
+        $this->icondir = $icondir . "/";
+        return true;
+}
+
+4) Arquivo: lib/treemenu.inc.php
+criado 2 variaveis de classe $_treeMenuToggleFunction e $_treeMenuToggle
+
+criado 2 novas funcoes:
+function printTreeMenuToogle($menu_name)
+{
+	print $this->_treeMenuToggle[$menu_name];
+}
+function printTreeMenuToogleFunction($menu_name)
+{
+	print $this->_treeMenuToggleFunction[$menu_name];
+}

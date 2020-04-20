@@ -1,0 +1,135 @@
+	.box-user{border-radius: 50%;background: #eee;width: 70px;height: 70px;text-align: center;padding-top: 15px !important;font-size: 30px;margin-right: 15px !important;}
+	#idDivMenu *,
+    #idDivMenu *:before,
+    #idDivMenu *:after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box; }
+
+      #idDivMenu .container {
+		width: 90%;
+        padding: 0 25px;
+        margin: 0 auto; }
+      #idDivMenu .left {
+        float: left; }
+      #idDivMenu .left img {
+	    width: 185px; }
+      #idDivMenu .right {
+        float: right; }
+        #idDivMenu .right:after {
+          content: "";
+          display: table;
+          clear: both;
+          width: 100%; }
+      #idDivMenu .menu {
+        margin: 0;
+        padding: 0;
+        position: relative; }
+        #idDivMenu .menu li {
+          list-style: none; }
+        #idDivMenu .menu li a {
+          font-family: Arial, sans-serif;
+          font-size: 13px;
+          font-weight: bold;
+          text-decoration: none;
+          color: inherit;
+          text-transform: uppercase; }
+        #idDivMenu .menu .menu-toggler {
+          height: 36px;
+          border-radius: 2px;          
+          position: relative;
+          z-index: 2; }
+        #idDivMenu .menu .menu-toggler > img {
+          max-width: 32px;
+          border-radius: 50%;
+          float: left; }
+        #idDivMenu .menu .menu-toggler > span,
+        #idDivMenu .menu .menu-toggler > i {
+		  color: inherit;
+          float: left;
+          margin-left: 7px;
+          padding: 8px 0;
+          transition: all 0.2s;
+          -o-transition: all 0.2s;
+          -ms-transition: all 0.2s;
+          -webkit-transition:all 0.2s;
+          -moz-transition:all 0.2s;
+          -webkit-backface-visibility: hidden; }
+        #idDivMenu .menu .menu-toggler > i svg {
+          fill: white; }
+        #idDivMenu .menu .menu-toggler + ul {
+          position: absolute;
+          min-width: 300px;
+          z-index: 9999;
+          right: 0px;
+          margin-top: -1px;
+          border-radius: 2px;
+          display: none;
+          background: white;
+          border: 1px solid rgba(0, 0, 0, 0.085);
+          box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.085);
+		  top:35px;}
+        #idDivMenu .menu .menu-toggler + ul:before,
+        #idDivMenu .menu .menu-toggler + ul:after {
+          bottom: 100%;
+          right: 10px;
+          border: solid transparent;
+          content: " ";
+          height: 0;
+          width: 0;
+          position: absolute;
+          pointer-events: none; }
+        #idDivMenu .menu .menu-toggler + ul:after {
+          border-color: rgba(136, 183, 213, 0);
+          border-bottom-color: white;
+          border-width: 10px;
+          margin-left: 0px; }
+        #idDivMenu .menu .menu-toggler + ul li.menu-item {
+          clear: both;
+          border-top: 1px solid rgba(0, 0, 0, 0.085); }
+        #idDivMenu .menu .menu-toggler + ul li.menu-item a {
+          display: block;
+          padding: 10px 15px;}
+        #idDivMenu .menu .menu-toggler + ul li.menu-item a:hover {
+          background-color: rgba(0, 0, 0, 0.03); }
+        #idDivMenu .menu .info {
+          padding: 15px; }
+        #idDivMenu .menu .info .left,
+        #idDivMenu .menu .info .right {
+          float: none;
+          vertical-align: top;
+          display: table-cell; }
+        #idDivMenu .menu .info .right {
+          padding: 10px; }
+		#idDivMenu .menu .info .right a {
+		  text-transform: none;
+		  color: #6b6bff;}
+        #idDivMenu .menu .info .left img {
+          max-width: 72px;
+          border-radius: 100px; }
+        #idDivMenu .menu .info h4 {
+          font-family: Arial, sans-serif;
+          font-size: 16px;
+          margin-bottom: 15px; }
+        #idDivMenu .menu .info h4 small {
+          font-weight: normal;
+          font-size: 13px;
+          opacity: .5; }
+        #idDivMenu .menu .info a {
+          font-size: 13px; }
+        #idDivMenu .menu .info a:hover {
+          text-decoration: underline; }
+        #idDivMenu .menu.open ul {
+          display: block;
+		  color:#000;}
+        #idDivMenu .menu.open .menu-toggler > i {
+          transform: rotate(180deg);
+          transition: all 0.2s;
+          -o-transition: all 0.2s;
+          -ms-transition: all 0.2s;
+          -webkit-transition:all 0.2s;
+          -moz-transition:all 0.2s;
+          -webkit-backface-visibility: hidden;}
+        #idDivMenu .info a {
+          text-transform: none;
+          font-weight: normal; }

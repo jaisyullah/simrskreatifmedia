@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!--SC_PAGE_CHARSET-->
+		<title>Sign In</title>
+        <link rel="stylesheet" href="{SC_LIB_CURRENT}login/css/login04.css">
+        <link rel="stylesheet" type="text/css" href="{SC_LIB_CURRENT}libs/bootstrap/css/bootstrap.min.css" />   
+        <link rel="stylesheet" type="text/css" href="{SC_LIB_CURRENT}libs/css/styles.css">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	<body class="page-sidebar page-background">
+		<div class="page">
+			<div class="container">
+              <div class="card card-container">
+                  <!-- <img class="profile-img-card" src="//lh3.googleusercontent.com/-6V8xOA6M7BA/AAAAAAAAAAI/AAAAAAAAAAA/rzlHcD0KYwo/photo.jpg?sz=120" alt="" /> -->
+                  <img id="profile-img" class="profile-img-card" src="{SC_LIB_CURRENT}login/img/avatar.png" />
+                  <p id="profile-name" class="profile-name-card"></p>
+                  <form class="form-signin" {SC_FORM_ATTR}>
+                  <!--SC_FORM_HIDDEN-->
+                      <span id="reauth-email" class="reauth-email"></span>
+                      <input type="text" id="inputEmail" class="form-control {SC_FIELD_CLASS}" {SC_FIELD_INFO_login} placeholder="Email address" required autofocus>
+                      <input type="password" id="inputPassword" class="form-control {SC_FIELD_CLASS}" {SC_FIELD_INFO_pswd} placeholder="Password" required>
+						<!--SC_REQUIRED_MSG-->
+						<!--SC_CAPTCHA-->
+                      <input class="btn btn-lg btn-primary btn-block btn-signin" type="button" value="Sign in" {SC_FORM_SUBMIT_CALL} />
+                  {SC_FIELD_INFO_Links}
+                  </form><!-- /form -->
+              </div><!-- /card-container -->
+          </div><!-- /container -->
+         
+            <div class="alert-message negative">
+                <span class="message"></span>
+                <span class="close">&times;</span>
+            </div>
+            
+            <!--SC_JS_LIB-->
+            <script type="text/javascript" src="{SC_LIB_CURRENT}libs/js/error.js"></script>
+      </body>
+</html>

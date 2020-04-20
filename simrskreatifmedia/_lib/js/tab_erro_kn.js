@@ -1,0 +1,32 @@
+Nm_erro = {
+  "lang_jscr_dcml" : "ದಶಾಂಶಗಳು",
+  "lang_jscr_decm" : "ಸೆಕೆಂಡಿನ ಹತ್ತು ಭಾಗ",
+  "lang_jscr_hour" : "ಗಂಟೆ",
+  "lang_jscr_iday" : "ದಿನ",
+  "lang_jscr_intg" : "ಇಡೀ ಅಂಕೆಗಳು ಮತ್ತು",
+  "lang_jscr_ivcr" : "ಕ್ರೆಡಿಟ್ ಕಾರ್ಡ್ ಸಂಖ್ಯೆ ಸರಿಯಿಲ್ಲ",
+  "lang_jscr_ivdt" : "ತಪ್ಪಾದ ಮಾಹಿತಿ",
+  "lang_jscr_ivem" : "ತಪ್ಪಾದ ಇ-ಮೇಲ್ ವಿಳಾಸ:",
+  "lang_jscr_ivnb" : "ತಪ್ಪಾದ ಅಂಕೆಗಳು",
+  "lang_jscr_ivtm" : "ತಪ್ಪಾದ ಸಮಯ:",
+  "lang_jscr_ivv2" : "ತಪ್ಪಾದ ದಿನಾಂಕ:",
+  "lang_jscr_ivvl" : "ತಪ್ಪಾದ ದಶಮಾಂಶ",
+  "lang_jscr_maxm" : "ಗರಿಷ್ಠ",
+  "lang_jscr_maxm_date" : "ಗರಿಷ್ಠ ದಿನಾಂಕ",
+  "lang_jscr_minm" : "ಕನಿಷ್ಠ",
+  "lang_jscr_minm_date" : "ಕನಿಷ್ಠ ದಿನಾಂಕ",
+  "lang_jscr_mint" : "ನಿಮಿಷಗಳು",
+  "lang_jscr_mnth" : "ತಿಂಗಳು",
+  "lang_jscr_msfr" : "ಈ ನಮೂನೆ ಒಂದು ಹೆಸರನ್ನು ಹೊಂದಿರಬೇಕು",
+  "lang_jscr_mslg" : "ಲಾಗಿನ್ ತಪ್ಪಾಗಿದೆ;",
+  "lang_jscr_msob" : "ಈ ನಮೂನೆ ವಸ್ತುವು ಹೆಸರನ್ನು ಹೊಂದಿರಬೇಕು",
+  "lang_jscr_mxdg" : "ಅಂಕೆಗಳ ಸಂಕ್ಯೆ ನಿರೀಕ್ಷೆಗಿಂತ ಹೆಚ್ಚಾಗಿವೆ",
+  "lang_jscr_mxvl" : "ಅಧಿಕ ಸಮಯವನ್ನು ಮೀರಿದೆ",
+  "lang_jscr_nnum" : "ಈ ಜಾಗವು ಸಾಂಖ್ಯಿಕವಾಗಿದೆ",
+  "lang_jscr_nvlf" : "ಕಳೆಯುವ ಚಿಹ್ನೆಯು ಮೌಲ್ಯದ ಎಡಬದಿಯಲ್ಲಿರಬೇಕು",
+  "lang_jscr_reqr" : "ಬೇಕಾದ ಜಾಗ",
+  "lang_jscr_secd" : "ಕ್ಷಣಗಳು",
+  "lang_jscr_wfix" : "-ನೀವು ಸರಿಪಡಿಸ ಬಯಸುತ್ತೀರಾ?"
+};
+
+//-------- Mens USR

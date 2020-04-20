@@ -1,0 +1,32 @@
+Nm_erro = {
+  "lang_jscr_dcml" : "Десятичные знаки",
+  "lang_jscr_decm" : "Десятая доля секунды",
+  "lang_jscr_hour" : "Час",
+  "lang_jscr_iday" : "День",
+  "lang_jscr_intg" : "Целые числа и",
+  "lang_jscr_ivcr" : "Неверный номер кредитной карты",
+  "lang_jscr_ivdt" : "Неверные данные:",
+  "lang_jscr_ivem" : "Неверный электронный адрес:",
+  "lang_jscr_ivnb" : "Неверное целое число",
+  "lang_jscr_ivtm" : "Неверное время:",
+  "lang_jscr_ivv2" : "Неверные данные:",
+  "lang_jscr_ivvl" : "Неверный десятичный знак",
+  "lang_jscr_maxm" : "Максимум",
+  "lang_jscr_maxm_date" : "Максимальный срок",
+  "lang_jscr_minm" : "Минимум",
+  "lang_jscr_minm_date" : "Минимальный срок",
+  "lang_jscr_mint" : "Минуты",
+  "lang_jscr_mnth" : "Месяц",
+  "lang_jscr_msfr" : "У формы должно быть название",
+  "lang_jscr_mslg" : "логин отсутствует;",
+  "lang_jscr_msob" : "У этого объекта формы должно быть название",
+  "lang_jscr_mxdg" : "Число знаков превысило ожидаемое",
+  "lang_jscr_mxvl" : "Максимальная длина превышена",
+  "lang_jscr_nnum" : "Числовое поле",
+  "lang_jscr_nvlf" : "Отрицательный знак должен стоять слева от значения",
+  "lang_jscr_reqr" : "Обязательное поле",
+  "lang_jscr_secd" : "Секунды",
+  "lang_jscr_wfix" : "- Вы хотите исправить?"
+};
+
+//-------- Mens USR

@@ -1,0 +1,10 @@
+
+Barcode Generator is included in this release. 
+Barcode Generator allows you to generate barcodes. 
+You are allowed to use Barcode Generator in the context of this application. 
+
+It is forbidden to use Barcode Generator outside of this application 
+without aquiring a commercial license on http://www.barcodephp.com 
+
+For more information, visit the website http://www.barcodephp.com
+
