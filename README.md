@@ -17,7 +17,7 @@ Fitur saat ini :
 13. Modul Rekam Medis
 14. Modul Laporan
 15. Modul Master Data
-16. Modul Aplicare BPJS
+16. Integrasi Aplicare BPJS
 17. Fitur Chat
 18. Modul Kamar Operasi
 19. Modul Kamar Persalinan
@@ -27,6 +27,7 @@ Fitur saat ini :
 23. Modul Keuangan
 24. Modul Akunting (Repositori lain)
 25. Modul Display Bed
+26. Integrasi SIRANAP
 
 Fitur Mendatang :
 1. Modul EKlaim
