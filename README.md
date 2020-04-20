@@ -27,3 +27,10 @@ Fitur saat ini :
 23. Modul Keuangan
 24. Modul Akunting (Repositori lain)
 25. Modul Display Bed
+
+Fitur Mendatang :
+1. Modul EKlaim
+2. Modul VClaim
+3. Modul Antrian Mobie JKN
+4. Mobile Apps
+5. Website + Appointment
