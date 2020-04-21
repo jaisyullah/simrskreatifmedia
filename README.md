@@ -3,6 +3,7 @@
 Fitur saat ini :
 
 1.  Admission
+
 2.  Modul Poliklinik
 3.  Modul IGD
 4.  Modul Rawat Inap
@@ -28,13 +29,18 @@ Fitur saat ini :
 24. Modul Akunting (Repositori lain)
 25. Modul Display Bed
 26. Integrasi SIRANAP
+27. Modul Maps Demografi
 
-Fitur Mendatang :
+Fitur Dalam Pengembangan :
 1. Modul EKlaim
 2. Modul VClaim
 3. Modul Antrian Mobie JKN
-4. Mobile Apps
-5. Website + Appointment
+4. Website + Appointment
+
+Fitur Mendatang :
+1. Mobile Apps
+2. Dashboard Iklan Digital
+3. Integrasi Sisrute
 
 Copyright (c) Kreatif Media SIMRS
 
