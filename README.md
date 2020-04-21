@@ -97,7 +97,7 @@ Fitur saat ini :
 ![Bed Info](https://raw.githubusercontent.com/jaisyullah/simrskreatifmedia/master/screens/bed.jpg)
 
 26. Integrasi SIRANAP
-27. Modul Maps Demografi
+27. Modul Maps Demografi (Not Implemented)
 
 ![Sub Modul Gizi](https://raw.githubusercontent.com/jaisyullah/simrskreatifmedia/master/screens/mapdemografi.jpg)
 
