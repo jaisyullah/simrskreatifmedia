@@ -1,4 +1,4 @@
-# simrskreatifmedia - Fight for Covid-19 Presented SIMRS/HIS Karya Anak Indonesia
+# simrskreatifmedia - Fight for Covid-19 Presented SIMRS/HIS karya anak Indonesia
 
 Fitur saat ini :
 
@@ -96,7 +96,7 @@ Fitur saat ini :
 
 ![Bed Info](https://raw.githubusercontent.com/jaisyullah/simrskreatifmedia/master/screens/bed.jpg)
 
-26. Integrasi SIRANAP (url/siranap)
+26. Integrasi SIRANAP (url/siranap_json)
 27. Modul Maps Demografi (Not Implemented this version)
 
 ![Sub Modul Gizi](https://raw.githubusercontent.com/jaisyullah/simrskreatifmedia/master/screens/mapdemografi.jpg)
