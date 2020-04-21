@@ -10,6 +10,7 @@ Fitur saat ini :
 5.  Modul Radiologi
 6.  Modul Laboratorium
 7.  Modul Gizi
+![Sub Modul Gizi](https://raw.githubusercontent.com/jaisyullah/simrskreatifmedia/master/screens/antropometrianak.jpg)
 8.  Modul Dokter
 9.  Modul Kasir
 10. Modul Apotek/Farmasi
