@@ -114,4 +114,5 @@ Fitur Mendatang :
 
 Copyright (c) Kreatif Media SIMRS
 
+Term & Condition :
 Dengan ini Saya telah membaca, memahami dan menyetujui bahwa Sistem ini bersifat free dan tidak diperkenankan untuk diperjual-belikan / komersilkan sebagai Syarat dan Ketentuan Pengguna, dan Saya tidak berkeberatan apabila penyedia SIMRS Kreatif Media mendata pada form registrasi : https://forms.gle/tSrpEd6gZSE1adK77 yang sudah disediakan, berupa alamat e-mail / nomor handphone untuk kepentingan pengiriman informasi seputar sistem rumah sakit seperti broadcast, update dan lain-lain.
