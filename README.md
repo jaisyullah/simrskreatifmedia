@@ -1,5 +1,9 @@
 # simrskreatifmedia - Fight for Covid-19 Presented SIMRS/HIS karya anak Indonesia
 
+Fitur baru untuk yg sudah implementasi :
+
+![Temabaru](https://raw.githubusercontent.com/jaisyullah/simrskreatifmedia/master/screens/Screenshot (103).png)
+
 Fitur saat ini :
 
 1.  Admission
