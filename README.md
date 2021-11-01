@@ -1,6 +1,6 @@
 # simrskreatifmedia - Fight for Covid-19 Presented SIMRS/HIS karya anak Indonesia
 
-Fitur baru untuk yg sudah implementasi :
+Fitur baru untuk yg sudah implementasi (Tema yg lebih elegan, Blueberry) :
 
 ![Temabaru](https://raw.githubusercontent.com/jaisyullah/simrskreatifmedia/master/screens/Screenshot%20(103).png)
 
