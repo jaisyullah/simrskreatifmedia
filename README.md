@@ -2,7 +2,7 @@
 
 Fitur baru untuk yg sudah implementasi (Tema yg lebih elegan, Blueberry) :
 
-![Temabaru](https://raw.githubusercontent.com/jaisyullah/simrskreatifmedia/master/screens/Screenshot%20(103).png)
+![Temabaru](https://raw.githubusercontent.com/jaisyullah/simrskreatifmedia/master/screens/temabaru.png)
 
 Fitur saat ini :
 
